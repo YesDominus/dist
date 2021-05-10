@@ -10,6 +10,21 @@
 	color: white;
 }
 
+section{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.passage{
+  width: 100%;
+	padding-left: 3px;
+	padding-right: 3px;
+	padding-bottom: 5px;
+	border-style: outset;
+	margin-bottom: 10px;
+	border-radius: 7px;
+}
+
 footer{
 color: white;
 }
