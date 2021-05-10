@@ -1,7 +1,17 @@
+:root {
+  --sitecolor: #003366;
+  --white: #ffffff; 
+}
+
 #masthead{
 	  position: -webkit-sticky; /* Safari */
 	position: sticky;
   top: 0;
   width: 100%;
 	color: white ;
+	
+}
+
+footer{
+background-color: var(--sitecolor);
 }
