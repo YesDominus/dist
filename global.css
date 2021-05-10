@@ -10,6 +10,11 @@
 	color: white;
 }
 
+
+#masthead + div{
+background-color: --sitecolor: #003366;
+}
+
 section{
 	padding-top: 10px;
 	padding-bottom: 10px;
@@ -27,4 +32,5 @@ section{
 
 footer{
 color: white;
+background-color: var(--sitecolor);
 }
