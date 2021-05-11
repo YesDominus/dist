@@ -15,19 +15,33 @@
 background-color: --sitecolor: #003366;
 }
 
+h1{
+text-align: center;
+}
+
+h2{
+	text-shadow: 2px 2px graytext;
+	color: #FFFF;
+	text-align: center;
+	text-transform: capitalize;
+	text-align: center;
+	background-color: #5b86ac;
+	color: white !important;
+}
+
 section{
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
 
 .passage{
-  	width: 100%;
-	padding-left: 3px;
-	padding-right: 3px;
+	background-color: whitesmoke;
+	padding: 0px 20px
 	padding-bottom: 5px;
 	border-style: outset;
 	margin-bottom: 10px;
 	border-radius: 7px;
+	margin: auto;
 }
 
 footer{
