@@ -1,3 +1,5 @@
+console.log("HEJ NU FUNKAR JAAAA");
+
 function showDiv(){
         let ReadMoreDiv = document.getElementById("ReadMoreDiv");
         let readMoreLabel = document.getElementById("readMoreLabel");
