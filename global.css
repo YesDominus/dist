@@ -1,7 +1,8 @@
+/*ROOT SITE COLOR*/
 :root {
   --sitecolor: #003366;
 }
-
+/*MASTHEAD/NAVBAR STYLE*/
 #masthead{
 	  position: -webkit-sticky; /* Safari */
 	position: sticky;
@@ -23,12 +24,14 @@
 	border: 1px ridge whitesmoke;
 }
 
+/*H1 STYLE*/
 h1{
 text-align: center;
 font-size: 40px !important;
 color: var(--sitecolor);
 text-shadow: 1px 1px black;
 }
+
 /*MOVES H1 UP*/
 #primary{
 	margin-top: 5px;
@@ -86,6 +89,17 @@ footer div{
 	border-radius: 10%;
 }
 /*FAQ*/
+.faq-h{
+text-align: center;
+text-transform: capitalize;
+background-color:white;
+color: var(--sitecolor)!important;
+text-shadow: 2px 2px gray;
+	
+}
+.faq-h::first-letter {
+    font-size: 120%;
+}
 .schema-faq-code {
 	max-width: 1000px;
 border: 1px solid #dedee0;
@@ -151,3 +165,4 @@ line-height: 1.4;
 .center-text{
 	text-align: center;
 }
+
