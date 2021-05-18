@@ -117,3 +117,15 @@ line-height: 1.4;
 .schema-faq-code .faq-question:last-child .faq-a {
   border-bottom:0px;
 }
+/*Read More*/
+ #readMoreLabel{
+     cursor: pointer;
+     /*background-color: #0abab5;
+        padding: 5px;
+        border-radius: 5px;
+        color: white;*/
+    }
+
+.center-text{
+	text-align: center;
+}
