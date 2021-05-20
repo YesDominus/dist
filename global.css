@@ -94,9 +94,7 @@ footer div{
   margin:30px auto;
   border-radius: 10%;
 }
-.wp-block-columns-review {
-	    display: flex;
-}
+
 /*img*/
 .passage-img{
   display: block;
