@@ -85,7 +85,18 @@ footer div{
 }
 
 
-
+/*Review-Passage*/
+.review-p {
+	padding: 20px;
+}
+.review-img{
+  display: block;
+  margin:30px auto;
+  border-radius: 10%;
+}
+.wp-block-columns-review {
+	    display: flex;
+}
 /*img*/
 .passage-img{
   display: block;
