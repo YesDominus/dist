@@ -11,6 +11,49 @@ function showDiv(){
         }
     }
 
+/* NEW PAGE NAVIGATION
+
+var internalNavID = "navlink";
+var navButtonText = "Page navigation";
+
+function hideOrShowFunction(){
+var navBar = document.getElementById(internalNavID);
+if(navBar .style.display === "none"){
+ navBar .style.display = "block";
+}else{
+ navBar .style.display = "none";
+	}
+}
+
+var h2List = Array.from(document.getElementsByTagName("h2"));
+
+var navBarUL = document.createElement("UL");
+navBarUL.setAttribute("style", "display: none");
+navBarUL.setAttribute("id", internalNavID);
+
+var referenceNode = document.getElementsByTagName("p")[0];
+referenceNode.parentNode.insertBefore(navBarUL , referenceNode.nextSibling);
+
+if(navBarUL !== null){
+  
+for(i = 0; i < h2List.length; i++){
+  h2List[i].setAttribute("id", "header"+i);
+  var newAnchor = document.createElement("A");
+  var anchorText = document.createTextNode(h2List[i].innerText);
+  newAnchor.setAttribute("href", "#header"+i);
+  newAnchor.appendChild(anchorText);
+  var newItem = document.createElement("LI");
+  newItem.appendChild(newAnchor);
+  navBarUL.appendChild(newItem);
+  }
+var displayNavButton = document.createElement("p");
+displayNavButton.setAttribute("onclick", "hideOrShowFunction()");
+displayNavButton.setAttribute("class", "show-internal-navbar");
+displayNavButton.appendChild(document.createTextNode(navButtonText));
+navBarUL.parentNode.insertBefore(displayNavButton, navBarUL);
+}
+*/
+
 /* The code below adds a sitemap link to the footer beneath the copyright text on all pages*/
 
 let copyrightSection = document.getElementsByClassName("ast-footer-copyright")[0];
