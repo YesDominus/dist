@@ -110,6 +110,9 @@ section{
   }
 }
 
+#ReadMoreDiv{
+	display:none;
+}
 footer{
 	background-color: var(--sitecolor) !important;
 }
