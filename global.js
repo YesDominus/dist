@@ -1,3 +1,17 @@
+/* NEW READ MORE, UN-COMMENT WHEN ALL ATTRIBUTES IN ELEMENTS ARE REMOVED
+		document.getElementById("readMoreLabel").onclick = function(){			
+	     let ReadMoreDiv = document.getElementById("ReadMoreDiv");
+         let readMoreLabel = document.getElementById("readMoreLabel");       
+        if(ReadMoreDiv.style.display === "none" || ReadMoreDiv.style.display === ""){
+            ReadMoreDiv.style.display = "block"
+            readMoreLabel.innerHTML = "Read less ^" 
+        }else{
+            ReadMoreDiv.style.display = "none";
+            readMoreLabel.innerHTML = "Read more ⌄"
+        }
+};
+*/
+
 function showDiv(){
         let ReadMoreDiv = document.getElementById("ReadMoreDiv");
         let readMoreLabel = document.getElementById("readMoreLabel");
