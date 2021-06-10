@@ -110,6 +110,10 @@ section{
   }
 }
 
+footer{
+	background-color: var(--sitecolor) !important;
+}
+
 footer div{
 	color: white !important;
 	font-weight: 600;
