@@ -76,3 +76,22 @@ else {
 	jQuery(this).siblings().find('.faq-a').addClass('faq-a-open').slideDown();
 	}
 })
+
+window.onload = function() {
+  var h2List = Array.from(document.getElementsByTagName("h2"));
+  var navBarUL = document.getElementById("internalNavbar");
+if(navBarUL !== null){
+  for(i = 0; i < h2List.length; i++){
+  h2List[i].setAttribute("id", "header"+i);
+  
+  var newAnchor = document.createElement("A");
+  var anchorText = document.createTextNode(h2List[i].innerText);
+  newAnchor.setAttribute("href", "#header"+i);
+  newAnchor.appendChild(anchorText);
+  
+  var newItem = document.createElement("LI");
+  newItem.appendChild(newAnchor);
+  navBarUL.appendChild(newItem);
+ }
+};
+}
