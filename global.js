@@ -77,6 +77,18 @@ else {
 	}
 })
 
+/* Set alt text to images */
+var allImages = document.getElementsByTagName("IMG");
+var title = document.getElementsByTagName("H1")[0].innerText;
+  if(allImages.length !== null || allImages !== 'undefined'){
+	for(i = 0; i < allImages.length; i++){
+      let currentIMG = allImages[i];
+      currentIMG.title = title + " " + currentIMG.title; 
+      currentIMG.alt = currentIMG.alt + " " + title;
+    }
+  }
+
+/* Creating navbar */
 window.onload = function() {
   var h2List = Array.from(document.getElementsByTagName("h2"));
   var navBarUL = document.getElementById("internalNavbar");
