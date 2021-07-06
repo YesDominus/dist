@@ -1,6 +1,8 @@
+let readMoreLabel = document.getElementById("readMoreLabel");
+
+if(readMoreLabel !== null){
 	document.getElementById("readMoreLabel").onclick = function(){			
-		let ReadMoreDiv = document.getElementById("ReadMoreDiv");
-		let readMoreLabel = document.getElementById("readMoreLabel");       
+		let ReadMoreDiv = document.getElementById("ReadMoreDiv");		      
 		if(ReadMoreDiv.style.display === "none" || ReadMoreDiv.style.display === ""){
 		    ReadMoreDiv.style.display = "block"
 		    readMoreLabel.innerHTML = "Read less ^" 
@@ -9,6 +11,7 @@
 		    readMoreLabel.innerHTML = "Read more ⌄"
 		}
 };
+} 
 
 /* NEW PAGE NAVIGATION
 
@@ -77,7 +80,7 @@ else {
 	}
 })
 
-/* Set alt text to images */
+/ Set alt text to images /
 var allImages = document.getElementsByTagName("IMG");
 var title = document.getElementsByTagName("H1")[0].innerText;
   if(allImages.length !== null || allImages !== 'undefined'){
@@ -88,7 +91,7 @@ var title = document.getElementsByTagName("H1")[0].innerText;
     }
   }
 
-/* Creating navbar */
+/ Creating navbar /
 window.onload = function() {
   var h2List = Array.from(document.getElementsByTagName("h2"));
   var navBarUL = document.getElementById("internalNavbar");
