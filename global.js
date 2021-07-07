@@ -14,10 +14,8 @@ if(readMoreLabel !== null){
 } 
 
 /* NEW PAGE NAVIGATION
-
 var internalNavID = "navlink";
 var navButtonText = "Page navigation";
-
 function hideOrShowFunction(){
 var navBar = document.getElementById(internalNavID);
 if(navBar .style.display === "none"){
@@ -26,16 +24,12 @@ if(navBar .style.display === "none"){
  navBar .style.display = "none";
 	}
 }
-
 var h2List = Array.from(document.getElementsByTagName("h2"));
-
 var navBarUL = document.createElement("UL");
 navBarUL.setAttribute("style", "display: none");
 navBarUL.setAttribute("id", internalNavID);
-
 var referenceNode = document.getElementsByTagName("p")[0];
 referenceNode.parentNode.insertBefore(navBarUL , referenceNode.nextSibling);
-
 if(navBarUL !== null){
   
 for(i = 0; i < h2List.length; i++){
@@ -80,7 +74,7 @@ else {
 	}
 })
 
-/ Set alt text to images /
+/* Set alt text to images */
 var allImages = document.getElementsByTagName("IMG");
 var title = document.getElementsByTagName("H1")[0].innerText;
   if(allImages.length !== null || allImages !== 'undefined'){
@@ -91,7 +85,7 @@ var title = document.getElementsByTagName("H1")[0].innerText;
     }
   }
 
-/ Creating navbar /
+/* Creating navbar */
 window.onload = function() {
   var h2List = Array.from(document.getElementsByTagName("h2"));
   var navBarUL = document.getElementById("internalNavbar");
