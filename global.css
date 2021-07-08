@@ -126,6 +126,12 @@ body{
 #ReadMoreDiv{
 	display:none;
 }
+
+a {
+  color: blue !important;
+}
+
+
 footer{
 	background-color: var(--sitecolor) !important;
 }
