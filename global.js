@@ -87,20 +87,24 @@ var title = document.getElementsByTagName("H1")[0].innerText;
 
 /* Creating navbar */
 window.onload = function() {
-  var h2List = Array.from(document.getElementsByTagName("h2"));
-  var navBarUL = document.getElementById("internalNavbar");
+  let  h2List = Array.from(document.getElementsByTagName("h2"));
+  let  navBarUL = document.getElementById("internalNavbar");
 if(navBarUL !== null){
   for(i = 0; i < h2List.length; i++){
   h2List[i].setAttribute("id", "header"+i);
   
-  var newAnchor = document.createElement("A");
-  var anchorText = document.createTextNode(h2List[i].innerText);
+  let newAnchor = document.createElement("A");
+  let anchorText = document.createTextNode(h2List[i].innerText);
   newAnchor.setAttribute("href", "#header"+i);
   newAnchor.appendChild(anchorText);
   
-  var newItem = document.createElement("LI");
+  let newItem = document.createElement("LI");
   newItem.appendChild(newAnchor);
   navBarUL.appendChild(newItem);
+	  
+  let navBarContainer = document.createElement("DIV");
+  navBarContainer.setAttribute("id", "navBarContainer");
+  navBarContainer.appendChild(navBarUL);  
  }
 };
 }
