@@ -97,11 +97,7 @@ if(navBarUL !== null){
   let anchorText = document.createTextNode(h2List[i].innerText);
   newAnchor.setAttribute("href", "#header"+i);
   newAnchor.appendChild(anchorText);
-  
-  let newItem = document.createElement("LI");
-  newItem.appendChild(newAnchor);
-  navBarUL.appendChild(newItem);
- 
+
  }
 };
 }
