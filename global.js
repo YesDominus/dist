@@ -101,10 +101,7 @@ if(navBarUL !== null){
   let newItem = document.createElement("LI");
   newItem.appendChild(newAnchor);
   navBarUL.appendChild(newItem);
-	  
-  let navBarContainer = document.createElement("DIV");
-  navBarContainer.setAttribute("id", "navBarContainer");
-  navBarContainer.appendChild(navBarUL);  
+ 
  }
 };
 }
