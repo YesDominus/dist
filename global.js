@@ -92,12 +92,16 @@ window.onload = function() {
 if(navBarUL !== null){
   for(i = 0; i < h2List.length; i++){
   h2List[i].setAttribute("id", "header"+i);
-  
+  console.log(h2List[i],"hej");
   let newAnchor = document.createElement("A");
   let anchorText = document.createTextNode(h2List[i].innerText);
   newAnchor.setAttribute("href", "#header"+i);
   newAnchor.appendChild(anchorText);
 
+  let newLi = document.createElement("LI");
+  newLi.setAttribute("href", "#header"+i);
+  newLi.appendChild(newAnchor);
+  navBarUL.appendChild(newLi);
  }
 };
 }
