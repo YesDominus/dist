@@ -98,7 +98,6 @@ if(navBarUL !== null){
   newAnchor.appendChild(anchorText);
 
   let newLi = document.createElement("LI");
-  newLi.setAttribute("href", "#header"+i);
   newLi.appendChild(newAnchor);
   navBarUL.appendChild(newLi);
  }
