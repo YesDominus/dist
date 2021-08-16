@@ -37,6 +37,11 @@ h2{
 	padding: 45px 0px 45px 0px;
 }
 
+/* Set down-arrow to white in nav*/
+.main-navigation{
+	color: white !important;
+}
+
 p{
 	font-size: 17px;
 }
