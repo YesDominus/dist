@@ -272,6 +272,10 @@ line-height: 1.4;
   border-color: red;
 }
 
+.admin-quick-add [name=firstParagraphContent]{
+	border-color: green;
+}
+
 .admin-quick-add [name=faqContent]{
 	  border-color: blue;
 }
