@@ -249,3 +249,29 @@ line-height: 1.4;
 		font-size: 40px!important;
 	}
 }
+
+/* Styling for post page content form */
+
+.admin-quick-add {
+	background-color: #DDD;
+	padding: 15px;
+	margin-bottom: 15px;
+}
+
+.admin-quick-add input,
+.admin-quick-add textarea {
+	width: 100%;
+	border: none;
+	padding: 10px;
+	margin: 0 0 10px 0;
+	box-sizing: border-box;
+}
+
+.admin-quick-add textarea{
+	  border-style: solid;
+  border-color: red;
+}
+
+.admin-quick-add [name=faqContent]{
+	  border-color: blue;
+}
