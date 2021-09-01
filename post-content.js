@@ -33,7 +33,7 @@ if(quickAddButton){
     
     if (titleVal === "" || slugVal === "") {
      
-    alert("Title, Slug and must be filled out");
+    alert("Title and Slug and must be filled out");
     return false;
     }
     
