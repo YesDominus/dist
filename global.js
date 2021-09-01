@@ -105,7 +105,7 @@ if(navBarUL !== null){
 }
 
 /* Handling the page post part */
-let quickAddButton = document.querySelector("#quick-add-button");
+/* let quickAddButton = document.querySelector("#quick-add-button");
 
 console.log("URI", superNova.get_dir_uri);
 console.log("NONCE", superNova.nonce);
@@ -333,3 +333,4 @@ alert("The page is now posted");
 
     });
 }
+*/
