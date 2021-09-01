@@ -105,7 +105,9 @@ if(navBarUL !== null){
 }
 
 /* Handling the page post part */
-/* let quickAddButton = document.querySelector("#quick-add-button");
+
+/* 
+let quickAddButton = document.querySelector("#quick-add-button");
 
 console.log("URI", superNova.get_dir_uri);
 console.log("NONCE", superNova.nonce);
@@ -117,6 +119,11 @@ if(quickAddButton){
     let titleVal = document.querySelector(".admin-quick-add [name='title']").value;
     let slugVal = document.querySelector(".admin-quick-add [name='slug']").value;
     let parentVal = document.querySelector(".admin-quick-add [name='parent']").value;
+    
+    if(parentVal === ""){
+        parentVal = null;
+    }
+    
     
     let firstParagraphVal =  document.querySelector(".admin-quick-add [name='firstParagraphContent']").value;
     let readMorePassageVal =  document.querySelector(".admin-quick-add [name='readMorePassageContent']").value;
@@ -131,9 +138,9 @@ if(quickAddButton){
     let ninthPassageVal = document.querySelector(".admin-quick-add [name='ninthPassageContent']").value;
     let faqVal = document.querySelector(".admin-quick-add [name='faqContent']").value;
     
-    if (titleVal === "" || slugVal === "" || parentVal === "") {
+    if (titleVal === "" || slugVal === "") {
      
-    alert("Title, Slug and Parent ID must be filled out");
+    alert("Title, Slug and must be filled out");
     return false;
     }
     
