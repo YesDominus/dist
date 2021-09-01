@@ -145,8 +145,6 @@ if(quickAddButton){
         allSectionsContent = firstParagraphVal;
     }
     
-    //console.log(passageContents);
-    
     for (let i = 0; i < passageContents.length; i++) {
         let currentPassageText = passageContents[i];
         
@@ -155,10 +153,8 @@ if(quickAddButton){
         let sections = [];
         
     var section = document.createElement("SECTION");
-    //passage.setAttribute("class", "passage");
     
     var parser = new DOMParser();
-    
 
     var doc = textValue(currentPassageText);
     
@@ -199,11 +195,6 @@ if(quickAddButton){
     
     passageHeader.appendChild(passageHeaderIMG);
     }
-    
-    //passageHeader.appendChild(document.createTextNode(section.querySelectorAll("H2")[0].innerHTML));
-    
-    
-    //console.log(section);
    
     let allChildren = section.getElementsByTagName('*');
     
@@ -225,7 +216,6 @@ if(quickAddButton){
     
     if(i === 0){
         
-        //console.log(" is raedmore");
         let tempDiv = document.createElement("DIV");
         
         let navBarContainer = document.createElement("DIV");
@@ -261,9 +251,6 @@ if(quickAddButton){
         } 
     }
     
-    //console.log("SECTIONS: ", sections);
-
-
         function textValue(text){
         return parser.parseFromString(text, 'text/html');
     }
@@ -321,27 +308,8 @@ if(quickAddButton){
     faqSection.appendChild(faqContainer);
     
     allSectionsContent += faqSection.outerHTML;
-
-
- //   console.log("CHECKA DEN HÄR:", faqSection);
     
     }
-
-/*
-<section>
-<h2 class="faq-h">FAQ's About Fast Payouts at Arizona Gambling Sites</h2>
-<div class="schema-faq-code">
-
-<div class="faq-question">
-<h3 class="faq-q">XXXXXXXXXXXXXXXXXXXXXXXXX</h3>
-<div>
-<p class="faq-a">xxxxxxxxxxxxxxxx</p>
-</div>
-</div>
-
-</div>
-</section>
-*/
 
 
 if(allSectionsContent !== ""){
