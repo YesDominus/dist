@@ -279,3 +279,115 @@ line-height: 1.4;
 .admin-quick-add [name=faqContent]{
 	  border-color: blue;
 }
+
+/* Table CSS */
+.top-list-table thead{
+      display:none;
+  }
+
+  .top-list-table img{
+     width: auto;
+     height: 60px;
+     margin: auto;
+  }
+
+.top-list-table tr{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	    margin-bottom: 11px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.1);
+  	justify-content: space-between;
+}
+
+
+/*
+  .top-list-table td:not(:.imgTD){
+	align-items: center;
+	align-content:center;
+}
+*/
+
+.top-list-table td{
+			border-style: none;
+}
+
+.imgTD, .bonusTD{
+		display:flex;
+	align-items: center;
+	align-content:center;
+}
+
+.imgTD{
+	border-radius: 5px;
+}
+
+.tableConsList ul{
+margin:auto;
+list-style-type:none;
+	  text-transform: capitalize;
+}
+
+.tableConsList li::before {
+  content: "✓ ";
+		  font-weight: 900;
+	  color: green;
+	
+}
+
+.ctaTD{
+	display: flex;
+	flex-flow: column;
+}
+
+.ctaTD a{
+	margin: auto;
+}
+
+.ctaAnchor::after{
+	content: " »"
+}
+
+  .ctaTD a:first-child {
+     padding: 9px 15px 9px 15px;
+     color: white !important;
+     width: 100%;
+     margin-top: auto;
+		 margin-bottom: 5px;
+     background-color: #39b54a;
+     border-radius: 7px;
+     box-shadow: 0 0px 1px 0 rgba(0, 0, 0, 0.3), 0 5px 15px 0 rgba(0, 0, 0, 0.3);
+		
+     
+  }
+
+.bonusTD{
+	  font-weight: 900;
+	  color: tomato;
+		font-size: 19px;
+	  text-transform: uppercase;
+}
+
+  .top-list-table a:hover {
+    text-decoration: underline;
+  }
+
+
+    @media only screen and (max-width: 1000px) {
+
+    .top-list-table tr{
+        flex-direction: column;
+        }
+			
+.top-list-table td:not(.tableConsList){
+	display: flex;
+	text-align: center;
+	align-items: center;
+	align-content:center;
+        }
+
+		.ctaTD {
+			flex-direction: column-reverse;
+			}
+   }
