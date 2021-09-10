@@ -27,7 +27,7 @@ h1{
 		background-color: var(--sitecolor);
 }
 
-h2{
+.passage h2{
 	text-shadow: 2px 2px black;
 	text-align: center;
 	text-transform: capitalize;
