@@ -27,9 +27,12 @@ h1{
 		background-color: var(--sitecolor);
 }
 
+h2{
+		text-align: center;
+}
+
 .passage h2{
 	text-shadow: 2px 2px black;
-	text-align: center;
 	text-transform: capitalize;
 	text-align: center;
 	background-color: var(--sitecolor);
@@ -127,6 +130,9 @@ body{
   .passage-body {
     padding: 0px 5px;
   }
+				  h2{
+        font-size: 21px!important;
+        }
 }
 
 #ReadMoreDiv{
@@ -374,15 +380,14 @@ list-style-type:none;
     text-decoration: underline;
   }
 
-
     @media only screen and (max-width: 1000px) {
 
     .top-list-table tr{
         flex-direction: column;
         }
 			
-.top-list-table td:not(.tableConsList){
-	display: flex;
+.top-list-table tr td:not(.tableConsList){
+	 display: flex;
 	text-align: center;
 	align-items: center;
 	align-content:center;
