@@ -28,7 +28,15 @@ h1{
 }
 
 h2{
-		text-align: center;
+	text-align: center;
+	font-size: 33px!important;
+}
+
+h3{
+	font-size: 30px!important;
+}
+h4{
+	font-size: 20px!important;
 }
 
 .passage h2{
@@ -130,7 +138,7 @@ body{
   .passage-body {
     padding: 0px 5px;
   }
-				  h2{
+	h2{
         font-size: 21px!important;
         }
 }
