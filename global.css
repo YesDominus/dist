@@ -154,6 +154,14 @@ a {
 
 footer{
 	background-color: var(--sitecolor) !important;
+} 
+
+footer ul li{
+	list-style-type: none;
+}
+
+footer ul li::before {
+  content: "- ";
 }
 
 footer div{
