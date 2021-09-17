@@ -170,6 +170,10 @@ footer div{
 	text-shadow: 1px 1px black;
 }
 
+footer ul, p{
+	text-align: left;
+}
+
 /*Review-Passage*/
 .review-p {
 	padding: 20px;
