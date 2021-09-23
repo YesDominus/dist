@@ -419,3 +419,37 @@ list-style-type:none;
    }
 
 /* Floating button standard */
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	/*background-color: #0C9;*/
+	background-color: #ffd700;
+	color: black!important;
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+	font-size: 21px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+	z-index: 1;
+}
+
+.my-float{
+	margin-top:22px;
+}
+
+@media only screen and (max-width: 600px) {
+  .float{
+	position:fixed;
+	width:55px;
+	height:55px;
+	bottom:20px;
+	right:20px;
+	font-size: 21px;
+	
+}
+}
