@@ -104,6 +104,11 @@ if(navBarUL !== null){
 };
 }
 
+/* Adding go to top floating button element */
+let floatingGoToTopBtn = document.createElement("A");
+floatingGoToTopBtn.innerHTML= '<a class="floating-btn" href="#">▲</a>';
+document.getElementsByTagName("FOOTER")[0].appendChild(floatingGoToTopBtn);
+
 /* Handling the page post part */
 
 /* 
