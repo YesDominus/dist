@@ -437,10 +437,6 @@ list-style-type:none;
 	z-index: 1;
 }
 
-.my-float{
-	margin-top:22px;
-}
-
 @media only screen and (max-width: 600px) {
   .floating-btn{
 	position:fixed;
