@@ -153,6 +153,15 @@ body{
 	display:none;
 }
 
+#readMoreLabel{
+	background-color: var(--sitecolor);
+	opacity: 0.9;
+	padding: 6px 15px;
+	border-radius: 5px;
+	color: white;
+	box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.19);
+}
+
 a {
 	color: #0088ff !important;
 }
