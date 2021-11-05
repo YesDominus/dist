@@ -95,6 +95,10 @@ nav, nav a {
 	color: white;
 }
 
+#ast-breadcrumbs-yoast a{
+	color: gold!important;
+}
+
 section{
 	padding-top: 10px;
 	padding-bottom: 10px;
