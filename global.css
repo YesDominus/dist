@@ -6,6 +6,12 @@
 #masthead div{
 	background-color: var(--sitecolor) !important;	
 }
+
+#masthead a:hover{
+			text-decoration: underline;
+
+}
+
 /* Set sitecolor to navlink drop down*/
 .sub-menu li, .ast-builder-layout-element ul{
 		background-color: var(--sitecolor) !important;
@@ -58,8 +64,9 @@ p{
 	font-size: 17px;
 }
 
-#masthead li {
-		color: white;
+nav, nav a {
+	color: white !important;
+	  font-weight: bold;
 }
 
 /* No margin/padding between nav & header (H1) */
@@ -121,7 +128,6 @@ body{
 
 }
 
-
 .passage img{
   display:block;
   margin:auto;	   
@@ -151,6 +157,10 @@ a {
 	color: #0088ff !important;
 }
 
+  a:hover {
+		text-decoration: underline;
+  }
+
 
 footer{
 	background-color: var(--sitecolor) !important;
@@ -164,7 +174,7 @@ footer ul li::before {
   content: "- ";
 }
 
-footer div{
+footer div, footer a{
 	color: white !important;
 	font-weight: 600;
 	text-shadow: 1px 1px black;
