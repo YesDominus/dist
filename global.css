@@ -65,8 +65,8 @@ p{
 }
 
 nav, nav a {
-	color: white !important;
-	  font-weight: bold;
+	color: white!important;
+	  font-weight: bold;	
 }
 
 /* No margin/padding between nav & header (H1) */
