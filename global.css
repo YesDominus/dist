@@ -1,6 +1,9 @@
 /*ROOT SITE COLOR*/
 :root {
-  --sitecolor: #003366;
+  --sitecolor: #1C6085;
+	--sitebackgroundimg: url("");
+	
+	--siteoverlay: inset 100vw 0 0 0 rgba(0, 125, 255, 0.2);
 }
 
 #masthead div{
@@ -8,8 +11,7 @@
 }
 
 #masthead a:hover{
-			text-decoration: underline;
-
+		text-decoration: underline;
 }
 
 /* Set sitecolor to navlink drop down*/
@@ -31,11 +33,22 @@ h1{
   margin-right: -50vw;
 	padding:35px;
 		background-color: var(--sitecolor);
+  background-repeat: repeat;
+	
+box-shadow: var(--siteoverlay);	
 }
+
+/*H1 STYLE*/
+h1, .ast-header-breadcrumb, .passage-header{
+	background-image: var(--sitebackgroundimg);
+}
+
 
 h2{
 	text-align: center;
 	font-size: 33px!important;
+	background-color: var(--sitecolor);
+	padding: 15px;
 }
 
 h3{
@@ -45,14 +58,15 @@ h4{
 	font-size: 20px!important;
 }
 
+section, .passage, .passage-header, .passage h2{
+	border-radius: 15px 15px 0px 0px;
+}
+
 .passage h2{
 	text-shadow: 2px 2px black;
 	text-transform: capitalize;
 	text-align: center;
-	background-color: var(--sitecolor);
 	color: white !important;
-  border-radius: 10px 10px 0px 0px;
-	padding: 25px 0px 25px 0px;
 }
 
 /* Set down-arrow to white in nav*/
@@ -93,6 +107,7 @@ nav, nav a {
 .ast-header-breadcrumb{
 	background-color: var(--sitecolor);
 	color: white;
+	box-shadow: var(--siteoverlay);	
 }
 
 #ast-breadcrumbs-yoast a{
@@ -100,8 +115,9 @@ nav, nav a {
 }
 
 section{
-	padding-top: 10px;
-	padding-bottom: 10px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
 }
 
 /*MASTHEAD/NAVBAR STYLE*/
@@ -119,17 +135,23 @@ body{
 }
 
 .passage{
-	background-color: white;
-	-webkit-box-shadow: -1px 5px 6px 5px rgba(0,0,0,0.12); 
-	box-shadow: -1px 5px 6px 5px rgba(0,0,0,0.12);
-	background-color: whitesmoke;
-	border-style: outset;
+	background-color: #FEFEFE;
 	margin: auto;
-	border-radius: 10px 10px 0px 0px;
+	max-width: 1200px;
+
 }
 
 .passage-header{
+		background-color: var(--sitecolor);
+  background-repeat: repeat;
+box-shadow: var(--siteoverlay);
+	padding-bottom: 10px;
+}
 
+.passage-head:first-child{
+			background-color: var(--sitecolor);
+  background-repeat: repeat;
+box-shadow: var(--siteoverlay);	
 }
 
 .passage img{
@@ -149,8 +171,9 @@ body{
     padding: 0px 5px;
   }
 	h2{
-        font-size: 21px!important;
-        }
+      font-size: 21px!important;
+		padding: 5px;
+  }
 }
 
 #ReadMoreDiv{
@@ -228,12 +251,12 @@ text-shadow: 2px 2px gray;
     font-size: 120%;
 }
 .schema-faq-code {
-	max-width: 1000px;
 border: 1px solid #dedee0;
 border-radius: 10px;
 /*background-color: rgba(222, 16, 38, 0.42);*/
   overflow:hidden;
 }
+
 .schema-faq-code .faq-q {
 font-size: 18px;
 font-weight: bold;
@@ -272,13 +295,16 @@ user-select: none;
 margin: 15px;
 padding: 0px 56px 12px 12px;
 background-color: rgba(222, 16, 38,);
-font-size: 14px;
 line-height: 1.4;
   border-bottom: 1px solid #dedee0;
   display: none;
 }
 .schema-faq-code .faq-question:last-child .faq-a {
   border-bottom:0px;
+}
+
+.faq-question h3{
+	font-size: 25px!important;
 }
 
 /*Read More*/
@@ -470,4 +496,29 @@ list-style-type:none;
 	font-size: 21px;
 	
 }
+	h3{
+		font-size: 20px!important;
+	}
+	.faq-question h3{
+	font-size: 20px!important;
+}
+}
+
+.navBarContainer{
+	padding-left: 5px;
+	padding-top: 5px;
+}
+
+section:nth-child(even){
+  /*width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+	background-color: #f1f6fc;*/
+}
+
+.passage-body{
+	background-color: #f1f6fc!important;
 }
