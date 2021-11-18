@@ -175,7 +175,7 @@ box-shadow: var(--siteoverlay);
     padding: 0px 5px;
   }
 	h2{
-      font-size: 21px!important;
+      font-size: 23px!important;
 		padding: 5px;
   }
 }
@@ -501,10 +501,10 @@ list-style-type:none;
 	
 }
 	h3{
-		font-size: 20px!important;
+		font-size: 19px!important;
 	}
 	.faq-question h3{
-	font-size: 20px!important;
+	font-size: 19px!important;
 }
 }
 
