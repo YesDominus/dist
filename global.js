@@ -75,14 +75,18 @@ else {
 })
 
 /* Set alt text to images */
-var allImages = document.getElementsByTagName("IMG");
-var title = document.getElementsByTagName("H1")[0].innerText;
-  if(allImages.length !== null || allImages !== 'undefined'){
-	for(i = 0; i < allImages.length; i++){
-      let currentIMG = allImages[i];
-      currentIMG.title = title + " " + currentIMG.title; 
-      currentIMG.alt = currentIMG.alt + " " + title;
-    }
+var allSections = document.getElementsByTagName("section");
+	for(i = 0; i < allSections.length; i++){
+
+let currentSection = allSections[i];
+
+let firstH2 = currentSection.querySelectorAll("h2")[0].innerHTML;
+let firstIMG = currentSection.querySelectorAll("img")[0];
+
+if(firstH2 && firstIMG){
+      firstIMG.title = firstIMG.alt + " " + firstH2; 
+      firstIMG.alt = firstIMG.alt + " " + firstH2;  
+   }
   }
 
 /* Creating navbar */
