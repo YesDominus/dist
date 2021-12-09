@@ -201,6 +201,7 @@ footer{
 
 footer ul li{
 	list-style-type: none;
+	margin: 5px;
 }
 
 footer ul li::before {
