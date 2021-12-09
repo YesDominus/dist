@@ -56,8 +56,8 @@ let copyrightSection = document.getElementsByClassName("ast-footer-copyright")[0
 
 let firstParagraph = copyrightSection.getElementsByTagName('p')[0];
 
-var sitemapAnchor = document.createElement("A");
-sitemapAnchor.innerHTML = "<p><a style='color: white' href='/sitemap_index.xml/'>Sitemap</a></p>";          
+var sitemapAnchor = document.createElement("P");
+sitemapAnchor.innerHTML = "<a style='color: white' href='/sitemap_index.xml/'>Sitemap</a>";          
 
 firstParagraph.parentNode.insertBefore(sitemapAnchor, firstParagraph.nextSibling);
 
