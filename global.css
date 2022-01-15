@@ -1,6 +1,6 @@
 :root {
 	--sitecolor: #1C6085;
-	--sitebackgroundimg: url("..");
+	--sitebackgroundimg: url("");
 	--siteoverlay: inset 100vw 0 0 0 rgba(0, 125, 255, 0.2);
 	--passageColor: #f1f6fc!important;
 	--bodycolor: #fcfcfc
@@ -350,12 +350,6 @@ p {
 	display: none
 }
 
-.top-list-table img {
-	width: auto;
-	height: 60px;
-	margin: auto
-}
-
 .top-list-table tr {
 	display: flex;
 	flex-flow: row wrap;
@@ -381,10 +375,26 @@ p {
 	border-radius: 5px
 }
 
+ .imgTD a{
+	 display: flex;
+	 width: 250px;
+	 height: 80px;
+	  margin: auto;
+  }
+
+.imgTD img{
+	display: block;
+  margin:auto;
+}
+
 .tableConsList ul {
 	margin: auto;
 	list-style-type: none;
 	text-transform: capitalize
+}
+
+.tableConsList{
+	font-weight: 600;
 }
 
 .tableConsList li::before {
@@ -399,7 +409,15 @@ p {
 }
 
 .ctaTD a {
-	margin: auto
+	margin: auto;
+}
+
+.ctaAnchor{
+	text-transform: uppercase;
+	min-width: 180px;
+	text-align: center;
+	font-weight: 600;
+	padding: 13px!important;
 }
 
 .ctaAnchor::after {
@@ -420,7 +438,7 @@ p {
 .bonusTD {
 	font-weight: 900;
 	color: tomato;
-	font-size: 19px;
+	font-size: 23px;
 	text-transform: uppercase
 }
 
