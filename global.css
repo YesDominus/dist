@@ -393,9 +393,9 @@ p {
 	text-transform: capitalize
 }
 
-.tableConsList{
+/*.tableConsList{
 	font-weight: 600;
-}
+}*/
 
 .tableConsList li::before {
 	content: "✓ ";
