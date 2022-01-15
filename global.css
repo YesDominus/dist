@@ -448,6 +448,10 @@ list-style-type:none;
   }
 
     @media only screen and (max-width: 1000px) {
+	    
+	.bonusTD{
+	margin: auto;
+	}
 
     .top-list-table tr{
         flex-direction: column;
