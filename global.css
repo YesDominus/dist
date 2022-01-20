@@ -429,6 +429,8 @@ p {
 
 .ctaTD a {
 	margin: auto;
+	margin: 4px 0px !important;
+	text-align: center;
 }
 
 .ctaAnchor{
@@ -448,7 +450,6 @@ p {
 	color: #fff!important;
 	width: 100%;
 	margin-top: auto;
-	margin-bottom: 5px;
 	background-color: #39b54a;
 	border-radius: 7px;
 	box-shadow: 0 0 1px 0 rgba(0, 0, 0, .3), 0 5px 15px 0 rgba(0, 0, 0, .3)
