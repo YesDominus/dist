@@ -530,6 +530,10 @@ p {
 	background-color: var(--passageColor)!important
 }
 
+section:nth-child(odd) {
+  background: whitesmoke;
+}
+
 .readMoreSection{
 	display: none;
 }
