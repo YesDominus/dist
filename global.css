@@ -529,3 +529,13 @@ p {
 .passage-body {
 	background-color: var(--passageColor)!important
 }
+
+.readMoreSection{
+	display: none;
+}
+
+section img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
