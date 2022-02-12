@@ -94,7 +94,7 @@ var allSections = document.getElementsByTagName("section");
 
 let currentSection = allSections[i];
 
-let firstH2 = currentSection.querySelectorAll("h2")[0].innerHTML;
+let firstH2 = currentSection.querySelectorAll("h2")[0].innerText;
 let firstIMG = currentSection.querySelectorAll("img")[0];
 
 if(firstH2 && firstIMG){
