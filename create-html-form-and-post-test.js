@@ -4,7 +4,7 @@ var ourPostData = {
 "content": "<p>hej</p>",
 "status": "private",
 //"metaDesc": "mfmdk",
-"slug" : "test",
+"slug" : "/test/",
 "parent": 3679
 }
 
