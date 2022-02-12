@@ -5,7 +5,7 @@ var ourPostData = {
 "status": "private",
 //"metaDesc": "mfmdk",
 "slug" : "test",
-"parent": ""
+"parent": 3679
 }
 
 createPost.open("POST", superNova.siteURL + "/wp-json/wp/v2/pages");
