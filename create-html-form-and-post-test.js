@@ -1,7 +1,7 @@
 var createPost = new XMLHttpRequest();
 var ourPostData = {
 "title": "Test1",
-"content": "hej",
+"content": "<p>hej</p>",
 "status": "private",
 //"metaDesc": "mfmdk",
 "slug" : "test",
