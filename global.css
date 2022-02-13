@@ -333,6 +333,13 @@ p {
   width:20%
 }
 	
+.wp-block-columns {
+		  border-width: 1px;
+  border-left: 6px solid lightsteelblue;	
+	padding: 5px;
+border-style: outset;
+}
+	
 }
 
 @media only screen and (min-width:900px) {
@@ -546,11 +553,4 @@ section img{
   display: block;
   margin-left: auto;
   margin-right: auto;
-}
-
-.wp-block-columns {
-		  border-width: 1px;
-  border-left: 6px solid lightsteelblue;	
-	padding: 5px;
-border-style: outset;
 }
