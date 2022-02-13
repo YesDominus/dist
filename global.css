@@ -547,3 +547,10 @@ section img{
   margin-left: auto;
   margin-right: auto;
 }
+
+.wp-block-columns {
+		  border-width: 1px;
+  border-left: 6px solid lightsteelblue;	
+	padding: 5px;
+border-style: outset;
+}
