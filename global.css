@@ -171,21 +171,19 @@ body {
 	display: none
 }
 
-#readMoreLabel {
-	background-color: var(--sitecolor);
-	opacity: 0.9;
-padding: 6px 15px;
+#readMoreLabel{
+	border-style: solid;
+	border-width: thin;
+  border-color: var(--sitecolor);
+	padding: 5px 10px; 
 	border-radius: 5px;
-	color: white;
-	box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.19);
 	cursor: pointer;
-	width: 150px;
-	font-weight: 600;
-	text-align: center;
+	font-weight: 400;
 }
 
 #readMoreLabel:hover {
-	box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.5), 0 1px 2px 0 rgba(0, 0, 0, 0.9);
+  background-color: var(--sitecolor);
+	color: white;
 }
 
 a {
