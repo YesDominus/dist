@@ -5,10 +5,10 @@ if(readMoreLabel !== null){
 		let ReadMoreDiv = document.getElementById("ReadMoreDiv");		      
 		if(ReadMoreDiv.style.display === "none" || ReadMoreDiv.style.display === ""){
 		    ReadMoreDiv.style.display = "block"
-		    readMoreLabel.innerHTML = "Read less ^" 
+		    readMoreLabel.innerHTML = "Read less" 
 		}else{
 		    ReadMoreDiv.style.display = "none";
-		    readMoreLabel.innerHTML = "Read more ⌄"
+		    readMoreLabel.innerHTML = "Read more"
 		}
 };
 } 
@@ -19,10 +19,10 @@ let readMoreLabel = document.getElementById("readMoreLabel");
 	document.getElementById("readMoreLabel").onclick = function(){
 		if(readMoreSection.style.display === "none" || readMoreSection.style.display === ""){
 		    readMoreSection.style.display = "block"
-		    readMoreLabel.innerHTML = "Read less ^" 
+		    readMoreLabel.innerHTML = "Read less" 
 		}else{
 		    readMoreSection.style.display = "none";
-		    readMoreLabel.innerHTML = "Read more ⌄"
+		    readMoreLabel.innerHTML = "Read more"
 		}
 };
 }
