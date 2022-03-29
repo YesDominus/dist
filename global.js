@@ -1,6 +1,6 @@
 let readMoreLabel = document.getElementById("readMoreLabel");
 
-if(readMoreLabel !== null){
+if(readMoreLabel){
 	document.getElementById("readMoreLabel").onclick = function(){			
 		let ReadMoreDiv = document.getElementById("ReadMoreDiv");		      
 		if(ReadMoreDiv.style.display === "none" || ReadMoreDiv.style.display === ""){
