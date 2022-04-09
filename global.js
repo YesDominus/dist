@@ -90,18 +90,23 @@ else {
 
 /* Set alt text to images */
 var allSections = document.getElementsByTagName("section");
+if(allSections){
 	for(i = 0; i < allSections.length; i++){
 
 let currentSection = allSections[i];
 
-let firstH2 = currentSection.querySelectorAll("h2")[0].innerText;
+let firstH2 = currentSection.querySelectorAll("h2")[0];
 let firstIMG = currentSection.querySelectorAll("img")[0];
 
 if(firstH2 && firstIMG){
+firstH2 = firstH2.innerText;
       firstIMG.title = firstIMG.alt + " " + firstH2; 
       firstIMG.alt = firstIMG.alt + " " + firstH2;  
    }
   }
+
+}
+
 
 /* Creating navbar */
 window.onload = function() {
