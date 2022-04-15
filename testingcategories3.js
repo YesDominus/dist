@@ -379,8 +379,6 @@ alert("The page is now posted");
 }
 */
 let attribute = null;
-console.log("den vilda");
-
 let operators = [{
 			brand: "fanduel",
                         bankings: ["paypal"],
@@ -417,9 +415,6 @@ let operators = [{
 //addEventListener('load', (event) => {
 window.onload = function(event) {
 
-        // code that runs when the readyState is set to complete
-
-console.log("hej");
 	let allTables = document.getElementsByClassName("top-list-table");
 	let isListEmpty = 0;
 	if (allTables) {
