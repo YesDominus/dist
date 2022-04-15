@@ -560,3 +560,8 @@ section img{
   color: red;
   text-align: center;
 }
+
+.listDisclaimerText{
+	text-align: center;
+	font-weight: bold;
+}
