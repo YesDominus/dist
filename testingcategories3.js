@@ -379,6 +379,7 @@ alert("The page is now posted");
 }
 */
 let attribute = null;
+console.log("den vilda");
 
 let operators = [{
 			brand: "fanduel",
