@@ -416,6 +416,10 @@ border-style: outset;
   margin:auto;
 }
 
+.tableConsList{
+	font-size: 17px;
+}
+
 .tableConsList ul {
 	margin: auto;
 	list-style-type: none;
@@ -433,8 +437,11 @@ border-style: outset;
 }
 
 .ctaTD {
+	
 	display: flex;
-	flex-flow: column
+	flex-flow: column;
+	justify-content: center;
+  	align-items: center;
 }
 
 .ctaTD a {
