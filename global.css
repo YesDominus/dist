@@ -572,3 +572,25 @@ section img{
 	text-align: center;
 	font-weight: bold;
 }
+
+/* Post article styling */
+
+.uagb-post__inner-wrap{
+	background-color: white!important;
+  border-style: solid;
+  border-color: #e5e4e2;
+	border-width: thin;
+	border-radius: 5px!important;
+	-webkit-box-shadow: 4px 5px 5px -2px #ACACAC; 
+box-shadow: 4px 5px 5px -2px #ACACAC;
+}
+
+.uagb-post__inner-wrap div{
+	  display: flex;
+  justify-content: center;
+  align-items: center;	
+}
+
+.uagb-post__inner-wrap img{
+	max-height: 130px;
+}
