@@ -87,6 +87,10 @@ nav a {
 	font-weight: 700
 }
 
+#main nav a{
+	color: blue!important;
+}
+
 #primary {
 	margin: 0!important;
 	padding: 0!important
