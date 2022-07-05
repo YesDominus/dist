@@ -417,7 +417,8 @@ border-style: outset;
 
 .imgTD img{
 	display: block;
-  margin:auto;
+  	margin:auto;
+	max-height: 80px!important;
 }
 
 .tableConsList{
