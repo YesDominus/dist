@@ -609,3 +609,17 @@ box-shadow: 4px 5px 5px -2px #ACACAC;
 .coming-soon-text{
 	text-align: center;
 }
+
+/* Promo styling */
+.tableConsList .promo-code-offer::before{
+	content: "🎁 Promo: "
+}
+
+.promo-code-offer{
+	border: 4px dotted #bbb;
+  border-radius: 11px;
+	font-size: 120%;
+	text-align: center;	
+  background-color: #F1F8FF;
+  font-weight: bold;
+}
