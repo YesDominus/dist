@@ -75,5 +75,3 @@ function setOperator(operator, bonus) {
 		}
 	}
 }
-
-let fanduel = document.getElementsByClassName("fanduel-bonus");
