@@ -1,27 +1,31 @@
 let attribute = null;
 let operators = {
 	fanduel:{
-        brand: "Fanduel Sportsbook",
-        bankings: ["paypal"],
-        mainBonus:{
-	azBonus: {betting: "Bet $5 get $150 - win or lose", casino: "$1,000 no sweat first bet"},
-	coBonus: "Bet $5 get $150 - win or lose",
-	ctBonus: "Bet $5 get $150 - win or lose",
-	iaBonus: "Bet $5 get $150 - win or lose",
-	inBonus: "Bet $5 get $150 - win or lose",
-	laBonus: "Bet $5 get $150 - win or lose",
-	miBonus: "Bet $5 get $150 - win or lose",
-	nyBonus: "Up to $1,000 no swat first bet",
-	nvBonus: "Bet $5 get $150 - win or lose",
-	ksBonus: {betting: "Early sign-up bonus: $100 free bet", casino: "$1,000 no sweat first bet"},
-	njBonus: "Bet $5 get $150 - win or lose",
-	paBonus: "Bet $5 get $150 - win or lose",
-	tnBonus: "Bet $5 get $150 - win or lose",
-	vaBonus: "Bet $5 get $150 - win or lose",
-	wvBonus: "Bet $5 get $150 - win or lose"
-	},
-        promoCode: "Click & activate",
-        sports: ["football", "basketball", "hockey", "baseball", "soccer", "tennis", "golf", "mma", "australian-rules", "boxing", "cricket", "cycling", "darts", "formula-1", "motorsports", "rugby", "snooker", "table-tennis", "horse-racing"]
+        	brand: "Fanduel Sportsbook",
+        	bankings: ["paypal"],
+		azBonus: {
+			sportsbook: "Bet $5 get $150 - win or lose",
+			casino: "$1,000 no sweat first bet"
+		},
+		coBonus: "Bet $5 get $150 - win or lose",
+		ctBonus: "Bet $5 get $150 - win or lose",
+		iaBonus: "Bet $5 get $150 - win or lose",
+		inBonus: "Bet $5 get $150 - win or lose",
+		laBonus: "Bet $5 get $150 - win or lose",
+		miBonus: "Bet $5 get $150 - win or lose",
+		nyBonus: "Up to $1,000 no sweat first bet",
+		nvBonus: "Bet $5 get $150 - win or lose",
+		ksBonus: {
+			sportsbook: "Early sign-up bonus: $100 free bet",
+			casino: "$1,000 no sweat first bet"
+		},
+		njBonus: "Bet $5 get $150 - win or lose",
+		paBonus: "Bet $5 get $150 - win or lose",
+		tnBonus: "Bet $5 get $150 - win or lose",
+		vaBonus: "Bet $5 get $150 - win or lose",
+		wvBonus: "Bet $5 get $150 - win or lose",
+       		promoCode: "Click & activate",
+        	sports: ["football", "basketball", "hockey", "baseball", "soccer", "tennis", "golf", "mma", "australian-rules", "boxing", "cricket", "cycling", "darts", "formula-1", "motorsports", "rugby", "snooker", "table-tennis", "horse-racing"]
     	},
 	
 	betrivers:{
