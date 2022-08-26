@@ -215,7 +215,7 @@ let wynnBETStandardSportsBonus = "Bet $100 get $100"
 let wynnBETStandardCasinoBonus = "100% deposit match up to $1000";
 let wynnbet = {
         brand: "WynnBET",
-        promoCode: "250MATCH",
+        promoCode: "Click & activate",
     azBonus: {
         sportsbook: wynnBETStandardSportsBonus,
         casino: wynnBETStandardCasinoBonus
@@ -282,8 +282,71 @@ let wynnbet = {
 
 //BETRIVERS
 
+let betriversStandardSportsBonus = "$250 bonus"
+let betriversStandardCasinoBonus = "$250 bonus";
 	let betrivers = {
-        brand: "betrivers",
+        brand: "BetRivers",
+	        promoCode: "250MATCH",
+    azBonus: {
+        sportsbook: betriversStandardSportsBonus,
+        casino: betriversStandardCasinoBonus
+    },
+    coBonus: {
+        sportsbook: betriversStandardSportsBonus,
+        casino: betriversStandardCasinoBonus
+    },
+    ctBonus: {
+        sportsbook: betriversStandardSportsBonus,
+        casino: betriversStandardCasinoBonus
+    },
+    iaBonus: {
+        sportsbook: betriversStandardSportsBonus,
+        casino: betriversStandardCasinoBonus
+    },
+    inBonus: {
+        sportsbook: betriversStandardSportsBonus,
+        casino: betriversStandardCasinoBonus
+    },
+    laBonus: {
+        sportsbook: betriversStandardSportsBonus,
+        casino: betriversStandardCasinoBonus
+    },
+    miBonus: {
+        sportsbook: betriversStandardSportsBonus,
+        casino: betriversStandardCasinoBonus
+    },
+    nyBonus: {
+        sportsbook: betriversStandardSportsBonus,
+        casino: betriversStandardCasinoBonus
+    },
+    nvBonus: {
+        sportsbook: betriversStandardSportsBonus,
+        casino: betriversStandardCasinoBonus
+    },
+    ksBonus: {
+        sportsbook: betriversStandardSportsBonus,
+        casino: betriversStandardCasinoBonus
+    },
+    njBonus: {
+        sportsbook: betriversStandardSportsBonus,
+        casino: betriversStandardCasinoBonus
+    },
+    paBonus: {
+        sportsbook: betriversStandardSportsBonus,
+        casino: betriversStandardCasinoBonus
+    },
+    tnBonus: {
+        sportsbook: betriversStandardSportsBonus,
+        casino: betriversStandardCasinoBonus
+    },
+    vaBonus: {
+        sportsbook: betriversStandardSportsBonus,
+        casino: betriversStandardCasinoBonus
+    },
+    wvBonus: {
+        sportsbook: betriversStandardSportsBonus,
+        casino: betriversStandardCasinoBonus
+    },
         bankings: ["paypal", "visa", "mastercard", "discovercard", "pay-with-cash", "ach", "vip-preferred", "casino-cage", "online-banking", "trustly"],
         sports: ["football", "basketball", "hockey", "baseball", "soccer", "tennis", "golf", "mma", "australian-rules", "boxing", "cricket", "cycling", "darts", "esports", "e-sports", "floorball", "formula-1", "gaelic-sports", "handball", "jai-alai", "motorsports", "rugby", "snooker", "table-tennis", "volleyball", "olympics"]
     	};
