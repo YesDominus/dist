@@ -1,4 +1,4 @@
-let fanduelStandardSportsBonus = "Bet $5 get $150 win or lose"
+let fanduelStandardSportsBonus = "Bet $5 get $150 - win or lose"
 let fanduelStandardCasinoBonus = "$1,000 play it again";
 
 let fanduel = {
