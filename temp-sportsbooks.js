@@ -7,7 +7,7 @@ let fanduelStandardCasinoBonus = "$1,000 play it again";
 let fanduel = {
     brand: "Fanduel",
         promoCode: {
-	    azsportsbettingsites: standardPromoText,
+	    azsportsbettingsites: globalStandardPromoText,
 	    arizonaonlinebetting: globalStandardPromoText,
 	    arizonaonlinegambling: globalStandardPromoText,
 	    azonlinebettingsites: globalStandardPromoText,
@@ -82,7 +82,7 @@ let fanduel = {
 	let betmgm = {
     brand: "BetMGM",
         promoCode: {
-	    azsportsbettingsites: standardPromoText,
+	    azsportsbettingsites: globalStandardPromoText,
 	    arizonaonlinebetting: globalStandardPromoText,
 	    arizonaonlinegambling: globalStandardPromoText,
 	    azonlinebettingsites: globalStandardPromoText,
@@ -157,7 +157,7 @@ let fanduel = {
 	let caesars = {
         brand: "caesars",
             promoCode: {
-	    azsportsbettingsites: standardPromoText,
+	    azsportsbettingsites: globalStandardPromoText,
 	    arizonaonlinebetting: globalStandardPromoText,
 	    arizonaonlinegambling: globalStandardPromoText,
 	    azonlinebettingsites: globalStandardPromoText,
@@ -233,7 +233,7 @@ let wynnbetStandardCasinoBonus = "100% deposit match up to $1000";
 let wynnbet = {
         brand: "WynnBET",
             promoCode: {
-	    azsportsbettingsites: standardPromoText,
+	    azsportsbettingsites: globalStandardPromoText,
 	    arizonaonlinebetting: globalStandardPromoText,
 	    arizonaonlinegambling: globalStandardPromoText,
 	    azonlinebettingsites: globalStandardPromoText,
@@ -534,7 +534,7 @@ let betfredtStandardCasinoBonus = "";
 	let betfred = {
         brand: "betfred",
 	    promoCode: {
-	    azsportsbettingsites: standardPromoText,
+	    azsportsbettingsites: globalStandardPromoText,
 	    arizonaonlinebetting: globalStandardPromoText,
 	    arizonaonlinegambling: globalStandardPromoText,
 	    azonlinebettingsites: globalStandardPromoText,
