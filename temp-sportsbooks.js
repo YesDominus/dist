@@ -1,15 +1,14 @@
 let globalStandardPromoText = "Click & activate";
 
-function setOperatorBonus(operatorBonusTD, setBonus) {
-    if (operatorBonusTD) {
-        for (i = 0; i < operatorBonusTD.length; i++) {
-            let currentBonusTD = operatorBonusTD[i]
-            currentBonusTD.innerHTML = setBonus;
+function setClassAttribute(className, attribute) {
+    if (className) {
+        for (i = 0; i < className.length; i++) {
+            className[i].innerHTML = attribute;
         }
     }
 }
 
-// SPORTSBOOKS
+// ALL SPORTSBOOKS
 
 // FANDUEL
 
