@@ -464,7 +464,7 @@ let unibetStandardCasinoBonus = "";
         brand: "unibet",
     promoCode: {
 	    standardPromoText: "Click & activate",
-	    azsportsbettingsites: "",
+	    azsportsbettingsites: "AZSPORTB",
 	    arizonaonlinebetting: "",
 	    arizonaonlinegambling: "",
 	    azonlinebettingsites: "",
@@ -534,9 +534,77 @@ let unibetStandardCasinoBonus = "";
     	};
 
 //BETFRED
-	
+let betfredStandardSportsBonus = "$500 welcome offer"
+let betfredtStandardCasinoBonus = "";
 	let betfred = {
         brand: "betfred",
+	    promoCode: {
+	    standardPromoText: "Click & activate",
+	    azsportsbettingsites: "",
+	    arizonaonlinebetting: "",
+	    arizonaonlinegambling: "",
+	    azonlinebettingsites: "",
+    },
+    azBonus: {
+        sportsbook: betfredStandardSportsBonus,
+        casino: betfredtStandardCasinoBonus
+    },
+    coBonus: {
+         sportsbook: betfredStandardSportsBonus,
+        casino: betfredtStandardCasinoBonus
+    },
+    ctBonus: {
+        sportsbook: betfredStandardSportsBonus,
+        casino: betfredtStandardCasinoBonus
+    },
+    iaBonus: {
+        sportsbook: betfredStandardSportsBonus,
+        casino: betfredtStandardCasinoBonus
+    },
+    inBonus: {
+        sportsbook: betfredStandardSportsBonus,
+        casino: betfredtStandardCasinoBonus
+    },
+    laBonus: {
+        sportsbook: betfredStandardSportsBonus,
+        casino: betfredtStandardCasinoBonus
+    },
+    miBonus: {
+        sportsbook: betfredStandardSportsBonus,
+        casino: betfredtStandardCasinoBonus
+    },
+    nyBonus: {
+        sportsbook: betfredStandardSportsBonus,
+        casino: betfredtStandardCasinoBonus
+    },
+    nvBonus: {
+        sportsbook: betfredStandardSportsBonus,
+        casino: betfredtStandardCasinoBonus
+    },
+    ksBonus: {
+        sportsbook: betfredStandardSportsBonus,
+        casino: betfredtStandardCasinoBonus
+    },
+    njBonus: {
+        sportsbook: betfredStandardSportsBonus,
+        casino: betfredtStandardCasinoBonus
+    },
+    paBonus: {
+        sportsbook: betfredStandardSportsBonus,
+        casino: betfredtStandardCasinoBonus
+    },
+    tnBonus: {
+         sportsbook: betfredStandardSportsBonus,
+        casino: betfredtStandardCasinoBonus
+    },
+    vaBonus: {
+        sportsbook: betfredStandardSportsBonus,
+        casino: betfredtStandardCasinoBonus
+    },
+    wvBonus: {
+        sportsbook: betfredStandardSportsBonus,
+        casino: betfredtStandardCasinoBonus
+    },
         bankings: ["paypal"],
         sports: ["soccer", "esports", "e-sports", "baseball"]
     	};
