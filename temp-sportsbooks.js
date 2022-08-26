@@ -269,7 +269,7 @@ let wynnbet = {
         casino: wynnbetStandardCasinoBonus
     },
     nyBonus: {
-        sportsbook: wynnbetStandardSportsBonus,
+        sportsbook: "Signup on WynnBET here",
         casino: wynnbetStandardCasinoBonus
     },
     nvBonus: {
