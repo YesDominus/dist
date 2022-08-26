@@ -211,70 +211,70 @@ let fanduel = {
 
 // WYNNBET
 
-let wynnBETStandardSportsBonus = "Bet $100 get $100"
-let wynnBETStandardCasinoBonus = "100% deposit match up to $1000";
+let wynnbetStandardSportsBonus = "Bet $100 get $100"
+let wynnbetStandardCasinoBonus = "100% deposit match up to $1000";
 let wynnbet = {
         brand: "WynnBET",
         promoCode: "Click & activate",
     azBonus: {
-        sportsbook: wynnBETStandardSportsBonus,
-        casino: wynnBETStandardCasinoBonus
+        sportsbook: wynnbetStandardSportsBonus,
+        casino: wynnbetStandardCasinoBonus
     },
     coBonus: {
-        sportsbook: wynnBETStandardSportsBonus,
-        casino: wynnBETStandardCasinoBonus
+        sportsbook: wynnbetStandardSportsBonus,
+        casino: wynnbetStandardCasinoBonus
     },
     ctBonus: {
-        sportsbook: wynnBETStandardSportsBonus,
-        casino: wynnBETStandardCasinoBonus
+        sportsbook: wynnbetStandardSportsBonus,
+        casino: wynnbetStandardCasinoBonus
     },
     iaBonus: {
-        sportsbook: wynnBETStandardSportsBonus,
-        casino: wynnBETStandardCasinoBonus
+        sportsbook: wynnbetStandardSportsBonus,
+        casino: wynnbetStandardCasinoBonus
     },
     inBonus: {
-        sportsbook: wynnBETStandardSportsBonus,
-        casino: wynnBETStandardCasinoBonus
+        sportsbook: wynnbetStandardSportsBonus,
+        casino: wynnbetStandardCasinoBonus
     },
     laBonus: {
-        sportsbook: wynnBETStandardSportsBonus,
-        casino: wynnBETStandardCasinoBonus
+        sportsbook: wynnbetStandardSportsBonus,
+        casino: wynnbetStandardCasinoBonus
     },
     miBonus: {
         sportsbook: "Bet $100 get $50",
-        casino: wynnBETStandardCasinoBonus
+        casino: wynnbetStandardCasinoBonus
     },
     nyBonus: {
-        sportsbook: wynnBETStandardSportsBonus,
-        casino: wynnBETStandardCasinoBonus
+        sportsbook: wynnbetStandardSportsBonus,
+        casino: wynnbetStandardCasinoBonus
     },
     nvBonus: {
-        sportsbook: wynnBETStandardSportsBonus,
-        casino: wynnBETStandardCasinoBonus
+        sportsbook: wynnbetStandardSportsBonus,
+        casino: wynnbetStandardCasinoBonus
     },
     ksBonus: {
-        sportsbook: wynnBETStandardSportsBonus,
-        casino: wynnBETStandardCasinoBonus
+        sportsbook: wynnbetStandardSportsBonus,
+        casino: wynnbetStandardCasinoBonus
     },
     njBonus: {
         sportsbook: "Bet $100 get $50",
-        casino: wynnBETStandardCasinoBonus
+        casino: wynnbetStandardCasinoBonus
     },
     paBonus: {
-        sportsbook: wynnBETStandardSportsBonus,
-        casino: wynnBETStandardCasinoBonus
+        sportsbook: wynnbetStandardSportsBonus,
+        casino: wynnbetStandardCasinoBonus
     },
     tnBonus: {
-        sportsbook: wynnBETStandardSportsBonus,
-        casino: wynnBETStandardCasinoBonus
+        sportsbook: wynnbetStandardSportsBonus,
+        casino: wynnbetStandardCasinoBonus
     },
     vaBonus: {
-        sportsbook: wynnBETStandardSportsBonus,
-        casino: wynnBETStandardCasinoBonus
+        sportsbook: wynnbetStandardSportsBonus,
+        casino: wynnbetStandardCasinoBonus
     },
     wvBonus: {
-        sportsbook: wynnBETStandardSportsBonus,
-        casino: wynnBETStandardCasinoBonus
+        sportsbook: wynnbetStandardSportsBonus,
+        casino: wynnbetStandardCasinoBonus
     },
         bankings: ["paypal", "visa", "playplus", "paynearme", "mastercard", "ach", "vip-preferred"],
         sports: ["football", "basketball", "baseball", "hockey", "tennis", "soccer", "mma", "golf", "esports", "e-sports", "motorsports", "table-tennis", "australian-rules", "boxing", "cricket", "cycling", "darts", "floorball", "boxing", "formula-1", "gaelic-sports", "handball", "rugby", "snooker", "volleyball", "olympics"]
@@ -352,9 +352,76 @@ let betriversStandardCasinoBonus = "$250 bonus";
     	};
 
 // FUBO
-	
+let fuboStandardSportsBonus = "Risk-free bet up to $1000"
+let fuboStandardCasinoBonus = "";
 	let fubo = {
         brand: "fubo",
+    promoCode: {
+	    azsportsbettingsites: "AZSPORTB"
+	    arizonaonlinebetting: "AZOBETTING",
+	    arizonaonlinegambling: "AZGAMBLING",
+	    azonlinebettingsites: "AZBETTING",
+    },
+    azBonus: {
+        sportsbook: fuboStandardSportsBonus,
+        casino: fuboStandardCasinoBonus
+    },
+    coBonus: {
+        sportsbook: fuboStandardSportsBonus,
+        casino: fuboStandardCasinoBonus
+    },
+    ctBonus: {
+        sportsbook: fuboStandardSportsBonus,
+        casino: fuboStandardCasinoBonus
+    },
+    iaBonus: {
+        sportsbook: fuboStandardSportsBonus,
+        casino: fuboStandardCasinoBonus
+    },
+    inBonus: {
+        sportsbook: fuboStandardSportsBonus,
+        casino: fuboStandardCasinoBonus
+    },
+    laBonus: {
+        sportsbook: fuboStandardSportsBonus,
+        casino: fuboStandardCasinoBonus
+    },
+    miBonus: {
+        sportsbook: fuboStandardSportsBonus,
+        casino: fuboStandardCasinoBonus
+    },
+    nyBonus: {
+        sportsbook: fuboStandardSportsBonus,
+        casino: fuboStandardCasinoBonus
+    },
+    nvBonus: {
+        sportsbook: fuboStandardSportsBonus,
+        casino: fuboStandardCasinoBonus
+    },
+    ksBonus: {
+        sportsbook: fuboStandardSportsBonus,
+        casino: fuboStandardCasinoBonus
+    },
+    njBonus: {
+        sportsbook: fuboStandardSportsBonus,
+        casino: fuboStandardCasinoBonus
+    },
+    paBonus: {
+        sportsbook: fuboStandardSportsBonus,
+        casino: fuboStandardCasinoBonus
+    },
+    tnBonus: {
+        sportsbook: fuboStandardSportsBonus,
+        casino: fuboStandardCasinoBonus
+    },
+    vaBonus: {
+        sportsbook: fuboStandardSportsBonus,
+        casino: fuboStandardCasinoBonus
+    },
+    wvBonus: {
+        sportsbook: fuboStandardSportsBonus,
+        casino: fuboStandardCasinoBonus
+    },
         bankings: ["visa", "mastercard", "ach", "vip-preferred", "skrill", "playplus", "paynearme", "paywithmybank", "trustly"],
         sports: ["football", "motorsports", "baseball", "hockey", "soccer", "mma", "tennis", "basketball", "boxing", "golf", "formula-1"]
     	};
