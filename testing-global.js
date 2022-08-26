@@ -1,4 +1,4 @@
-<script src="https://cdn.jsdelivr.net/gh/YesDominus/dist@main/BrandFanduel.min.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/gh/YesDominus/dist@main/brand-fanduel.min.js" crossorigin="anonymous"></script>
 
 console.log(fanduel);
 
