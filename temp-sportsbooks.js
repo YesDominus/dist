@@ -4,7 +4,13 @@ let fanduelStandardSportsBonus = "Bet $5 get $150 - win or lose"
 let fanduelStandardCasinoBonus = "$1,000 play it again";
 let fanduel = {
     brand: "Fanduel",
-    promoCode: "Click & activate",
+        promoCode: {
+	    standardPromoText: "Click & activate",
+	    azsportsbettingsites: "",
+	    arizonaonlinebetting: "",
+	    arizonaonlinegambling: "",
+	    azonlinebettingsites: "",
+    },
     azBonus: {
         sportsbook: fanduelStandardSportsBonus,
         casino: fanduelStandardCasinoBonus
@@ -74,7 +80,13 @@ let fanduel = {
   let betmgmStandardCasinoBonus = "$25 free play";
 	let betmgm = {
     brand: "BetMGM",
-    promoCode: "Click & activate",
+        promoCode: {
+	    standardPromoText: "Click & activate",
+	    azsportsbettingsites: "",
+	    arizonaonlinebetting: "",
+	    arizonaonlinegambling: "",
+	    azonlinebettingsites: "",
+    },
     azBonus: {
         sportsbook: betmgmStandardSportsBonus,
         casino: betmgmStandardCasinoBonus
@@ -144,7 +156,13 @@ let fanduel = {
   let caesarsStandardCasinoBonus = "$2,000 bonus";
 	let caesars = {
         brand: "caesars",
-        promoCode: "Click & activate",
+            promoCode: {
+	    standardPromoText: "Click & activate",
+	    azsportsbettingsites: "",
+	    arizonaonlinebetting: "",
+	    arizonaonlinegambling: "",
+	    azonlinebettingsites: "",
+    },
     azBonus: {
         sportsbook: caesarsStandardSportsBonus,
         casino: caesarsStandardCasinoBonus
@@ -215,7 +233,13 @@ let wynnbetStandardSportsBonus = "Bet $100 get $100"
 let wynnbetStandardCasinoBonus = "100% deposit match up to $1000";
 let wynnbet = {
         brand: "WynnBET",
-        promoCode: "Click & activate",
+            promoCode: {
+	    standardPromoText: "Click & activate",
+	    azsportsbettingsites: "",
+	    arizonaonlinebetting: "",
+	    arizonaonlinegambling: "",
+	    azonlinebettingsites: "",
+    },
     azBonus: {
         sportsbook: wynnbetStandardSportsBonus,
         casino: wynnbetStandardCasinoBonus
@@ -286,7 +310,13 @@ let betriversStandardSportsBonus = "$250 bonus"
 let betriversStandardCasinoBonus = "$250 bonus";
 	let betrivers = {
         brand: "BetRivers",
-	        promoCode: "250MATCH",
+    promoCode: {
+	    standardPromoText: "Click & activate",
+	    azsportsbettingsites: "250MATCH",
+	    arizonaonlinebetting: "250MATCH",
+	    arizonaonlinegambling: "250MATCH",
+	    azonlinebettingsites: "250MATCH",
+    },
     azBonus: {
         sportsbook: betriversStandardSportsBonus,
         casino: betriversStandardCasinoBonus
@@ -357,6 +387,7 @@ let fuboStandardCasinoBonus = "";
 	let fubo = {
         brand: "fubo",
     promoCode: {
+	    standardPromoText: "Click & activate",
 	    azsportsbettingsites: "AZSPORTB"
 	    arizonaonlinebetting: "AZOBETTING",
 	    arizonaonlinegambling: "AZGAMBLING",
@@ -427,9 +458,77 @@ let fuboStandardCasinoBonus = "";
     	};
 
 // UNIBET
-	
+let unibetStandardSportsBonus = "$250 risk-free bet"
+let unibetStandardCasinoBonus = "";
 	let unibet = {
         brand: "unibet",
+    promoCode: {
+	    standardPromoText: "Click & activate",
+	    azsportsbettingsites: "",
+	    arizonaonlinebetting: "",
+	    arizonaonlinegambling: "",
+	    azonlinebettingsites: "",
+    },
+    azBonus: {
+        sportsbook: unibetStandardSportsBonus,
+        casino: unibetStandardCasinoBonus
+    },
+    coBonus: {
+        sportsbook: unibetStandardSportsBonus,
+        casino: unibetStandardCasinoBonus
+    },
+    ctBonus: {
+        sportsbook: unibetStandardSportsBonus,
+        casino: unibetStandardCasinoBonus
+    },
+    iaBonus: {
+        sportsbook: unibetStandardSportsBonus,
+        casino: unibetStandardCasinoBonus
+    },
+    inBonus: {
+        sportsbook: unibetStandardSportsBonus,
+        casino: unibetStandardCasinoBonus
+    },
+    laBonus: {
+        sportsbook: unibetStandardSportsBonus,
+        casino: unibetStandardCasinoBonus
+    },
+    miBonus: {
+        sportsbook: unibetStandardSportsBonus,
+        casino: unibetStandardCasinoBonus
+    },
+    nyBonus: {
+        sportsbook: unibetStandardSportsBonus,
+        casino: unibetStandardCasinoBonus
+    },
+    nvBonus: {
+        sportsbook: unibetStandardSportsBonus,
+        casino: unibetStandardCasinoBonus
+    },
+    ksBonus: {
+        sportsbook: unibetStandardSportsBonus,
+        casino: unibetStandardCasinoBonus
+    },
+    njBonus: {
+        sportsbook: unibetStandardSportsBonus,
+        casino: unibetStandardCasinoBonus
+    },
+    paBonus: {
+        sportsbook: unibetStandardSportsBonus,
+        casino: unibetStandardCasinoBonus
+    },
+    tnBonus: {
+        sportsbook: unibetStandardSportsBonus,
+        casino: unibetStandardCasinoBonus
+    },
+    vaBonus: {
+        sportsbook: unibetStandardSportsBonus,
+        casino: unibetStandardCasinoBonus
+    },
+    wvBonus: {
+        sportsbook: unibetStandardSportsBonus,
+        casino: unibetStandardCasinoBonus
+    },
         bankings: ["paypal", "visa", "playplus", "paynearme", "mastercard", "ach", "vip-preferred"],
         sports: ["football", "basketball", "baseball", "hockey", "tennis", "soccer", "mma", "golf", "esports", "e-sports", "motorsports", "table-tennis", "australian-rules", "boxing", "cricket", "cycling", "darts", "floorball", "boxing", "formula-1", "gaelic-sports", "handball", "rugby", "snooker", "volleyball", "olympics"]
     	};
