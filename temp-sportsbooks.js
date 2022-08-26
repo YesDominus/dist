@@ -1,5 +1,16 @@
 let globalStandardPromoText = "Click & activate";
 
+function setOperatorBonus(operatorBonusTD, setBonus) {
+    if (operatorBonusTD) {
+        for (i = 0; i < operatorBonusTD.length; i++) {
+            let currentBonusTD = operatorBonusTD[i]
+            currentBonusTD.innerHTML = setBonus;
+        }
+    }
+}
+
+// SPORTSBOOKS
+
 // FANDUEL
 
 let fanduelStandardSportsBonus = "Bet $5 get $150 - win or lose"
