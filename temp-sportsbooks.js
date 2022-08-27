@@ -1,25 +1,28 @@
-let fanduelBonusClass = "fanduel-bonus";
-let betmgmBonusClass = "betmgm-bonus";
-let caesarsBonusClass = "caesars-bonus";
-let draftkingsBonusClass = "draftkings-bonus";
-let betriversBonusClass = "betrivers-bonus";
-let wynnbetBonusClass = "wynnbet-bonus";
-let fuboBonusClass = "fubo-bonus";
-let betfredBonusClass = "betfred-bonus";
-let unibetBonusClass = "unibet-bonus";
+let bonusClassExtension = "-bonus";
+
+let fanduelClass = "fanduel";
+let betmgmClass = "betmgm";
+let caesarsClass = "caesars";
+let draftkingsClass = "draftkings";
+let betriversClass = "betrivers";
+let wynnbetClass = "wynnbet";
+let fuboClass = "fubo";
+let betfredClass = "betfred";
+let unibetClass = "unibet";
 
 let globalStandardPromoText = "Click & activate";
 
-function setClassAttribute(className, attribute) {
+function setClassAttribute(className, type, newAttribute) {
+	className = className+type;
     if (className) {
         for (i = 0; i < className.length; i++) {
-            className[i].innerHTML = attribute;
+            className[i].innerHTML = newAttribute;
         }
     }
 }
 
-setClassAttribute("fanduel-bonus", fanduel.azBonus.sportsbook);
-setClassAttribute("wynnbet-bonus", wynnbet.azBonus.sportsbook);
+setClassAttribute(fanduelClass, bonusClassExtension, fanduel.azBonus.sportsbook);
+setClassAttribute(wynnbetClass, bonusClassExtension, wynnbet.azBonus.sportsbook);
 
 // ALL SPORTSBOOKS
 
