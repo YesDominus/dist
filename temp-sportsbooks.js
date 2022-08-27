@@ -14,15 +14,13 @@ let globalStandardPromoText = "Click & activate";
 
 function setClassAttribute(className, type, newAttribute) {
 	className = className+type;
-    if (className) {
-        for (i = 0; i < className.length; i++) {
-            className[i].innerHTML = newAttribute;
+	classNameEnteties = document.getElementsByClassName(className);
+    if (classNameEnteties) {
+        for (i = 0; i < classNameEnteties.length; i++) {
+            classNameEnteties = classNameEnteties[i] = newAttribute;
         }
     }
 }
-
-setClassAttribute(fanduelClass, bonusClassExtension, fanduel.azBonus.sportsbook);
-setClassAttribute(wynnbetClass, bonusClassExtension, wynnbet.azBonus.sportsbook);
 
 // ALL SPORTSBOOKS
 
