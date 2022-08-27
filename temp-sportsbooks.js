@@ -1,3 +1,13 @@
+let fanduelBonusClass = "fanduel-bonus";
+let betmgmBonusClass = "betmgm-bonus";
+let caesarsBonusClass = "caesars-bonus";
+let draftkingsBonusClass = "draftkings-bonus";
+let betriversBonusClass = "betrivers-bonus";
+let wynnbetBonusClass = "wynnbet-bonus";
+let fuboBonusClass = "fubo-bonus";
+let betfredBonusClass = "betfred-bonus";
+let unibetBonusClass = "unibet-bonus";
+
 let globalStandardPromoText = "Click & activate";
 
 function setClassAttribute(className, attribute) {
@@ -7,6 +17,9 @@ function setClassAttribute(className, attribute) {
         }
     }
 }
+
+setClassAttribute("fanduel-bonus", fanduel.azBonus.sportsbook);
+setClassAttribute("wynnbet-bonus", wynnbet.azBonus.sportsbook);
 
 // ALL SPORTSBOOKS
 
