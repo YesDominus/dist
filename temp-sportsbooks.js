@@ -7,19 +7,31 @@ let draftkingsClass = "draftkings";
 let betriversClass = "betrivers";
 let wynnbetClass = "wynnbet";
 let fuboClass = "fubo";
-let betfredClass = "betfred";
 let unibetClass = "unibet";
+let betfredClass = "betfred";
 
 let globalStandardPromoText = "Click & activate";
 
 function setClassAttribute(className, type, newAttribute) {
 	className = className+type;
-	classNameEnteties = document.getElementsByClassName(className);
+	let classNameEnteties = document.getElementsByClassName(className);
     if (classNameEnteties) {
         for (i = 0; i < classNameEnteties.length; i++) {
             classNameEnteties = classNameEnteties[i] = newAttribute;
         }
     }
+}
+
+function setArizonaSettings(){
+setClassAttribute(fanduelClass, bonusClassExtension, fanduel.azBonus.sportsbook);
+setClassAttribute(betmgmClass, bonusClassExtension, wynnbet.azBonus.sportsbook);
+setClassAttribute(caesarsClass, bonusClassExtension, caesars.azBonus.sportsbook);
+//setClassAttribute(draftkingsClass, bonusClassExtension, draftkings.azBonus.sportsbook);
+setClassAttribute(betriversClass, bonusClassExtension, betrivers.azBonus.sportsbook);
+setClassAttribute(wynnbetClass, bonusClassExtension, wynnbet.azBonus.sportsbook);
+setClassAttribute(fuboClass, bonusClassExtension, fubo.azBonus.sportsbook);
+setClassAttribute(unibetClass, bonusClassExtension, unibet.azBonus.sportsbook);
+setClassAttribute(betfredClass, bonusClassExtension, betfred.azBonus.sportsbook);
 }
 
 // ALL SPORTSBOOKS
