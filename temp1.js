@@ -17,14 +17,14 @@ function setClassAttribute(className, type, newAttribute) {
 	let classNameEnteties = document.getElementsByClassName(className);
     if (classNameEnteties) {
         for (i = 0; i < classNameEnteties.length; i++) {
-            classNameEnteties = classNameEnteties[i] = newAttribute;
+            classNameEnteties[i].innerHTML = newAttribute;
         }
     }
 }
 
 function setArizonaSettings(){
 setClassAttribute(fanduelClass, bonusClassExtension, fanduel.azBonus.sportsbook);
-setClassAttribute(betmgmClass, bonusClassExtension, wynnbet.azBonus.sportsbook);
+setClassAttribute(betmgmClass, bonusClassExtension, betmgm.azBonus.sportsbook);
 setClassAttribute(caesarsClass, bonusClassExtension, caesars.azBonus.sportsbook);
 //setClassAttribute(draftkingsClass, bonusClassExtension, draftkings.azBonus.sportsbook);
 setClassAttribute(betriversClass, bonusClassExtension, betrivers.azBonus.sportsbook);
@@ -46,7 +46,7 @@ let fanduel = {
 	    azsportsbettingsites: globalStandardPromoText,
 	    arizonaonlinebetting: globalStandardPromoText,
 	    arizonaonlinegambling: globalStandardPromoText,
-	    azonlinebettingsites: globalStandardPromoText,
+	    azonlinebettingsites: globalStandardPromoText
     },
     azBonus: {
         sportsbook: fanduelStandardSportsBonus,
@@ -113,7 +113,7 @@ let fanduel = {
 };
 
 // BETMGM
-	let betmgmStandardSportsBonus = "Risk-free bet up to $1000"
+	let betmgmStandardSportsBonus = "Risk free bet up to $1000"
   let betmgmStandardCasinoBonus = "$25 free play";
 	let betmgm = {
     brand: "BetMGM",
@@ -121,7 +121,7 @@ let fanduel = {
 	    azsportsbettingsites: globalStandardPromoText,
 	    arizonaonlinebetting: globalStandardPromoText,
 	    arizonaonlinegambling: globalStandardPromoText,
-	    azonlinebettingsites: globalStandardPromoText,
+	    azonlinebettingsites: globalStandardPromoText
     },
     azBonus: {
         sportsbook: betmgmStandardSportsBonus,
@@ -196,7 +196,7 @@ let fanduel = {
 	    azsportsbettingsites: globalStandardPromoText,
 	    arizonaonlinebetting: globalStandardPromoText,
 	    arizonaonlinegambling: globalStandardPromoText,
-	    azonlinebettingsites: globalStandardPromoText,
+	    azonlinebettingsites: globalStandardPromoText
     },
     azBonus: {
         sportsbook: caesarsStandardSportsBonus,
@@ -272,7 +272,7 @@ let wynnbet = {
 	    azsportsbettingsites: globalStandardPromoText,
 	    arizonaonlinebetting: globalStandardPromoText,
 	    arizonaonlinegambling: globalStandardPromoText,
-	    azonlinebettingsites: globalStandardPromoText,
+	    azonlinebettingsites: globalStandardPromoText
     },
     azBonus: {
         sportsbook: wynnbetStandardSportsBonus,
@@ -348,7 +348,7 @@ let betriversStandardCasinoBonus = "$250 bonus";
 	    azsportsbettingsites: "250MATCH",
 	    arizonaonlinebetting: "250MATCH",
 	    arizonaonlinegambling: "250MATCH",
-	    azonlinebettingsites: "250MATCH",
+	    azonlinebettingsites: "250MATCH"
     },
     azBonus: {
         sportsbook: betriversStandardSportsBonus,
@@ -420,10 +420,10 @@ let fuboStandardCasinoBonus = "";
 	let fubo = {
         brand: "fubo",
     promoCode: {
-	    azsportsbettingsites: "AZSPORTB"
+	    azsportsbettingsites: "AZSPORTB",
 	    arizonaonlinebetting: "AZOBETTING",
 	    arizonaonlinegambling: "AZGAMBLING",
-	    azonlinebettingsites: "AZBETTING",
+	    azonlinebettingsites: "AZBETTING"
     },
     azBonus: {
         sportsbook: fuboStandardSportsBonus,
@@ -498,7 +498,7 @@ let unibetStandardCasinoBonus = "";
 	    azsportsbettingsites: "AZSPORTB",
 	    arizonaonlinebetting: globalStandardPromoText,
 	    arizonaonlinegambling: globalStandardPromoText,
-	    azonlinebettingsites: globalStandardPromoText,
+	    azonlinebettingsites: globalStandardPromoText
     },
     azBonus: {
         sportsbook: unibetStandardSportsBonus,
@@ -573,7 +573,7 @@ let betfredtStandardCasinoBonus = "";
 	    azsportsbettingsites: globalStandardPromoText,
 	    arizonaonlinebetting: globalStandardPromoText,
 	    arizonaonlinegambling: globalStandardPromoText,
-	    azonlinebettingsites: globalStandardPromoText,
+	    azonlinebettingsites: globalStandardPromoText
     },
     azBonus: {
         sportsbook: betfredStandardSportsBonus,
