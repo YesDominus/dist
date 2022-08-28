@@ -834,7 +834,60 @@ setClassAttribute(betfredClass, bonusClassExtension, betfred.wvBonus.sportsbook)
 }
 }
 
-
+if(AZSites.includes(window.location.hostname)){
+setStateSettings("AZ");
+}
+else if(NYSites.includes(window.location.hostname)){
+setStateSettings("NY");
+}
+else if(MISites.includes(window.location.hostname)){
+setStateSettings("MI");
+}
+else if(NJSites.includes(window.location.hostname)){
+setStateSettings("NJ");
+}
+else if(COSites.includes(window.location.hostname)){
+setStateSettings("CO");
+}
+else if(PASites.includes(window.location.hostname)){
+setStateSettings("PA");
+}
+else if(TNSites.includes(window.location.hostname)){
+setStateSettings("TN");
+}
+else if(WISites.includes(window.location.hostname)){
+setStateSettings("WI");
+}
+else if(VASites.includes(window.location.hostname)){
+setStateSettings("VA");
+}
+else if(LASites.includes(window.location.hostname)){
+setStateSettings("LA");
+}
+else if(ILSites.includes(window.location.hostname)){
+setStateSettings("IL");
+}
+else if(INSites.includes(window.location.hostname)){
+setStateSettings("IN");
+}
+else if(IASites.includes(window.location.hostname)){
+setStateSettings("IA");
+}
+else if(KSSites.includes(window.location.hostname)){
+setStateSettings("KS");
+}
+else if(NVSites.includes(window.location.hostname)){
+setStateSettings("KV");
+}
+else if(OHSites.includes(window.location.hostname)){
+setStateSettings("OH");
+}
+else if(MDSites.includes(window.location.hostname)){
+setStateSettings("MD");
+}
+else if(MASites.includes(window.location.hostname)){
+setStateSettings("MA");
+}
 
 /*--------------------------------------------------------------------------------------------------------------------------------*/
 
