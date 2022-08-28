@@ -962,14 +962,14 @@ navBarUL.parentNode.insertBefore(displayNavButton, navBarUL);
 
 /* The code below adds a sitemap link to the footer beneath the copyright text on all pages*/
 
-let copyrightSection = document.getElementsByClassName("ast-footer-copyright")[0];
-
-let firstParagraph = copyrightSection.getElementsByTagName('p')[0];
-
+let copyrightSection = document.getElementsByClassName("ast-footer-site-title");
+if(copyrightSection){
 var sitemapAnchor = document.createElement("P");
-sitemapAnchor.innerHTML = "<a style='color: white' href='/sitemap_index.xml/'>Sitemap</a>";          
-
-firstParagraph.parentNode.insertBefore(sitemapAnchor, firstParagraph.nextSibling);
+sitemapAnchor.innerHTML = "<a style='color: white' href='/sitemap_index.xml/'>Sitemap</a>";  
+copyrightSection[0].appendChild(sitemapAnchor);
+}else{
+console.log("Automated sitemap anchor error");
+}
 
 /* FAQ-CODE SCRIPT IN JQUERY*/
 
