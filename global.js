@@ -572,7 +572,7 @@ let fuboStandardCasinoBonus = "";
     	};
 
 // UNIBET
-let unibetStandardSportsBonus = "$250 risk-free bet"
+let unibetStandardSportsBonus = "Bet $50 get $200"
 let unibetStandardCasinoBonus = "";
 	let unibet = {
         brand: "unibet",
