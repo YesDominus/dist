@@ -1,4 +1,5 @@
 let bonusClassExtension = "-bonus";
+let globalStandardPromoText = "Click & activate";
 
 let fanduelClass = "fanduel";
 let betmgmClass = "betmgm";
@@ -10,7 +11,24 @@ let fuboClass = "fubo";
 let unibetClass = "unibet";
 let betfredClass = "betfred";
 
-let globalStandardPromoText = "Click & activate";
+let AZSites = ["azsportsbettingsites.com", "arizonaonlinebetting.com", "arizonaonlinegambling.net", "azonlinebettingsites.com", "arizonagamblers.com"];
+let NYSites = ["nystateonlinecasino.com", "bestnyonlinecasino.com", "thenewyorkbets.com", "nystateonlinebetting.com", "nystatebetting.com", "nystatebettingsites.com", "nyonlinegamblingsites.com", "nygamblers.com"];
+let MISites = ["michiganstatecasinos.com", "mistateonlinecasino.com", "mistatesportsbetting.com", "michigangamblers.com"];
+let NJSites = ["njstateonlinecasino.com", "njstateonlinecasinos.com", "onlinecasinoinnj.com", "njstatesportsbetting.com", "njstategambler.com"];
+let COSites = ["coloradostategambling.com", "coloradogamblers.com"];
+let PASites = ["pastateonlinecasino.com", "paonlinecasinosites.com", "onlinecasinoinpa.com", "pastatesportsbetting.com", "pennsylvaniagamblers.com"];
+let TNSites = ["tnonlinecasino.com", "tnstatesportsbetting.com", "onlinegamblingtennessee.com", "tennesseegamblers.com"];
+let WISites = ["wisportsbettingsites.com", "wisconsinstatebetting.com", "onlinecasinoinnj.com", "wisconsinonlinegambling.com", "wisconsingamblers.com"];
+let VASites = ["vasportsbettingsites.com", "virginiastategambling.com", "onlinecasinoinnj.com", "vagamblers.com"];
+let LASites = ["louisianastategambling.com", "louisianagamblers.com"];
+let ILSites = ["illinoisstatebetting.com", "illinoisstategambling.com", "ilgambler.com.com", "illinoisgamblers.com"];
+let INSites = ["indianastategambling.com"];
+let IASites = ["iowastategambling.com"];
+let KSSites = ["kansasonlinegambling.com", "kansasgamblers.com"];
+let NVSites = ["nevadastategambling.com"];
+let OHSites = ["ohiostatebetting.com", "ohiostatebettingsites.com", "ohioonlinebettingsites.com", "onlinebettingohio.com", "ohiostateonlinegambling.com", "ohgamblers.com", "ohonlinecasino.com"];
+let MDSites = ["marylandstatebetting.com", "mdstatesportsbetting.com", "onlinebettingmd.com", "onlinebettingmaryland.com", "mdstatebetting.com", "marylandstategambling", "mdgambler"];
+let MASites = ["masportsbettingsites.com", "maonlinebettingsites.com", "mastatebetting.com", "massachusettsonlinegambling.com", "magambler.com"];
 
 function setClassAttribute(className, type, newAttribute) {
 	className = className + type;
