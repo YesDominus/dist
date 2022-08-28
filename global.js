@@ -10,6 +10,7 @@ let wynnbetClass = "wynnbet";
 let fuboClass = "fubo";
 let unibetClass = "unibet";
 let betfredClass = "betfred";
+let hardRockClass = "hard-rock";
 
 let AZSites = ["azsportsbettingsites.com", "arizonaonlinebetting.com", "arizonaonlinegambling.net", "azonlinebettingsites.com", "arizonagamblers.com"];
 let NYSites = ["nystateonlinecasino.com", "bestnyonlinecasino.com", "thenewyorkbets.com", "nystateonlinebetting.com", "nystatebetting.com", "nystatebettingsites.com", "nyonlinegamblingsites.com", "nygamblers.com"];
@@ -420,6 +421,81 @@ let betriversStandardCasinoBonus = "$250 bonus";
         sports: ["football", "basketball", "hockey", "baseball", "soccer", "tennis", "golf", "mma", "australian-rules", "boxing", "cricket", "cycling", "darts", "esports", "e-sports", "floorball", "formula-1", "gaelic-sports", "handball", "jai-alai", "motorsports", "rugby", "snooker", "table-tennis", "volleyball", "olympics"]
     	};
 
+// HARD-ROCK
+	let hardrockStandardSportsBonus = "3 risk free bets for max $100"
+  let hardrockStandardCasinoBonus = "$2,000 bonus";
+	let hardRock = {
+        brand: "Hard Rock",
+            promoCode: {
+	    azsportsbettingsites: globalStandardPromoText,
+	    arizonaonlinebetting: globalStandardPromoText,
+	    arizonaonlinegambling: globalStandardPromoText,
+	    azonlinebettingsites: globalStandardPromoText
+    },
+    azBonus: {
+        sportsbook: hardrockStandardSportsBonus,
+        casino: hardrockStandardCasinoBonus
+    },
+    coBonus: {
+        sportsbook: hardrockStandardSportsBonus,
+        casino: hardrockStandardCasinoBonus
+    },
+    ctBonus: {
+        sportsbook: hardrockStandardSportsBonus,
+        casino: hardrockStandardCasinoBonus
+    },
+    iaBonus: {
+        sportsbook: hardrockStandardSportsBonus,
+        casino: hardrockStandardCasinoBonus
+    },
+    inBonus: {
+        sportsbook: hardrockStandardSportsBonus,
+        casino: hardrockStandardCasinoBonus
+    },
+    laBonus: {
+        sportsbook: hardrockStandardSportsBonus,
+        casino: hardrockStandardCasinoBonus
+    },
+    miBonus: {
+        sportsbook: hardrockStandardSportsBonus,
+        casino: hardrockStandardCasinoBonus
+    },
+    nyBonus: {
+        sportsbook: hardrockStandardSportsBonus,
+        casino: hardrockStandardCasinoBonus
+    },
+    nvBonus: {
+        sportsbook: hardrockStandardSportsBonus,
+        casino: hardrockStandardCasinoBonus
+    },
+    ksBonus: {
+        sportsbook: hardrockStandardSportsBonus,
+        casino: hardrockStandardCasinoBonus
+    },
+    njBonus: {
+        sportsbook: hardrockStandardSportsBonus,
+        casino: hardrockStandardCasinoBonus
+    },
+    paBonus: {
+        sportsbook: hardrockStandardSportsBonus,
+        casino: hardrockStandardCasinoBonus
+    },
+    tnBonus: {
+        sportsbook: hardrockStandardSportsBonus,
+        casino: hardrockStandardCasinoBonus
+    },
+    vaBonus: {
+        sportsbook: hardrockStandardSportsBonus,
+        casino: hardrockStandardCasinoBonus
+    },
+    wvBonus: {
+        sportsbook: hardrockStandardSportsBonus,
+        casino: hardrockStandardCasinoBonus
+    },
+        bankings: ["paypal", "playplus", "online banking", "visa", "mastercard"],
+        sports: ["australian-rules", "motorsports", "baseball", "basketball", "boxing", "cricket", "cycling", "darts", "football", "golf", "hockey", "lacrosse", "rugby", "snooker", "soccer", "softball", "table-tennis", "tennis", "mma"]
+    	};
+
 // FUBO
 let fuboStandardSportsBonus = "Risk-free bet up to $1000"
 let fuboStandardCasinoBonus = "";
@@ -665,6 +741,7 @@ setClassAttribute(wynnbetClass, bonusClassExtension, wynnbet.azBonus.sportsbook)
 setClassAttribute(fuboClass, bonusClassExtension, fubo.azBonus.sportsbook);
 setClassAttribute(unibetClass, bonusClassExtension, unibet.azBonus.sportsbook);
 setClassAttribute(betfredClass, bonusClassExtension, betfred.azBonus.sportsbook);
+setClassAttribute(hardRockClass, bonusClassExtension, hardRock.azBonus.sportsbook);
     break;
   case "CO":
 setClassAttribute(fanduelClass, bonusClassExtension, fanduel.coBonus.sportsbook);
