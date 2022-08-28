@@ -194,7 +194,7 @@ let fanduel = {
     	};
 
 // CAESARS
-	let caesarsStandardSportsBonus = "Up to $1,500 risk-free"
+	let caesarsStandardSportsBonus = "Up to $1,250 bonus + 1,000 Reward Credits + 1,000 tier credits"
   let caesarsStandardCasinoBonus = "$2,000 bonus";
 	let caesars = {
         brand: "caesars",
