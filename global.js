@@ -831,6 +831,8 @@ setClassAttribute(fuboClass, bonusClassExtension, fubo.wvBonus.sportsbook);
 setClassAttribute(unibetClass, bonusClassExtension, unibet.wvBonus.sportsbook);
 setClassAttribute(betfredClass, bonusClassExtension, betfred.wvBonus.sportsbook);
     break;
+  default:
+    console.log("State not found");
 }
 }
 
