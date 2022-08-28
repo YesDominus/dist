@@ -647,7 +647,7 @@ let unibetStandardCasinoBonus = "";
     	};
 
 //BETFRED
-let betfredStandardSportsBonus = "$500 welcome offer"
+let betfredStandardSportsBonus = "Bet $50 get $250 free"
 let betfredtStandardCasinoBonus = "";
 	let betfred = {
         brand: "betfred",
