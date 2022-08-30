@@ -821,15 +821,15 @@ setClassAttribute(unibetClass, bonusClassExtension, unibet.nyBonus.sportsbook);
 setClassAttribute(betfredClass, bonusClassExtension, betfred.nyBonus.sportsbook);
     break;
   case "NV":
-setClassAttribute(fanduelClass, bonusClassExtension, fanduel.nyBonus.sportsbook);
-setClassAttribute(betmgmClass, bonusClassExtension, betmgm.nyBonus.sportsbook);
-setClassAttribute(caesarsClass, bonusClassExtension, caesars.nyBonus.sportsbook);
-//setClassAttribute(draftkingsClass, bonusClassExtension, draftkings.nyBonus.sportsbook);
-setClassAttribute(betriversClass, bonusClassExtension, betrivers.nyBonus.sportsbook);
-setClassAttribute(wynnbetClass, bonusClassExtension, wynnbet.nyBonus.sportsbook);
-setClassAttribute(fuboClass, bonusClassExtension, fubo.nyBonus.sportsbook);
-setClassAttribute(unibetClass, bonusClassExtension, unibet.nyBonus.sportsbook);
-setClassAttribute(betfredClass, bonusClassExtension, betfred.nyBonus.sportsbook);
+setClassAttribute(fanduelClass, bonusClassExtension, fanduel.nvBonus.sportsbook);
+setClassAttribute(betmgmClass, bonusClassExtension, betmgm.nvBonus.sportsbook);
+setClassAttribute(caesarsClass, bonusClassExtension, caesars.nvBonus.sportsbook);
+//setClassAttribute(draftkingsClass, bonusClassExtension, draftkings.nvBonus.sportsbook);
+setClassAttribute(betriversClass, bonusClassExtension, betrivers.nvBonus.sportsbook);
+setClassAttribute(wynnbetClass, bonusClassExtension, wynnbet.nvBonus.sportsbook);
+setClassAttribute(fuboClass, bonusClassExtension, fubo.nvBonus.sportsbook);
+setClassAttribute(unibetClass, bonusClassExtension, unibet.nvBonus.sportsbook);
+setClassAttribute(betfredClass, bonusClassExtension, betfred.nvBonus.sportsbook);
     break;
   case "KS":
 setClassAttribute(fanduelClass, bonusClassExtension, fanduel.ksBonus.sportsbook);
