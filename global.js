@@ -92,7 +92,7 @@ let fanduel = {
         casino: fanduelStandardCasinoBonus
     },
     ksBonus: {
-        sportsbook: "Early sign-up $100 free bet",
+        sportsbook: fanduelStandardSportsBonus,
         casino: fanduelStandardCasinoBonus
     },
     njBonus: {
