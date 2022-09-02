@@ -352,10 +352,10 @@ let betriversStandardCasinoBonus = "$250 bonus";
 	let betrivers = {
         brand: "BetRivers",
     promoCode: {
-	    azsportsbettingsites: "250MATCH",
-	    arizonaonlinebetting: "250MATCH",
-	    arizonaonlinegambling: "250MATCH",
-	    azonlinebettingsites: "250MATCH"
+	    azsportsbettingsites: "JOKERZINO",
+	    arizonaonlinebetting: "JOKERZINO",
+	    arizonaonlinegambling: "JOKERZINO",
+	    azonlinebettingsites: "JOKERZINO"
     },
     azBonus: {
         sportsbook: betriversStandardSportsBonus,
