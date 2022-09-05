@@ -1,3 +1,4 @@
+<script>
 function setOperatorAttribute(operatorClassName, operator) {
 	let operatorTRs = document.getElementsByClassName(operatorClassName);
 	if (operatorTRs) {
@@ -1455,61 +1456,306 @@ let betrivers = {
 		}
 	},
 
-	coBonus: {
-		sportsbook: betriversStandardSportsBonus,
-		casino: betriversStandardCasinoBonus
+	co: {
+		promoCode: {
+			coloradostategambling: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			},
+			coloradogamblers: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			}
+		},
+		bonus: {
+			sportsbook: betriversStandardSportsBonus,
+			casino: betriversStandardCasinoBonus
+		}
 	},
-	ctBonus: {
-		sportsbook: betriversStandardSportsBonus,
-		casino: betriversStandardCasinoBonus
+
+	ct: {
+		promoCode: {
+			onlinegamblingconnecticut: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			},
+			connecticutgambler: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			}
+		},
+		bonus: {
+			sportsbook: betriversStandardSportsBonus,
+			casino: betriversStandardCasinoBonus
+		}
 	},
-	iaBonus: {
-		sportsbook: betriversStandardSportsBonus,
-		casino: betriversStandardCasinoBonus
+	ia: {
+		promoCode: {
+			iowastategambling: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			}
+		},
+		bonus: {
+			sportsbook: betriversStandardSportsBonus,
+			casino: betriversStandardCasinoBonus
+		}
 	},
-	inBonus: {
-		sportsbook: betriversStandardSportsBonus,
-		casino: betriversStandardCasinoBonus
+	in : {
+		promoCode: {
+			indianastategambling: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			}
+		},
+		bonus: {
+			sportsbook: betriversStandardSportsBonus,
+			casino: betriversStandardCasinoBonus
+		}
 	},
-	laBonus: {
-		sportsbook: betriversStandardSportsBonus,
-		casino: betriversStandardCasinoBonus
+	la: {
+		promoCode: {
+			louisianastategambling: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			},
+			louisianagamblers: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			}
+		},
+		bonus: {
+			sportsbook: betriversStandardSportsBonus,
+			casino: betriversStandardCasinoBonus
+		}
 	},
-	miBonus: {
-		sportsbook: betriversStandardSportsBonus,
-		casino: betriversStandardCasinoBonus
+	mi: {
+		promoCode: {
+			michigangamblers: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			},
+			mistateonlinecasino: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			},
+			mistatesportsbetting: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			},
+			michiganstatecasinos: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			}
+		},
+		bonus: {
+			sportsbook: betriversStandardSportsBonus,
+			casino: betriversStandardCasinoBonus
+		}
 	},
-	nyBonus: {
-		sportsbook: betriversStandardSportsBonus,
-		casino: betriversStandardCasinoBonus
+	ny: {
+		promoCode: {
+			nygamblers: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			},
+			nyonlinegamblingsites: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			},
+			nystatebettingsites: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			},
+			nystateonlinebetting: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			},
+			thenewyorkbets: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			},
+			bestnyonlinecasino: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			},
+			nystateonlinecasino: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			},
+			nystatebetting: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			}
+		},
+		bonus: {
+			sportsbook: betriversStandardSportsBonus,
+			casino: betriversStandardCasinoBonus
+		}
 	},
-	nvBonus: {
-		sportsbook: betriversStandardSportsBonus,
-		casino: betriversStandardCasinoBonus
+	nv: {
+		promoCode: {
+			nevadastategambling: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			},
+		},
+		bonus: {
+			sportsbook: betriversStandardSportsBonus,
+			casino: betriversStandardCasinoBonus
+		}
 	},
-	ksBonus: {
-		sportsbook: betriversStandardSportsBonus,
-		casino: betriversStandardCasinoBonus
+	ks: {
+		promoCode: {
+			kansasonlinegambling: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			},
+			kansasgamblers: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			}
+		},
+		bonus: {
+			sportsbook: betriversStandardSportsBonus,
+			casino: betriversStandardCasinoBonus
+		}
 	},
-	njBonus: {
-		sportsbook: betriversStandardSportsBonus,
-		casino: betriversStandardCasinoBonus
+	nj: {
+		promoCode: {
+			njstateonlinecasino: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			},
+			njstateonlinecasinos: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			},
+			onlinecasinoinnj: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			},
+			njstatesportsbetting: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			},
+			njstategambler: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			}
+		},
+		bonus: {
+			sportsbook: betriversStandardSportsBonus,
+			casino: betriversStandardCasinoBonus
+		}
 	},
-	paBonus: {
-		sportsbook: betriversStandardSportsBonus,
-		casino: betriversStandardCasinoBonus
+	pa: {
+		promoCode: {
+			pastateonlinecasino: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			},
+			paonlinecasinosites: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			},
+			onlinecasinoinpa: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			},
+			pastatesportsbetting: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			},
+			pennsylvaniagamblers: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			}
+		},
+		bonus: {
+			sportsbook: betriversStandardSportsBonus,
+			casino: betriversStandardCasinoBonus
+		}
 	},
-	tnBonus: {
-		sportsbook: betriversStandardSportsBonus,
-		casino: betriversStandardCasinoBonus
+	tn: {
+		promoCode: {
+			tnonlinecasino: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			},
+			tnstatesportsbetting: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			},
+			onlinegamblingtennessee: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			},
+			tennesseegamblers: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			}
+		},
+		bonus: {
+			sportsbook: betriversStandardSportsBonus,
+			casino: betriversStandardCasinoBonus
+		}
 	},
-	vaBonus: {
-		sportsbook: betriversStandardSportsBonus,
-		casino: betriversStandardCasinoBonus
+	va: {
+		promoCode: {
+			vasportsbettingsites: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			},
+			virginiastategambling: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			},
+			vagamblers: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			}
+		},
+		bonus: {
+			sportsbook: betriversStandardSportsBonus,
+			casino: betriversStandardCasinoBonus
+		}
 	},
-	wvBonus: {
-		sportsbook: betriversStandardSportsBonus,
-		casino: betriversStandardCasinoBonus
+	wi: {
+		promoCode: {
+			wisportsbettingsites: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			},
+			wisconsinstatebetting: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			},
+			wisconsingamblers: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			},
+			wisconsinonlinegambling: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			}
+		},
+		bonus: {
+			sportsbook: betriversStandardSportsBonus,
+			casino: betriversStandardCasinoBonus
+		}
+	},
+	wv: {
+		promoCode: {
+			wvstateonlinegambling: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			}
+		},
+		bonus: {
+			sportsbook: betriversStandardSportsBonus,
+			casino: betriversStandardCasinoBonus
+		}
 	},
 	bankings: ["paypal", "visa", "mastercard", "discovercard", "pay-with-cash", "ach", "vip-preferred", "casino-cage", "online-banking", "trustly"],
 	sports: ["football", "basketball", "hockey", "baseball", "soccer", "tennis", "golf", "mma", "australian-rules", "boxing", "cricket", "cycling", "darts", "esports", "e-sports", "floorball", "formula-1", "gaelic-sports", "handball", "jai-alai", "motorsports", "rugby", "snooker", "table-tennis", "volleyball", "olympics"]
@@ -1525,19 +1771,19 @@ let hardRock = {
 	az: {
 		promoCode: {
 			azsportsbettingsites: {
-				sportsbook: "250MATCH",
+				sportsbook: globalStandardPromoText,
 				casino: globalStandardPromoText
 			},
 			arizonaonlinebetting: {
-				sportsbook: "250MATCH",
+				sportsbook: globalStandardPromoText,
 				casino: globalStandardPromoText
 			},
 			arizonaonlinegambling: {
-				sportsbook: "250MATCH",
+				sportsbook: globalStandardPromoText,
 				casino: globalStandardPromoText
 			},
 			azonlinebettingsites: {
-				sportsbook: "250MATCH",
+				sportsbook: globalStandardPromoText,
 				casino: globalStandardPromoText
 			}
 		},
@@ -1547,61 +1793,306 @@ let hardRock = {
 		}
 	},
 
-	coBonus: {
-		sportsbook: hardrockStandardSportsBonus,
-		casino: hardrockStandardCasinoBonus
+	co: {
+		promoCode: {
+			coloradostategambling: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			},
+			coloradogamblers: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			}
+		},
+		bonus: {
+			sportsbook: hardrockStandardSportsBonus,
+			casino: hardrockStandardCasinoBonus
+		}
 	},
-	ctBonus: {
-		sportsbook: hardrockStandardSportsBonus,
-		casino: hardrockStandardCasinoBonus
+
+	ct: {
+		promoCode: {
+			onlinegamblingconnecticut: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			},
+			connecticutgambler: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			}
+		},
+		bonus: {
+			sportsbook: hardrockStandardSportsBonus,
+			casino: hardrockStandardCasinoBonus
+		}
 	},
-	iaBonus: {
-		sportsbook: hardrockStandardSportsBonus,
-		casino: hardrockStandardCasinoBonus
+	ia: {
+		promoCode: {
+			iowastategambling: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			}
+		},
+		bonus: {
+			sportsbook: hardrockStandardSportsBonus,
+			casino: hardrockStandardCasinoBonus
+		}
 	},
-	inBonus: {
-		sportsbook: hardrockStandardSportsBonus,
-		casino: hardrockStandardCasinoBonus
+	in : {
+		promoCode: {
+			indianastategambling: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			}
+		},
+		bonus: {
+			sportsbook: hardrockStandardSportsBonus,
+			casino: hardrockStandardCasinoBonus
+		}
 	},
-	laBonus: {
-		sportsbook: hardrockStandardSportsBonus,
-		casino: hardrockStandardCasinoBonus
+	la: {
+		promoCode: {
+			louisianastategambling: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			},
+			louisianagamblers: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			}
+		},
+		bonus: {
+			sportsbook: hardrockStandardSportsBonus,
+			casino: hardrockStandardCasinoBonus
+		}
 	},
-	miBonus: {
-		sportsbook: hardrockStandardSportsBonus,
-		casino: hardrockStandardCasinoBonus
+	mi: {
+		promoCode: {
+			michigangamblers: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			},
+			mistateonlinecasino: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			},
+			mistatesportsbetting: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			},
+			michiganstatecasinos: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			}
+		},
+		bonus: {
+			sportsbook: hardrockStandardSportsBonus,
+			casino: hardrockStandardCasinoBonus
+		}
 	},
-	nyBonus: {
-		sportsbook: hardrockStandardSportsBonus,
-		casino: hardrockStandardCasinoBonus
+	ny: {
+		promoCode: {
+			nygamblers: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			},
+			nyonlinegamblingsites: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			},
+			nystatebettingsites: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			},
+			nystateonlinebetting: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			},
+			thenewyorkbets: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			},
+			bestnyonlinecasino: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			},
+			nystateonlinecasino: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			},
+			nystatebetting: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			}
+		},
+		bonus: {
+			sportsbook: hardrockStandardSportsBonus,
+			casino: hardrockStandardCasinoBonus
+		}
 	},
-	nvBonus: {
-		sportsbook: hardrockStandardSportsBonus,
-		casino: hardrockStandardCasinoBonus
+	nv: {
+		promoCode: {
+			nevadastategambling: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			},
+		},
+		bonus: {
+			sportsbook: hardrockStandardSportsBonus,
+			casino: hardrockStandardCasinoBonus
+		}
 	},
-	ksBonus: {
-		sportsbook: hardrockStandardSportsBonus,
-		casino: hardrockStandardCasinoBonus
+	ks: {
+		promoCode: {
+			kansasonlinegambling: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			},
+			kansasgamblers: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			}
+		},
+		bonus: {
+			sportsbook: hardrockStandardSportsBonus,
+			casino: hardrockStandardCasinoBonus
+		}
 	},
-	njBonus: {
-		sportsbook: hardrockStandardSportsBonus,
-		casino: hardrockStandardCasinoBonus
+	nj: {
+		promoCode: {
+			njstateonlinecasino: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			},
+			njstateonlinecasinos: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			},
+			onlinecasinoinnj: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			},
+			njstatesportsbetting: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			},
+			njstategambler: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			}
+		},
+		bonus: {
+			sportsbook: hardrockStandardSportsBonus,
+			casino: hardrockStandardCasinoBonus
+		}
 	},
-	paBonus: {
-		sportsbook: hardrockStandardSportsBonus,
-		casino: hardrockStandardCasinoBonus
+	pa: {
+		promoCode: {
+			pastateonlinecasino: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			},
+			paonlinecasinosites: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			},
+			onlinecasinoinpa: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			},
+			pastatesportsbetting: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			},
+			pennsylvaniagamblers: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			}
+		},
+		bonus: {
+			sportsbook: hardrockStandardSportsBonus,
+			casino: hardrockStandardCasinoBonus
+		}
 	},
-	tnBonus: {
-		sportsbook: hardrockStandardSportsBonus,
-		casino: hardrockStandardCasinoBonus
+	tn: {
+		promoCode: {
+			tnonlinecasino: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			},
+			tnstatesportsbetting: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			},
+			onlinegamblingtennessee: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			},
+			tennesseegamblers: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			}
+		},
+		bonus: {
+			sportsbook: hardrockStandardSportsBonus,
+			casino: hardrockStandardCasinoBonus
+		}
 	},
-	vaBonus: {
-		sportsbook: hardrockStandardSportsBonus,
-		casino: hardrockStandardCasinoBonus
+	va: {
+		promoCode: {
+			vasportsbettingsites: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			},
+			virginiastategambling: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			},
+			vagamblers: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			}
+		},
+		bonus: {
+			sportsbook: hardrockStandardSportsBonus,
+			casino: hardrockStandardCasinoBonus
+		}
 	},
-	wvBonus: {
-		sportsbook: hardrockStandardSportsBonus,
-		casino: hardrockStandardCasinoBonus
+	wi: {
+		promoCode: {
+			wisportsbettingsites: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			},
+			wisconsinstatebetting: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			},
+			wisconsingamblers: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			},
+			wisconsinonlinegambling: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			}
+		},
+		bonus: {
+			sportsbook: hardrockStandardSportsBonus,
+			casino: hardrockStandardCasinoBonus
+		}
+	},
+	wv: {
+		promoCode: {
+			wvstateonlinegambling: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			}
+		},
+		bonus: {
+			sportsbook: hardrockStandardSportsBonus,
+			casino: hardrockStandardCasinoBonus
+		}
 	},
 	bankings: ["paypal", "playplus", "online banking", "visa", "mastercard"],
 	sports: ["australian-rules", "motorsports", "baseball", "basketball", "boxing", "cricket", "cycling", "darts", "football", "golf", "hockey", "lacrosse", "rugby", "snooker", "soccer", "softball", "table-tennis", "tennis", "mma"]
@@ -1848,7 +2339,7 @@ function setStateSettings(state) {
 			//setOperatorAttribute(caesarsClass, bonusClass, caesars.azBonus.sportsbook);
 			//setOperatorAttribute(draftkingsClass, bonusClass, draftkings.azBonus.sportsbook);
 			setOperatorAttribute(betriversClass, betrivers);
-			//setOperatorAttribute(wynnbetClass, bonusClass, wynnbet.azBonus.sportsbook);
+			setOperatorAttribute(wynnbetClass, wynnbet);
 			//setOperatorAttribute(fuboClass, bonusClass, fubo.azBonus.sportsbook);
 			//setOperatorAttribute(unibetClass, bonusClass, unibet.azBonus.sportsbook);
 			//setOperatorAttribute(betfredClass, bonusClass, betfred.azBonus.sportsbook);
@@ -2456,3 +2947,4 @@ alert("The page is now posted");
     });
 }
 */
+</script>
