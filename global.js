@@ -347,7 +347,7 @@ let wynnbet = {
 
 //BETRIVERS
 
-let betriversStandardSportsBonus = "Up to $500 free bet"
+let betriversStandardSportsBonus = "Up to $500 free bet";
 let betriversStandardCasinoBonus = "$250 bonus";
 	let betrivers = {
         brand: "BetRivers",
