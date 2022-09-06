@@ -1,8 +1,8 @@
 function setOperatorAttribute(operatorBrandName, operatorStateValues, tableType) {
 
-	if (tableType === "sportsbooks-table") {
+	if (tableType === "sportsbook") {
 		setOperatorValues(operatorBrandName, operatorStateValues, tableType);
-	} else if (tableType === "casino-table") {
+	} else if (tableType === "casino") {
 		setOperatorValues(operatorBrandName, operatorStateValues, tableType);
 	} else {
 		console.log("Table type not found");
@@ -10,16 +10,9 @@ function setOperatorAttribute(operatorBrandName, operatorStateValues, tableType)
 }
 
 function setOperatorValues(currentOperatorName, currentOperatorStateValues, currentTableType) {
-	let gamblingType = "";
-	if (currentTableType === "sportsbooks-table") {
-		gamblingType = "sportsbook";
-	} else if (currentTableType === "casino-table") {
-		gamblingType = "casino";
-	}
-
+	let tablesClass = currentTableType + "-table";
 	let currentSites = currentOperatorStateValues.promoCode;
-	console.log(currentSites, "currentsites");
-	let currentTables = document.getElementsByClassName(currentTableType);
+	let currentTables = document.getElementsByClassName(tablesClass);
 
 	for (let indexTables = 0; indexTables < currentTables.length; indexTables++) {
 		let currentTable = currentTables[indexTables];
@@ -36,7 +29,7 @@ function setOperatorValues(currentOperatorName, currentOperatorStateValues, curr
 
 						if (currentBonusElements) {
 							for (let index = 0; index < currentBonusElements.length; index++) {
-								currentBonusElements[index].innerHTML = currentOperatorStateValues.bonus[gamblingType];
+								currentBonusElements[index].innerHTML = currentOperatorStateValues.bonus[currentTableType];
 							}
 						}
 
@@ -49,8 +42,7 @@ function setOperatorValues(currentOperatorName, currentOperatorStateValues, curr
 
 								if (currentPromoElements) {
 									for (let x = 0; x < currentPromoElements.length; x++) {
-										console.log(currentPromoSite);
-										currentPromoElements[x].innerHTML = currentSites[currentPromoSite][gamblingType];
+										currentPromoElements[x].innerHTML = currentSites[currentPromoSite][currentTableType];
 
 									}
 								}
@@ -451,6 +443,347 @@ let fanduel = {
 		bonus: {
 			sportsbook: fanduelStandardSportsBonus,
 			casino: fanduelStandardCasinoBonus
+		}
+	},
+	sports: ["football", "basketball", "hockey", "baseball", "soccer", "tennis", "golf", "mma", "australian-rules", "boxing", "cricket", "cycling", "darts", "formula-1", "motorsports", "rugby", "snooker", "table-tennis", "horse-racing"],
+	bankings: ["paypal"]
+};
+
+// DRAFTKINGS
+
+let draftkingsStandardSportsBonus = "Up to $1,050 free";
+let draftkingsStandardCasinoBonus = "Up to $85 free";
+let draftkings = {
+	brand: "DraftKings",
+	standardPromoCode: {
+		sportsbook: globalStandardPromoText,
+		casino: globalStandardPromoText
+	},
+
+	az: {
+		promoCode: {
+			azsportsbettingsites: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			},
+			arizonaonlinebetting: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			},
+			arizonaonlinegambling: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			},
+			azonlinebettingsites: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			}
+		},
+		bonus: {
+			sportsbook: draftkingsStandardSportsBonus,
+			casino: draftkingsStandardCasinoBonus
+		}
+	},
+
+	co: {
+		promoCode: {
+			coloradostategambling: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			},
+			coloradogamblers: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			}
+		},
+		bonus: {
+			sportsbook: draftkingsStandardSportsBonus,
+			casino: draftkingsStandardCasinoBonus
+		}
+	},
+
+	ct: {
+		promoCode: {
+			onlinegamblingconnecticut: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			},
+			connecticutgambler: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			}
+		},
+		bonus: {
+			sportsbook: draftkingsStandardSportsBonus,
+			casino: draftkingsStandardCasinoBonus
+		}
+	},
+	ia: {
+		promoCode: {
+			iowastategambling: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			}
+		},
+		bonus: {
+			sportsbook: draftkingsStandardSportsBonus,
+			casino: draftkingsStandardCasinoBonus
+		}
+	},
+	in : {
+		promoCode: {
+			indianastategambling: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			}
+		},
+		bonus: {
+			sportsbook: draftkingsStandardSportsBonus,
+			casino: draftkingsStandardCasinoBonus
+		}
+	},
+	la: {
+		promoCode: {
+			louisianastategambling: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			},
+			louisianagamblers: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			}
+		},
+		bonus: {
+			sportsbook: draftkingsStandardSportsBonus,
+			casino: draftkingsStandardCasinoBonus
+		}
+	},
+	mi: {
+		promoCode: {
+			michigangamblers: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			},
+			mistateonlinecasino: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			},
+			mistatesportsbetting: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			},
+			michiganstatecasinos: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			}
+		},
+		bonus: {
+			sportsbook: draftkingsStandardSportsBonus,
+			casino: draftkingsStandardCasinoBonus
+		}
+	},
+	ny: {
+		promoCode: {
+			nygamblers: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			},
+			nyonlinegamblingsites: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			},
+			nystatebettingsites: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			},
+			nystateonlinebetting: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			},
+			thenewyorkbets: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			},
+			bestnyonlinecasino: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			},
+			nystateonlinecasino: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			},
+			nystatebetting: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			}
+		},
+		bonus: {
+			sportsbook: draftkingsStandardSportsBonus,
+			casino: draftkingsStandardCasinoBonus
+		}
+	},
+	nv: {
+		promoCode: {
+			nevadastategambling: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			},
+		},
+		bonus: {
+			sportsbook: draftkingsStandardSportsBonus,
+			casino: draftkingsStandardCasinoBonus
+		}
+	},
+	ks: {
+		promoCode: {
+			kansasonlinegambling: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			},
+			kansasgamblers: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			}
+		},
+		bonus: {
+			sportsbook: draftkingsStandardSportsBonus,
+			casino: draftkingsStandardCasinoBonus
+		}
+	},
+	nj: {
+		promoCode: {
+			njstateonlinecasino: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			},
+			njstateonlinecasinos: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			},
+			onlinecasinoinnj: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			},
+			njstatesportsbetting: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			},
+			njstategambler: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			}
+		},
+		bonus: {
+			sportsbook: draftkingsStandardSportsBonus,
+			casino: draftkingsStandardCasinoBonus
+		}
+	},
+	pa: {
+		promoCode: {
+			pastateonlinecasino: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			},
+			paonlinecasinosites: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			},
+			onlinecasinoinpa: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			},
+			pastatesportsbetting: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			},
+			pennsylvaniagamblers: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			}
+		},
+		bonus: {
+			sportsbook: draftkingsStandardSportsBonus,
+			casino: draftkingsStandardCasinoBonus
+		}
+	},
+	tn: {
+		promoCode: {
+			tnonlinecasino: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			},
+			tnstatesportsbetting: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			},
+			onlinegamblingtennessee: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			},
+			tennesseegamblers: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			}
+		},
+		bonus: {
+			sportsbook: draftkingsStandardSportsBonus,
+			casino: draftkingsStandardCasinoBonus
+		}
+	},
+	va: {
+		promoCode: {
+			vasportsbettingsites: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			},
+			virginiastategambling: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			},
+			vagamblers: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			}
+		},
+		bonus: {
+			sportsbook: draftkingsStandardSportsBonus,
+			casino: draftkingsStandardCasinoBonus
+		}
+	},
+	wi: {
+		promoCode: {
+			wisportsbettingsites: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			},
+			wisconsinstatebetting: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			},
+			wisconsingamblers: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			},
+			wisconsinonlinegambling: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			}
+		},
+		bonus: {
+			sportsbook: draftkingsStandardSportsBonus,
+			casino: draftkingsStandardCasinoBonus
+		}
+	},
+	wv: {
+		promoCode: {
+			wvstateonlinegambling: {
+				sportsbook: globalStandardPromoText,
+				casino: globalStandardPromoText
+			}
+		},
+		bonus: {
+			sportsbook: draftkingsStandardSportsBonus,
+			casino: draftkingsStandardCasinoBonus
 		}
 	},
 	sports: ["football", "basketball", "hockey", "baseball", "soccer", "tennis", "golf", "mma", "australian-rules", "boxing", "cricket", "cycling", "darts", "formula-1", "motorsports", "rugby", "snooker", "table-tennis", "horse-racing"],
@@ -3182,19 +3515,22 @@ let sugarhouse = {
 	sports: ["football", "basketball", "hockey", "baseball", "soccer", "tennis", "golf", "mma", "australian-rules", "boxing", "cricket", "cycling", "darts", "esports", "floorball", "formula-1", "gaelic-sports", "handball", "jai-alai", "motorsports", "rugby", "snooker", "table-tennis", "volleyball", "olympics"]
 };
 
+let sportsbookTableClass = "sportsbooks-table";
+
+
 function setStateSettings(state) {
 	switch (state) {
 		case "AZ":
-			//setOperatorAttribute(fanduelClass, bonusClass, fanduel.azBonus.sportsbook);
-			//setOperatorAttribute(betmgmClass, bonusClass, betmgm.azBonus.sportsbook);
-			//setOperatorAttribute(caesarsClass, bonusClass, caesars.azBonus.sportsbook);
-			//setOperatorAttribute(draftkingsClass, bonusClass, draftkings.azBonus.sportsbook);
-			//setOperatorAttribute(betriversClass, betrivers.az, "sportsbooks-table", betrivers.az.promoCode.azsportsbettingsites.sportsbook);
-			//setOperatorAttribute(wynnbetClass, wynnbet.az, "sportsbooks-table");
-			setOperatorAttribute(fuboClass, fubo.az, "sportsbooks-table");
-			//setOperatorAttribute(unibetClass, bonusClass, unibet.azBonus.sportsbook);
-			//setOperatorAttribute(betfredClass, bonusClass, betfred.azBonus.sportsbook);
-			//setOperatorAttribute(hardRockClass, bonusClass, hardRock.azBonus.sportsbook);
+			setOperatorAttribute(fanduelClass, fanduel.az, "sportsbook");
+			setOperatorAttribute(betmgmClass, betmgm.az, "sportsbook");
+			setOperatorAttribute(caesarsClass, caesars.az, "sportsbook");
+			setOperatorAttribute(draftkingsClass, draftkings.az, "sportsbook");
+			setOperatorAttribute(betriversClass, betrivers.az, "sportsbook");
+			setOperatorAttribute(wynnbetClass, wynnbet.az, "sportsbook");
+			setOperatorAttribute(fuboClass, fubo.az, "sportsbook");
+			setOperatorAttribute(unibetClass, unibet.az, "sportsbook");
+			setOperatorAttribute(betfredClass, betfred.az, "sportsbook");
+			setOperatorAttribute(hardRockClass, hardRock.az, "sportsbook");
 			break;
 		case "CO":
 			setOperatorAttribute(fanduelClass, bonusClass, fanduel.coBonus.sportsbook);
@@ -3490,7 +3826,7 @@ let copyrightSection = document.getElementsByClassName("ast-footer-copyright");
 if (copyrightSection) {
 	var sitemapAnchor = document.createElement("P");
 	sitemapAnchor.innerHTML = "<a style='color: white' href='/sitemap_index.xml/'>Sitemap</a>";
-	console.log(copyrightSection);
+	//console.log(copyrightSection);
 	copyrightSection[0].innerHTML += sitemapAnchor.outerHTML;
 } else {
 	console.log("Automated sitemap anchor error");
