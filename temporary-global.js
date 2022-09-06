@@ -1,28 +1,62 @@
-function setOperatorAttribute(operatorClassName, operator) {
-	let operatorTRs = document.getElementsByClassName(operatorClassName);
-	if (operatorTRs) {
-		for (let i = 0; i < operatorTRs.length; i++) {
-			let currentOperatorTR = operatorTRs[i];
-			let currentBonusElements = currentOperatorTR.getElementsByClassName(bonusClass);
-			let currentPromoElements = currentOperatorTR.getElementsByClassName(promoClass);
+function setOperatorAttribute(operatorBrandName, operatorStateValues, tableType, sitePromoCode) {
+	console.log(sitePromoCode);
 
-			if (currentBonusElements) {
-				for (let index = 0; index < currentBonusElements.length; index++) {
-					currentBonusElements[index].innerHTML = operator.az.bonus.sportsbook;
+	if (tableType === "sportsbooks-table") {
+		setOperatorValues(operatorBrandName, operatorStateValues, tableType, sitePromoCode);
+	} else if (tableType === "casino-table") {
+
+	} else {
+		console.log("Table type not found");
+	}
+}
+
+function setOperatorValues(currentOperatorName, currentOperatorStateValues, currentTableType, currentSite) {
+	/*if(typeof currentSitePromoCode === 'undefined'){
+	currentSitePromoCode = globalStandardPromoText;
+	}*/
+	console.log(currentSite);
+	let currentTables = document.getElementsByClassName(currentTableType);
+	for (let indexTables = 0; indexTables < currentTables.length; indexTables++) {
+		let currentTable = currentTables[indexTables];
+		if (currentTable) {
+			if (currentOperatorStateValues) {
+				let operatorClassName = currentOperatorName.toLowerCase();
+				let operatorTRs = document.getElementsByClassName(operatorClassName);
+
+				if (operatorTRs) {
+					for (let i = 0; i < operatorTRs.length; i++) {
+						let currentOperatorTR = operatorTRs[i];
+						let currentBonusElements = currentOperatorTR.getElementsByClassName(bonusClass);
+						let currentPromoElements = currentOperatorTR.getElementsByClassName(promoClass);
+
+						if (currentBonusElements) {
+							for (let index = 0; index < currentBonusElements.length; index++) {
+								currentBonusElements[index].innerHTML = currentOperatorStateValues.bonus.sportsbook;
+
+							}
+						}
+
+						let promoSites = Object.keys(currentSite);
+						for (let promoSitesIndex = 0; promoSites.length; promoSitesIndex++) {
+							let currentPromoCode = promoSites[promoSitesIndex];
+							if (window.location.hostname === currentSite) {
+								if (currentPromoElements) {
+									for (let x = 0; x < currentPromoElements.length; x++) {
+										currentPromoElements[x].innerHTML = currentPromoCode.sportsbook;
+
+									}
+								}
+
+							}
+
+						}
+
+					}
 
 				}
 			}
-
-			if (currentPromoElements) {
-				for (let x = 0; x < currentPromoElements.length; x++) {
-					currentPromoElements[x].innerHTML = operator.az.promoCode.azsportsbettingsites.sportsbook;
-
-				}
-			}
-
 		}
 	}
-
 }
 
 let bonusClass = "bonusTD";
@@ -3147,9 +3181,9 @@ function setStateSettings(state) {
 			//setOperatorAttribute(betmgmClass, bonusClass, betmgm.azBonus.sportsbook);
 			//setOperatorAttribute(caesarsClass, bonusClass, caesars.azBonus.sportsbook);
 			//setOperatorAttribute(draftkingsClass, bonusClass, draftkings.azBonus.sportsbook);
-			setOperatorAttribute(betriversClass, betrivers);
-			setOperatorAttribute(wynnbetClass, wynnbet);
-			//setOperatorAttribute(fuboClass, bonusClass, fubo.azBonus.sportsbook);
+			setOperatorAttribute(betriversClass, betrivers.az, "sportsbooks-table", betrivers.az.promoCode.azsportsbettingsites.sportsbook);
+			setOperatorAttribute(wynnbetClass, wynnbet.az, "sportsbooks-table");
+			setOperatorAttribute(fuboClass, fubo.az, "sportsbooks-table", fubo.az.promoCode);
 			//setOperatorAttribute(unibetClass, bonusClass, unibet.azBonus.sportsbook);
 			//setOperatorAttribute(betfredClass, bonusClass, betfred.azBonus.sportsbook);
 			//setOperatorAttribute(hardRockClass, bonusClass, hardRock.azBonus.sportsbook);
