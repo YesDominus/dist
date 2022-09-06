@@ -1,8 +1,8 @@
 function setOperatorAttribute(operatorBrandName, operatorStateValues, tableType) {
 
-	if (tableType === "sportsbook") {
+	if (tableType === sportsbookTableType) {
 		setOperatorValues(operatorBrandName, operatorStateValues, tableType);
-	} else if (tableType === "casino") {
+	} else if (tableType === casinoTableType) {
 		setOperatorValues(operatorBrandName, operatorStateValues, tableType);
 	} else {
 		console.log("Table type not found");
@@ -15,6 +15,8 @@ function setOperatorValues(currentOperatorName, currentOperatorStateValues, curr
 	let currentTables = document.getElementsByClassName(tablesClass);
 
 	for (let indexTables = 0; indexTables < currentTables.length; indexTables++) {
+		console.log(currentTableType);
+
 		let currentTable = currentTables[indexTables];
 		if (currentTable) {
 			if (currentOperatorStateValues) {
@@ -26,7 +28,6 @@ function setOperatorValues(currentOperatorName, currentOperatorStateValues, curr
 						let currentOperatorTR = operatorTRs[i];
 						let currentBonusElements = currentOperatorTR.getElementsByClassName(bonusClass);
 						let currentPromoElements = currentOperatorTR.getElementsByClassName(promoClass);
-
 						if (currentBonusElements) {
 							for (let index = 0; index < currentBonusElements.length; index++) {
 								currentBonusElements[index].innerHTML = currentOperatorStateValues.bonus[currentTableType];
@@ -76,6 +77,9 @@ let fuboClass = "fubo";
 let unibetClass = "unibet";
 let betfredClass = "betfred";
 let hardRockClass = "hard-rock";
+
+let sportsbookTableType = "sportsbook";
+let casinoTableType = "casino";
 
 let AZSites = ["azsportsbettingsites.com", "arizonaonlinebetting.com", "arizonaonlinegambling.net", "azonlinebettingsites.com", "arizonagamblers.com"];
 let NYSites = ["nystateonlinecasino.com", "bestnyonlinecasino.com", "thenewyorkbets.com", "nystateonlinebetting.com", "nystatebetting.com", "nystatebettingsites.com", "nyonlinegamblingsites.com", "nygamblers.com"];
@@ -2830,7 +2834,7 @@ let fubo = {
 };
 
 // UNIBET
-let unibetStandardSportsBonus = "Bet $50 get $200";
+let unibetStandardSportsBonus = "Bet $50 - get $200";
 let unibetStandardCasinoBonus = "";
 let unibet = {
 	brand: "Unibet",
@@ -3515,198 +3519,251 @@ let sugarhouse = {
 	sports: ["football", "basketball", "hockey", "baseball", "soccer", "tennis", "golf", "mma", "australian-rules", "boxing", "cricket", "cycling", "darts", "esports", "floorball", "formula-1", "gaelic-sports", "handball", "jai-alai", "motorsports", "rugby", "snooker", "table-tennis", "volleyball", "olympics"]
 };
 
-let sportsbookTableClass = "sportsbooks-table";
-
 
 function setStateSettings(state) {
+	let stateShortName = state.toLowerCase();
 	switch (state) {
 		case "AZ":
-			setOperatorAttribute(fanduelClass, fanduel.az, "sportsbook");
-			setOperatorAttribute(betmgmClass, betmgm.az, "sportsbook");
-			setOperatorAttribute(caesarsClass, caesars.az, "sportsbook");
-			setOperatorAttribute(draftkingsClass, draftkings.az, "sportsbook");
-			setOperatorAttribute(betriversClass, betrivers.az, "sportsbook");
-			setOperatorAttribute(wynnbetClass, wynnbet.az, "sportsbook");
-			setOperatorAttribute(fuboClass, fubo.az, "sportsbook");
-			setOperatorAttribute(unibetClass, unibet.az, "sportsbook");
-			setOperatorAttribute(betfredClass, betfred.az, "sportsbook");
-			setOperatorAttribute(hardRockClass, hardRock.az, "sportsbook");
+			//stateShortName = "az";
+			setOperatorAttribute(fanduelClass, fanduel[stateShortName], sportsbookTableType);
+			setOperatorAttribute(betmgmClass, betmgm[stateShortName], sportsbookTableType);
+			setOperatorAttribute(caesarsClass, caesars[stateShortName], sportsbookTableType);
+			setOperatorAttribute(draftkingsClass, draftkings[stateShortName], sportsbookTableType);
+			setOperatorAttribute(betriversClass, betrivers[stateShortName], sportsbookTableType);
+			setOperatorAttribute(wynnbetClass, wynnbet[stateShortName], sportsbookTableType);
+			setOperatorAttribute(fuboClass, fubo[stateShortName], sportsbookTableType);
+			setOperatorAttribute(unibetClass, unibet[stateShortName], sportsbookTableType);
+			setOperatorAttribute(betfredClass, betfred[stateShortName], sportsbookTableType);
+			setOperatorAttribute(hardRockClass, hardRock[stateShortName], sportsbookTableType);
 			break;
 		case "CO":
-			setOperatorAttribute(fanduelClass, bonusClass, fanduel.coBonus.sportsbook);
-			setOperatorAttribute(betmgmClass, bonusClass, betmgm.coBonus.sportsbook);
-			setOperatorAttribute(caesarsClass, bonusClass, caesars.coBonus.sportsbook);
-			//setOperatorAttribute(draftkingsClass, bonusClass, draftkings.coBonus.sportsbook);
-			setOperatorAttribute(betriversClass, bonusClass, betrivers.coBonus.sportsbook);
-			setOperatorAttribute(wynnbetClass, bonusClass, wynnbet.coBonus.sportsbook);
-			setOperatorAttribute(fuboClass, bonusClass, fubo.coBonus.sportsbook);
-			setOperatorAttribute(unibetClass, bonusClass, unibet.coBonus.sportsbook);
-			setOperatorAttribute(betfredClass, bonusClass, betfred.coBonus.sportsbook);
+			//stateShortName = "co";
+			setOperatorAttribute(fanduelClass, fanduel[stateShortName], sportsbookTableType);
+			setOperatorAttribute(betmgmClass, betmgm[stateShortName], sportsbookTableType);
+			setOperatorAttribute(caesarsClass, caesars[stateShortName], sportsbookTableType);
+			setOperatorAttribute(draftkingsClass, draftkings[stateShortName], sportsbookTableType);
+			setOperatorAttribute(betriversClass, betrivers[stateShortName], sportsbookTableType);
+			setOperatorAttribute(wynnbetClass, wynnbet[stateShortName], sportsbookTableType);
+			setOperatorAttribute(fuboClass, fubo[stateShortName], sportsbookTableType);
+			setOperatorAttribute(unibetClass, unibet[stateShortName], sportsbookTableType);
+			setOperatorAttribute(betfredClass, betfred[stateShortName], sportsbookTableType);
+			setOperatorAttribute(hardRockClass, hardRock[stateShortName], sportsbookTableType);
 			break;
 		case "CT":
-			setOperatorAttribute(fanduelClass, bonusClass, fanduel.ctBonus.sportsbook);
-			setOperatorAttribute(betmgmClass, bonusClass, betmgm.ctBonus.sportsbook);
-			setOperatorAttribute(caesarsClass, bonusClass, caesars.ctBonus.sportsbook);
-			//setOperatorAttribute(draftkingsClass, bonusClass, draftkings.ctBonus.sportsbook);
-			setOperatorAttribute(betriversClass, bonusClass, betrivers.ctBonus.sportsbook);
-			setOperatorAttribute(wynnbetClass, bonusClass, wynnbet.ctBonus.sportsbook);
-			setOperatorAttribute(fuboClass, bonusClass, fubo.ctBonus.sportsbook);
-			setOperatorAttribute(unibetClass, bonusClass, unibet.ctBonus.sportsbook);
-			setOperatorAttribute(betfredClass, bonusClass, betfred.ctBonus.sportsbook);
+			//stateShortName = "ct";
+
+			setOperatorAttribute(fanduelClass, fanduel[stateShortName], sportsbookTableType);
+			setOperatorAttribute(betmgmClass, betmgm[stateShortName], sportsbookTableType);
+			setOperatorAttribute(caesarsClass, caesars[stateShortName], sportsbookTableType);
+			setOperatorAttribute(draftkingsClass, draftkings[stateShortName], sportsbookTableType);
+			setOperatorAttribute(betriversClass, betrivers[stateShortName], sportsbookTableType);
+			setOperatorAttribute(wynnbetClass, wynnbet[stateShortName], sportsbookTableType);
+			setOperatorAttribute(fuboClass, fubo[stateShortName], sportsbookTableType);
+			setOperatorAttribute(unibetClass, unibet[stateShortName], sportsbookTableType);
+			setOperatorAttribute(betfredClass, betfred[stateShortName], sportsbookTableType);
+			setOperatorAttribute(hardRockClass, hardRock[stateShortName], sportsbookTableType);
 			break;
 		case "IA":
-			setOperatorAttribute(fanduelClass, bonusClass, fanduel.iaBonus.sportsbook);
-			setOperatorAttribute(betmgmClass, bonusClass, betmgm.iaBonus.sportsbook);
-			setOperatorAttribute(caesarsClass, bonusClass, caesars.iaBonus.sportsbook);
-			//setOperatorAttribute(draftkingsClass, bonusClass, draftkings.iaBonus.sportsbook);
-			setOperatorAttribute(betriversClass, bonusClass, betrivers.iaBonus.sportsbook);
-			setOperatorAttribute(wynnbetClass, bonusClass, wynnbet.iaBonus.sportsbook);
-			setOperatorAttribute(fuboClass, bonusClass, fubo.iaBonus.sportsbook);
-			setOperatorAttribute(unibetClass, bonusClass, unibet.iaBonus.sportsbook);
-			setOperatorAttribute(betfredClass, bonusClass, betfred.iaBonus.sportsbook);
+			//stateShortName = "ia";
+
+			setOperatorAttribute(fanduelClass, fanduel[stateShortName], sportsbookTableType);
+			setOperatorAttribute(betmgmClass, betmgm[stateShortName], sportsbookTableType);
+			setOperatorAttribute(caesarsClass, caesars[stateShortName], sportsbookTableType);
+			setOperatorAttribute(draftkingsClass, draftkings[stateShortName], sportsbookTableType);
+			setOperatorAttribute(betriversClass, betrivers[stateShortName], sportsbookTableType);
+			setOperatorAttribute(wynnbetClass, wynnbet[stateShortName], sportsbookTableType);
+			setOperatorAttribute(fuboClass, fubo[stateShortName], sportsbookTableType);
+			setOperatorAttribute(unibetClass, unibet[stateShortName], sportsbookTableType);
+			setOperatorAttribute(betfredClass, betfred[stateShortName], sportsbookTableType);
+			setOperatorAttribute(hardRockClass, hardRock[stateShortName], sportsbookTableType);
 			break;
 		case "IN":
-			setOperatorAttribute(fanduelClass, bonusClass, fanduel.inBonus.sportsbook);
-			setOperatorAttribute(betmgmClass, bonusClass, betmgm.inBonus.sportsbook);
-			setOperatorAttribute(caesarsClass, bonusClass, caesars.inBonus.sportsbook);
-			//setOperatorAttribute(draftkingsClass, bonusClass, draftkings.inBonus.sportsbook);
-			setOperatorAttribute(betriversClass, bonusClass, betrivers.inBonus.sportsbook);
-			setOperatorAttribute(wynnbetClass, bonusClass, wynnbet.inBonus.sportsbook);
-			setOperatorAttribute(fuboClass, bonusClass, fubo.inBonus.sportsbook);
-			setOperatorAttribute(unibetClass, bonusClass, unibet.inBonus.sportsbook);
-			setOperatorAttribute(betfredClass, bonusClass, betfred.inBonus.sportsbook);
+			//stateShortName = "in";
+
+			setOperatorAttribute(fanduelClass, fanduel[stateShortName], sportsbookTableType);
+			setOperatorAttribute(betmgmClass, betmgm[stateShortName], sportsbookTableType);
+			setOperatorAttribute(caesarsClass, caesars[stateShortName], sportsbookTableType);
+			setOperatorAttribute(draftkingsClass, draftkings[stateShortName], sportsbookTableType);
+			setOperatorAttribute(betriversClass, betrivers[stateShortName], sportsbookTableType);
+			setOperatorAttribute(wynnbetClass, wynnbet[stateShortName], sportsbookTableType);
+			setOperatorAttribute(fuboClass, fubo[stateShortName], sportsbookTableType);
+			setOperatorAttribute(unibetClass, unibet[stateShortName], sportsbookTableType);
+			setOperatorAttribute(betfredClass, betfred[stateShortName], sportsbookTableType);
+			setOperatorAttribute(hardRockClass, hardRock[stateShortName], sportsbookTableType);
 			break;
 		case "LA":
-			setOperatorAttribute(fanduelClass, bonusClass, fanduel.laBonus.sportsbook);
-			setOperatorAttribute(betmgmClass, bonusClass, betmgm.laBonus.sportsbook);
-			setOperatorAttribute(caesarsClass, bonusClass, caesars.laBonus.sportsbook);
-			//setOperatorAttribute(draftkingsClass, bonusClass, draftkings.laBonus.sportsbook);
-			setOperatorAttribute(betriversClass, bonusClass, betrivers.laBonus.sportsbook);
-			setOperatorAttribute(wynnbetClass, bonusClass, wynnbet.laBonus.sportsbook);
-			setOperatorAttribute(fuboClass, bonusClass, fubo.laBonus.sportsbook);
-			setOperatorAttribute(unibetClass, bonusClass, unibet.laBonus.sportsbook);
-			setOperatorAttribute(betfredClass, bonusClass, betfred.laBonus.sportsbook);
+			//stateShortName = "la";
+
+			setOperatorAttribute(fanduelClass, fanduel[stateShortName], sportsbookTableType);
+			setOperatorAttribute(betmgmClass, betmgm[stateShortName], sportsbookTableType);
+			setOperatorAttribute(caesarsClass, caesars[stateShortName], sportsbookTableType);
+			setOperatorAttribute(draftkingsClass, draftkings[stateShortName], sportsbookTableType);
+			setOperatorAttribute(betriversClass, betrivers[stateShortName], sportsbookTableType);
+			setOperatorAttribute(wynnbetClass, wynnbet[stateShortName], sportsbookTableType);
+			setOperatorAttribute(fuboClass, fubo[stateShortName], sportsbookTableType);
+			setOperatorAttribute(unibetClass, unibet[stateShortName], sportsbookTableType);
+			setOperatorAttribute(betfredClass, betfred[stateShortName], sportsbookTableType);
+			setOperatorAttribute(hardRockClass, hardRock[stateShortName], sportsbookTableType);
 			break;
 		case "MI":
-			setOperatorAttribute(fanduelClass, bonusClass, fanduel.miBonus.sportsbook);
-			setOperatorAttribute(betmgmClass, bonusClass, betmgm.miBonus.sportsbook);
-			setOperatorAttribute(caesarsClass, bonusClass, caesars.miBonus.sportsbook);
-			//setOperatorAttribute(draftkingsClass, bonusClass, draftkings.miBonus.sportsbook);
-			setOperatorAttribute(betriversClass, bonusClass, betrivers.miBonus.sportsbook);
-			setOperatorAttribute(wynnbetClass, bonusClass, wynnbet.miBonus.sportsbook);
-			setOperatorAttribute(fuboClass, bonusClass, fubo.miBonus.sportsbook);
-			setOperatorAttribute(unibetClass, bonusClass, unibet.miBonus.sportsbook);
-			setOperatorAttribute(betfredClass, bonusClass, betfred.miBonus.sportsbook);
+			//stateShortName = "mi";
+
+			setOperatorAttribute(fanduelClass, fanduel[stateShortName], sportsbookTableType);
+			setOperatorAttribute(fanduelClass, fanduel[stateShortName], casinoTableType);
+			setOperatorAttribute(betmgmClass, betmgm[stateShortName], sportsbookTableType);
+			setOperatorAttribute(betmgmClass, betmgm[stateShortName], casinoTableType);
+
+			setOperatorAttribute(caesarsClass, caesars[stateShortName], sportsbookTableType);
+			setOperatorAttribute(caesarsClass, caesars[stateShortName], casinoTableType);
+
+			setOperatorAttribute(draftkingsClass, draftkings[stateShortName], sportsbookTableType);
+			setOperatorAttribute(betriversClass, betrivers[stateShortName], sportsbookTableType);
+			setOperatorAttribute(wynnbetClass, wynnbet[stateShortName], sportsbookTableType);
+			setOperatorAttribute(wynnbetClass, wynnbet[stateShortName], casinoTableType);
+
+			setOperatorAttribute(fuboClass, fubo[stateShortName], sportsbookTableType);
+			setOperatorAttribute(unibetClass, unibet[stateShortName], sportsbookTableType);
+			setOperatorAttribute(betfredClass, betfred[stateShortName], sportsbookTableType);
+			setOperatorAttribute(hardRockClass, hardRock[stateShortName], sportsbookTableType);
 			break;
 		case "NY":
-			setOperatorAttribute(fanduelClass, bonusClass, fanduel.nyBonus.sportsbook);
-			setOperatorAttribute(betmgmClass, bonusClass, betmgm.nyBonus.sportsbook);
-			setOperatorAttribute(caesarsClass, bonusClass, caesars.nyBonus.sportsbook);
-			//setOperatorAttribute(draftkingsClass, bonusClass, draftkings.nyBonus.sportsbook);
-			setOperatorAttribute(betriversClass, bonusClass, betrivers.nyBonus.sportsbook);
-			setOperatorAttribute(wynnbetClass, bonusClass, wynnbet.nyBonus.sportsbook);
-			setOperatorAttribute(fuboClass, bonusClass, fubo.nyBonus.sportsbook);
-			setOperatorAttribute(unibetClass, bonusClass, unibet.nyBonus.sportsbook);
-			setOperatorAttribute(betfredClass, bonusClass, betfred.nyBonus.sportsbook);
+			//stateShortName = "ny";
+
+			setOperatorAttribute(fanduelClass, fanduel[stateShortName], sportsbookTableType);
+			setOperatorAttribute(betmgmClass, betmgm[stateShortName], sportsbookTableType);
+			setOperatorAttribute(caesarsClass, caesars[stateShortName], sportsbookTableType);
+			setOperatorAttribute(draftkingsClass, draftkings[stateShortName], sportsbookTableType);
+			setOperatorAttribute(betriversClass, betrivers[stateShortName], sportsbookTableType);
+			setOperatorAttribute(wynnbetClass, wynnbet[stateShortName], sportsbookTableType);
+			setOperatorAttribute(fuboClass, fubo[stateShortName], sportsbookTableType);
+			setOperatorAttribute(unibetClass, unibet[stateShortName], sportsbookTableType);
+			setOperatorAttribute(betfredClass, betfred[stateShortName], sportsbookTableType);
+			setOperatorAttribute(hardRockClass, hardRock[stateShortName], sportsbookTableType);
 			break;
 		case "NV":
-			setOperatorAttribute(fanduelClass, bonusClass, fanduel.nvBonus.sportsbook);
-			setOperatorAttribute(betmgmClass, bonusClass, betmgm.nvBonus.sportsbook);
-			setOperatorAttribute(caesarsClass, bonusClass, caesars.nvBonus.sportsbook);
-			//setOperatorAttribute(draftkingsClass, bonusClass, draftkings.nvBonus.sportsbook);
-			setOperatorAttribute(betriversClass, bonusClass, betrivers.nvBonus.sportsbook);
-			setOperatorAttribute(wynnbetClass, bonusClass, wynnbet.nvBonus.sportsbook);
-			setOperatorAttribute(fuboClass, bonusClass, fubo.nvBonus.sportsbook);
-			setOperatorAttribute(unibetClass, bonusClass, unibet.nvBonus.sportsbook);
-			setOperatorAttribute(betfredClass, bonusClass, betfred.nvBonus.sportsbook);
+			//stateShortName = "nv";
+
+			setOperatorAttribute(fanduelClass, fanduel[stateShortName], sportsbookTableType);
+			setOperatorAttribute(betmgmClass, betmgm[stateShortName], sportsbookTableType);
+			setOperatorAttribute(caesarsClass, caesars[stateShortName], sportsbookTableType);
+			setOperatorAttribute(draftkingsClass, draftkings[stateShortName], sportsbookTableType);
+			setOperatorAttribute(betriversClass, betrivers[stateShortName], sportsbookTableType);
+			setOperatorAttribute(wynnbetClass, wynnbet[stateShortName], sportsbookTableType);
+			setOperatorAttribute(fuboClass, fubo[stateShortName], sportsbookTableType);
+			setOperatorAttribute(unibetClass, unibet[stateShortName], sportsbookTableType);
+			setOperatorAttribute(betfredClass, betfred[stateShortName], sportsbookTableType);
+			setOperatorAttribute(hardRockClass, hardRock[stateShortName], sportsbookTableType);
 			break;
 		case "KS":
-			setOperatorAttribute(fanduelClass, bonusClass, fanduel.ksBonus.sportsbook);
-			setOperatorAttribute(betmgmClass, bonusClass, betmgm.ksBonus.sportsbook);
-			setOperatorAttribute(caesarsClass, bonusClass, caesars.ksBonus.sportsbook);
-			//setOperatorAttribute(draftkingsClass, bonusClass, draftkings.ksBonus.sportsbook);
-			setOperatorAttribute(betriversClass, bonusClass, betrivers.ksBonus.sportsbook);
-			setOperatorAttribute(wynnbetClass, bonusClass, wynnbet.ksBonus.sportsbook);
-			setOperatorAttribute(fuboClass, bonusClass, fubo.ksBonus.sportsbook);
-			setOperatorAttribute(unibetClass, bonusClass, unibet.ksBonus.sportsbook);
-			setOperatorAttribute(betfredClass, bonusClass, betfred.ksBonus.sportsbook);
+			//stateShortName = "ks";
+
+			setOperatorAttribute(fanduelClass, fanduel[stateShortName], sportsbookTableType);
+			setOperatorAttribute(betmgmClass, betmgm[stateShortName], sportsbookTableType);
+			setOperatorAttribute(caesarsClass, caesars[stateShortName], sportsbookTableType);
+			setOperatorAttribute(draftkingsClass, draftkings[stateShortName], sportsbookTableType);
+			setOperatorAttribute(betriversClass, betrivers[stateShortName], sportsbookTableType);
+			setOperatorAttribute(wynnbetClass, wynnbet[stateShortName], sportsbookTableType);
+			setOperatorAttribute(fuboClass, fubo[stateShortName], sportsbookTableType);
+			setOperatorAttribute(unibetClass, unibet[stateShortName], sportsbookTableType);
+			setOperatorAttribute(betfredClass, betfred[stateShortName], sportsbookTableType);
+			setOperatorAttribute(hardRockClass, hardRock[stateShortName], sportsbookTableType);
 			break;
 		case "NJ":
-			setOperatorAttribute(fanduelClass, bonusClass, fanduel.njBonus.sportsbook);
-			setOperatorAttribute(betmgmClass, bonusClass, betmgm.njBonus.sportsbook);
-			setOperatorAttribute(caesarsClass, bonusClass, caesars.njBonus.sportsbook);
-			//setOperatorAttribute(draftkingsClass, bonusClass, draftkings.njBonus.sportsbook);
-			setOperatorAttribute(betriversClass, bonusClass, betrivers.njBonus.sportsbook);
-			setOperatorAttribute(wynnbetClass, bonusClass, wynnbet.njBonus.sportsbook);
-			setOperatorAttribute(fuboClass, bonusClass, fubo.njBonus.sportsbook);
-			setOperatorAttribute(unibetClass, bonusClass, unibet.njBonus.sportsbook);
-			setOperatorAttribute(betfredClass, bonusClass, betfred.njBonus.sportsbook);
+			//stateShortName = "nj";
+
+			setOperatorAttribute(fanduelClass, fanduel[stateShortName], sportsbookTableType);
+			setOperatorAttribute(betmgmClass, betmgm[stateShortName], sportsbookTableType);
+			setOperatorAttribute(caesarsClass, caesars[stateShortName], sportsbookTableType);
+			setOperatorAttribute(draftkingsClass, draftkings[stateShortName], sportsbookTableType);
+			setOperatorAttribute(betriversClass, betrivers[stateShortName], sportsbookTableType);
+			setOperatorAttribute(wynnbetClass, wynnbet[stateShortName], sportsbookTableType);
+			setOperatorAttribute(fuboClass, fubo[stateShortName], sportsbookTableType);
+			setOperatorAttribute(unibetClass, unibet[stateShortName], sportsbookTableType);
+			setOperatorAttribute(betfredClass, betfred[stateShortName], sportsbookTableType);
+			setOperatorAttribute(hardRockClass, hardRock[stateShortName], sportsbookTableType);
 			break;
 		case "PA":
-			setOperatorAttribute(fanduelClass, bonusClass, fanduel.paBonus.sportsbook);
-			setOperatorAttribute(betmgmClass, bonusClass, betmgm.paBonus.sportsbook);
-			setOperatorAttribute(caesarsClass, bonusClass, caesars.paBonus.sportsbook);
-			//setOperatorAttribute(draftkingsClass, bonusClass, draftkings.paBonus.sportsbook);
-			setOperatorAttribute(betriversClass, bonusClass, betrivers.paBonus.sportsbook);
-			setOperatorAttribute(wynnbetClass, bonusClass, wynnbet.paBonus.sportsbook);
-			setOperatorAttribute(fuboClass, bonusClass, fubo.paBonus.sportsbook);
-			setOperatorAttribute(unibetClass, bonusClass, unibet.paBonus.sportsbook);
-			setOperatorAttribute(betfredClass, bonusClass, betfred.paBonus.sportsbook);
+			//stateShortName = "pa";
+
+			setOperatorAttribute(fanduelClass, fanduel[stateShortName], sportsbookTableType);
+			setOperatorAttribute(betmgmClass, betmgm[stateShortName], sportsbookTableType);
+			setOperatorAttribute(caesarsClass, caesars[stateShortName], sportsbookTableType);
+			setOperatorAttribute(draftkingsClass, draftkings[stateShortName], sportsbookTableType);
+			setOperatorAttribute(betriversClass, betrivers[stateShortName], sportsbookTableType);
+			setOperatorAttribute(wynnbetClass, wynnbet[stateShortName], sportsbookTableType);
+			setOperatorAttribute(fuboClass, fubo[stateShortName], sportsbookTableType);
+			setOperatorAttribute(unibetClass, unibet[stateShortName], sportsbookTableType);
+			setOperatorAttribute(betfredClass, betfred[stateShortName], sportsbookTableType);
+			setOperatorAttribute(hardRockClass, hardRock[stateShortName], sportsbookTableType);
 			break;
 		case "TN":
-			setOperatorAttribute(fanduelClass, bonusClass, fanduel.tnBonus.sportsbook);
-			setOperatorAttribute(betmgmClass, bonusClass, betmgm.tnBonus.sportsbook);
-			setOperatorAttribute(caesarsClass, bonusClass, caesars.tnBonus.sportsbook);
-			//setOperatorAttribute(draftkingsClass, bonusClass, draftkings.tnBonus.sportsbook);
-			setOperatorAttribute(betriversClass, bonusClass, betrivers.tnBonus.sportsbook);
-			setOperatorAttribute(wynnbetClass, bonusClass, wynnbet.tnBonus.sportsbook);
-			setOperatorAttribute(fuboClass, bonusClass, fubo.tnBonus.sportsbook);
-			setOperatorAttribute(unibetClass, bonusClass, unibet.tnBonus.sportsbook);
-			setOperatorAttribute(betfredClass, bonusClass, betfred.tnBonus.sportsbook);
+			//stateShortName = "tn";
+
+			setOperatorAttribute(fanduelClass, fanduel[stateShortName], sportsbookTableType);
+			setOperatorAttribute(betmgmClass, betmgm[stateShortName], sportsbookTableType);
+			setOperatorAttribute(caesarsClass, caesars[stateShortName], sportsbookTableType);
+			setOperatorAttribute(draftkingsClass, draftkings[stateShortName], sportsbookTableType);
+			setOperatorAttribute(betriversClass, betrivers[stateShortName], sportsbookTableType);
+			setOperatorAttribute(wynnbetClass, wynnbet[stateShortName], sportsbookTableType);
+			setOperatorAttribute(fuboClass, fubo[stateShortName], sportsbookTableType);
+			setOperatorAttribute(unibetClass, unibet[stateShortName], sportsbookTableType);
+			setOperatorAttribute(betfredClass, betfred[stateShortName], sportsbookTableType);
+			setOperatorAttribute(hardRockClass, hardRock[stateShortName], sportsbookTableType);
 			break;
 		case "VA":
-			setOperatorAttribute(fanduelClass, bonusClass, fanduel.vaBonus.sportsbook);
-			setOperatorAttribute(betmgmClass, bonusClass, betmgm.vaBonus.sportsbook);
-			setOperatorAttribute(caesarsClass, bonusClass, caesars.vaBonus.sportsbook);
-			//setOperatorAttribute(draftkingsClass, bonusClass, draftkings.vaBonus.sportsbook);
-			setOperatorAttribute(betriversClass, bonusClass, betrivers.vaBonus.sportsbook);
-			setOperatorAttribute(wynnbetClass, bonusClass, wynnbet.vaBonus.sportsbook);
-			setOperatorAttribute(fuboClass, bonusClass, fubo.vaBonus.sportsbook);
-			setOperatorAttribute(unibetClass, bonusClass, unibet.vaBonus.sportsbook);
-			setOperatorAttribute(betfredClass, bonusClass, betfred.vaBonus.sportsbook);
+			//stateShortName = "va";
+
+			setOperatorAttribute(fanduelClass, fanduel[stateShortName], sportsbookTableType);
+			setOperatorAttribute(betmgmClass, betmgm[stateShortName], sportsbookTableType);
+			setOperatorAttribute(caesarsClass, caesars[stateShortName], sportsbookTableType);
+			setOperatorAttribute(draftkingsClass, draftkings[stateShortName], sportsbookTableType);
+			setOperatorAttribute(betriversClass, betrivers[stateShortName], sportsbookTableType);
+			setOperatorAttribute(wynnbetClass, wynnbet[stateShortName], sportsbookTableType);
+			setOperatorAttribute(fuboClass, fubo[stateShortName], sportsbookTableType);
+			setOperatorAttribute(unibetClass, unibet[stateShortName], sportsbookTableType);
+			setOperatorAttribute(betfredClass, betfred[stateShortName], sportsbookTableType);
+			setOperatorAttribute(hardRockClass, hardRock[stateShortName], sportsbookTableType);
 			break;
 		case "WA":
-			setOperatorAttribute(fanduelClass, bonusClass, fanduel.waBonus.sportsbook);
-			setOperatorAttribute(betmgmClass, bonusClass, betmgm.waBonus.sportsbook);
-			setOperatorAttribute(caesarsClass, bonusClass, caesars.waBonus.sportsbook);
-			//setOperatorAttribute(draftkingsClass, bonusClass, draftkings.waBonus.sportsbook);
-			setOperatorAttribute(betriversClass, bonusClass, betrivers.waBonus.sportsbook);
-			setOperatorAttribute(wynnbetClass, bonusClass, wynnbet.waBonus.sportsbook);
-			setOperatorAttribute(fuboClass, bonusClass, fubo.waBonus.sportsbook);
-			setOperatorAttribute(unibetClass, bonusClass, unibet.waBonus.sportsbook);
-			setOperatorAttribute(betfredClass, bonusClass, betfred.waBonus.sportsbook);
+			//stateShortName = "wa";
+
+			setOperatorAttribute(fanduelClass, fanduel[stateShortName], sportsbookTableType);
+			setOperatorAttribute(betmgmClass, betmgm[stateShortName], sportsbookTableType);
+			setOperatorAttribute(caesarsClass, caesars[stateShortName], sportsbookTableType);
+			setOperatorAttribute(draftkingsClass, draftkings[stateShortName], sportsbookTableType);
+			setOperatorAttribute(betriversClass, betrivers[stateShortName], sportsbookTableType);
+			setOperatorAttribute(wynnbetClass, wynnbet[stateShortName], sportsbookTableType);
+			setOperatorAttribute(fuboClass, fubo[stateShortName], sportsbookTableType);
+			setOperatorAttribute(unibetClass, unibet[stateShortName], sportsbookTableType);
+			setOperatorAttribute(betfredClass, betfred[stateShortName], sportsbookTableType);
+			setOperatorAttribute(hardRockClass, hardRock[stateShortName], sportsbookTableType);
 			break;
 		case "WI":
-			setOperatorAttribute(fanduelClass, bonusClass, fanduel.wiBonus.sportsbook);
-			setOperatorAttribute(betmgmClass, bonusClass, betmgm.wiBonus.sportsbook);
-			setOperatorAttribute(caesarsClass, bonusClass, caesars.wiBonus.sportsbook);
-			//setOperatorAttribute(draftkingsClass, bonusClass, draftkings.wiBonus.sportsbook);
-			setOperatorAttribute(betriversClass, bonusClass, betrivers.wiBonus.sportsbook);
-			setOperatorAttribute(wynnbetClass, bonusClass, wynnbet.wiBonus.sportsbook);
-			setOperatorAttribute(fuboClass, bonusClass, fubo.wiBonus.sportsbook);
-			setOperatorAttribute(unibetClass, bonusClass, unibet.wiBonus.sportsbook);
-			setOperatorAttribute(betfredClass, bonusClass, betfred.wiBonus.sportsbook);
+			//stateShortName = "wi";
+
+			setOperatorAttribute(fanduelClass, fanduel[stateShortName], sportsbookTableType);
+			setOperatorAttribute(betmgmClass, betmgm[stateShortName], sportsbookTableType);
+			setOperatorAttribute(caesarsClass, caesars[stateShortName], sportsbookTableType);
+			setOperatorAttribute(draftkingsClass, draftkings[stateShortName], sportsbookTableType);
+			setOperatorAttribute(betriversClass, betrivers[stateShortName], sportsbookTableType);
+			setOperatorAttribute(wynnbetClass, wynnbet[stateShortName], sportsbookTableType);
+			setOperatorAttribute(fuboClass, fubo[stateShortName], sportsbookTableType);
+			setOperatorAttribute(unibetClass, unibet[stateShortName], sportsbookTableType);
+			setOperatorAttribute(betfredClass, betfred[stateShortName], sportsbookTableType);
+			setOperatorAttribute(hardRockClass, hardRock[stateShortName], sportsbookTableType);
 			break;
 		case "WV":
-			setOperatorAttribute(fanduelClass, bonusClass, fanduel.wvBonus.sportsbook);
-			setOperatorAttribute(betmgmClass, bonusClass, betmgm.wvBonus.sportsbook);
-			setOperatorAttribute(caesarsClass, bonusClass, caesars.wvBonus.sportsbook);
-			//setOperatorAttribute(draftkingsClass, bonusClass, draftkings.wvBonus.sportsbook);
-			setOperatorAttribute(betriversClass, bonusClass, betrivers.wvBonus.sportsbook);
-			setOperatorAttribute(wynnbetClass, bonusClass, wynnbet.wvBonus.sportsbook);
-			setOperatorAttribute(fuboClass, bonusClass, fubo.wvBonus.sportsbook);
-			setOperatorAttribute(unibetClass, bonusClass, unibet.wvBonus.sportsbook);
-			setOperatorAttribute(betfredClass, bonusClass, betfred.wvBonus.sportsbook);
+			//stateShortName = "wv";
+			setOperatorAttribute(fanduelClass, fanduel[stateShortName], sportsbookTableType);
+			setOperatorAttribute(betmgmClass, betmgm[stateShortName], sportsbookTableType);
+			setOperatorAttribute(caesarsClass, caesars[stateShortName], sportsbookTableType);
+			setOperatorAttribute(draftkingsClass, draftkings[stateShortName], sportsbookTableType);
+			setOperatorAttribute(betriversClass, betrivers[stateShortName], sportsbookTableType);
+			setOperatorAttribute(wynnbetClass, wynnbet[stateShortName], sportsbookTableType);
+			setOperatorAttribute(fuboClass, fubo[stateShortName], sportsbookTableType);
+			setOperatorAttribute(unibetClass, unibet[stateShortName], sportsbookTableType);
+			setOperatorAttribute(betfredClass, betfred[stateShortName], sportsbookTableType);
+			setOperatorAttribute(hardRockClass, hardRock[stateShortName], sportsbookTableType);
 			break;
 		default:
 			console.log("State not found");
