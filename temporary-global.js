@@ -1433,19 +1433,19 @@ let betrivers = {
 	az: {
 		promoCode: {
 			azsportsbettingsites: {
-				sportsbook: "250MATCH",
+				sportsbook: "JOKERZINO",
 				casino: globalStandardPromoText
 			},
 			arizonaonlinebetting: {
-				sportsbook: "250MATCH",
+				sportsbook: "JOKERZINO",
 				casino: globalStandardPromoText
 			},
 			arizonaonlinegambling: {
-				sportsbook: "250MATCH",
+				sportsbook: "JOKERZINO",
 				casino: globalStandardPromoText
 			},
 			azonlinebettingsites: {
-				sportsbook: "250MATCH",
+				sportsbook: "JOKERZINO",
 				casino: globalStandardPromoText
 			}
 		},
