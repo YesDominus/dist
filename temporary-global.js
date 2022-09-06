@@ -3,16 +3,22 @@ function setOperatorAttribute(operatorBrandName, operatorStateValues, tableType)
 	if (tableType === "sportsbooks-table") {
 		setOperatorValues(operatorBrandName, operatorStateValues, tableType);
 	} else if (tableType === "casino-table") {
-
+		setOperatorValues(operatorBrandName, operatorStateValues, tableType);
 	} else {
 		console.log("Table type not found");
 	}
 }
 
 function setOperatorValues(currentOperatorName, currentOperatorStateValues, currentTableType) {
+	let gamblingType = "";
+	if (currentTableType === "sportsbooks-table") {
+		gamblingType = "sportsbook";
+	} else if (currentTableType === "casino-table") {
+		gamblingType = "casino";
+	}
 
 	let currentSites = currentOperatorStateValues.promoCode;
-	//console.log(currentSites, "currentsites");
+	console.log(currentSites, "currentsites");
 	let currentTables = document.getElementsByClassName(currentTableType);
 
 	for (let indexTables = 0; indexTables < currentTables.length; indexTables++) {
@@ -30,24 +36,21 @@ function setOperatorValues(currentOperatorName, currentOperatorStateValues, curr
 
 						if (currentBonusElements) {
 							for (let index = 0; index < currentBonusElements.length; index++) {
-								currentBonusElements[index].innerHTML = currentOperatorStateValues.bonus.sportsbook;
-
+								currentBonusElements[index].innerHTML = currentOperatorStateValues.bonus[gamblingType];
 							}
 						}
 
 						let promoSites = Object.keys(currentSites);
 
 						for (let promoSitesIndex = 0; promoSitesIndex < promoSites.length; promoSitesIndex++) {
-							let currentPromoCode = promoSites[promoSitesIndex];
-							//let tempHostName = currentPromoCode + ".com";
-							if (window.location.hostname === "".concat(currentPromoCode, ".com")) {
-								//let siteName = tempHostName.split(".com")[0];
+							let currentPromoSite = promoSites[promoSitesIndex];
 
+							if (window.location.hostname.split(".")[0] === currentPromoSite) {
 
 								if (currentPromoElements) {
 									for (let x = 0; x < currentPromoElements.length; x++) {
-										console.log(currentPromoCode);
-										currentPromoElements[x].innerHTML = currentSites[currentPromoCode].sportsbook;
+										console.log(currentPromoSite);
+										currentPromoElements[x].innerHTML = currentSites[currentPromoSite][gamblingType];
 
 									}
 								}
