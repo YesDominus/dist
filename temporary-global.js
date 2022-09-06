@@ -1,8 +1,7 @@
-function setOperatorAttribute(operatorBrandName, operatorStateValues, tableType, sitePromoCode) {
-	console.log(sitePromoCode);
+function setOperatorAttribute(operatorBrandName, operatorStateValues, tableType) {
 
 	if (tableType === "sportsbooks-table") {
-		setOperatorValues(operatorBrandName, operatorStateValues, tableType, sitePromoCode);
+		setOperatorValues(operatorBrandName, operatorStateValues, tableType);
 	} else if (tableType === "casino-table") {
 
 	} else {
@@ -10,12 +9,12 @@ function setOperatorAttribute(operatorBrandName, operatorStateValues, tableType,
 	}
 }
 
-function setOperatorValues(currentOperatorName, currentOperatorStateValues, currentTableType, currentSite) {
-	/*if(typeof currentSitePromoCode === 'undefined'){
-	currentSitePromoCode = globalStandardPromoText;
-	}*/
-	console.log(currentSite);
+function setOperatorValues(currentOperatorName, currentOperatorStateValues, currentTableType) {
+
+	let currentSites = currentOperatorStateValues.promoCode;
+	//console.log(currentSites, "currentsites");
 	let currentTables = document.getElementsByClassName(currentTableType);
+
 	for (let indexTables = 0; indexTables < currentTables.length; indexTables++) {
 		let currentTable = currentTables[indexTables];
 		if (currentTable) {
@@ -36,13 +35,19 @@ function setOperatorValues(currentOperatorName, currentOperatorStateValues, curr
 							}
 						}
 
-						let promoSites = Object.keys(currentSite);
-						for (let promoSitesIndex = 0; promoSites.length; promoSitesIndex++) {
+						let promoSites = Object.keys(currentSites);
+
+						for (let promoSitesIndex = 0; promoSitesIndex < promoSites.length; promoSitesIndex++) {
 							let currentPromoCode = promoSites[promoSitesIndex];
-							if (window.location.hostname === currentSite) {
+							//let tempHostName = currentPromoCode + ".com";
+							if (window.location.hostname === "".concat(currentPromoCode, ".com")) {
+								//let siteName = tempHostName.split(".com")[0];
+
+
 								if (currentPromoElements) {
 									for (let x = 0; x < currentPromoElements.length; x++) {
-										currentPromoElements[x].innerHTML = currentPromoCode.sportsbook;
+										console.log(currentPromoCode);
+										currentPromoElements[x].innerHTML = currentSites[currentPromoCode].sportsbook;
 
 									}
 								}
@@ -3181,9 +3186,9 @@ function setStateSettings(state) {
 			//setOperatorAttribute(betmgmClass, bonusClass, betmgm.azBonus.sportsbook);
 			//setOperatorAttribute(caesarsClass, bonusClass, caesars.azBonus.sportsbook);
 			//setOperatorAttribute(draftkingsClass, bonusClass, draftkings.azBonus.sportsbook);
-			setOperatorAttribute(betriversClass, betrivers.az, "sportsbooks-table", betrivers.az.promoCode.azsportsbettingsites.sportsbook);
-			setOperatorAttribute(wynnbetClass, wynnbet.az, "sportsbooks-table");
-			setOperatorAttribute(fuboClass, fubo.az, "sportsbooks-table", fubo.az.promoCode);
+			//setOperatorAttribute(betriversClass, betrivers.az, "sportsbooks-table", betrivers.az.promoCode.azsportsbettingsites.sportsbook);
+			//setOperatorAttribute(wynnbetClass, wynnbet.az, "sportsbooks-table");
+			setOperatorAttribute(fuboClass, fubo.az, "sportsbooks-table");
 			//setOperatorAttribute(unibetClass, bonusClass, unibet.azBonus.sportsbook);
 			//setOperatorAttribute(betfredClass, bonusClass, betfred.azBonus.sportsbook);
 			//setOperatorAttribute(hardRockClass, bonusClass, hardRock.azBonus.sportsbook);
