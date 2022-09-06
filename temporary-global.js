@@ -80,7 +80,10 @@ let fanduelStandardSportsBonus = "Bet $5 get $150 - win or lose";
 let fanduelStandardCasinoBonus = "$1,000 play it again";
 let fanduel = {
 	brand: "Fanduel",
-
+	standardPromoCode: {
+		sportsbook: globalStandardPromoText,
+		casino: globalStandardPromoText
+	},
 
 	az: {
 		promoCode: {
@@ -417,7 +420,10 @@ let betmgmStandardSportsBonus = "Risk-free bet up to $1000";
 let betmgmStandardCasinoBonus = "$25 free play";
 let betmgm = {
 	brand: "BetMGM",
-
+	standardPromoCode: {
+		sportsbook: globalStandardPromoText,
+		casino: globalStandardPromoText
+	},
 
 	az: {
 		promoCode: {
@@ -753,9 +759,12 @@ let betmgm = {
 let caesarsStandardSportsBonus = "Up to $1,250 bonus + 1,000 credits";
 let caesarsStandardCasinoBonus = "$2,000 bonus";
 let caesars = {
-	brand: "caesars",
+	brand: "Caesars",
 
-
+	standardPromoCode: {
+		sportsbook: globalStandardPromoText,
+		casino: globalStandardPromoText
+	},
 	az: {
 		promoCode: {
 			azsportsbettingsites: {
@@ -1092,7 +1101,10 @@ let wynnbetStandardSportsBonus = "Bet $100 get $100";
 let wynnbetStandardCasinoBonus = "100% deposit match up to $1000";
 let wynnbet = {
 	brand: "WynnBET",
-
+	standardPromoCode: {
+		sportsbook: globalStandardPromoText,
+		casino: globalStandardPromoText
+	},
 	az: {
 		promoCode: {
 			azsportsbettingsites: {
@@ -1429,7 +1441,10 @@ let betriversStandardSportsBonus = "Up to $500 free bet";
 let betriversStandardCasinoBonus = "$250 bonus";
 let betrivers = {
 	brand: "BetRivers",
-
+	standardPromoCode: {
+		sportsbook: globalStandardPromoText,
+		casino: globalStandardPromoText
+	},
 	az: {
 		promoCode: {
 			azsportsbettingsites: {
@@ -1766,7 +1781,10 @@ let hardrockStandardCasinoBonus = "$2,000 bonus";
 let hardRock = {
 	brand: "Hard Rock",
 
-
+	standardPromoCode: {
+		sportsbook: globalStandardPromoText,
+		casino: globalStandardPromoText
+	},
 	az: {
 		promoCode: {
 			azsportsbettingsites: {
@@ -2101,7 +2119,11 @@ let hardRock = {
 let fuboStandardSportsBonus = "Risk-free bet up to $1000";
 let fuboStandardCasinoBonus = "";
 let fubo = {
-	brand: "fubo",
+	brand: "Fubo",
+	standardPromoCode: {
+		sportsbook: globalStandardPromoText,
+		casino: globalStandardPromoText
+	},
 	az: {
 		promoCode: {
 			azsportsbettingsites: {
@@ -2436,7 +2458,11 @@ let fubo = {
 let unibetStandardSportsBonus = "Bet $50 get $200";
 let unibetStandardCasinoBonus = "";
 let unibet = {
-	brand: "unibet",
+	brand: "Unibet",
+	standardPromoCode: {
+		sportsbook: globalStandardPromoText,
+		casino: globalStandardPromoText
+	},
 	az: {
 		promoCode: {
 			azsportsbettingsites: {
@@ -2771,7 +2797,11 @@ let unibet = {
 let betfredStandardSportsBonus = "Bet $50 get $250 free";
 let betfredtStandardCasinoBonus = "";
 let betfred = {
-	brand: "betfred",
+	brand: "Betfred",
+	standardPromoCode: {
+		sportsbook: globalStandardPromoText,
+		casino: globalStandardPromoText
+	},
 	az: {
 		promoCode: {
 			azsportsbettingsites: {
