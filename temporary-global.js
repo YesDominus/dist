@@ -800,8 +800,8 @@ let betmgmStandardCasinoBonus = "$25 free play";
 let betmgm = {
 	brand: "BetMGM",
 	standardPromoCode: {
-		sportsbook: globalStandardPromoText,
-		casino: globalStandardPromoText
+		sportsbook: "JOKERZINO",
+		casino: "JOKERZINO"
 	},
 
 	az: {
