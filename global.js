@@ -125,10 +125,10 @@ let fanduel = {
 	let betmgm = {
     brand: "BetMGM",
         promoCode: {
-	    azsportsbettingsites: globalStandardPromoText,
-	    arizonaonlinebetting: globalStandardPromoText,
-	    arizonaonlinegambling: globalStandardPromoText,
-	    azonlinebettingsites: globalStandardPromoText
+	    azsportsbettingsites: "JOKERZINO",
+	    arizonaonlinebetting: "JOKERZINO",
+	    arizonaonlinegambling: "JOKERZINO",
+	    azonlinebettingsites: "JOKERZINO"
     },
     azBonus: {
         sportsbook: betmgmStandardSportsBonus,
