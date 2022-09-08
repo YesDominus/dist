@@ -3519,7 +3519,6 @@ let sugarhouse = {
 	sports: ["football", "basketball", "hockey", "baseball", "soccer", "tennis", "golf", "mma", "australian-rules", "boxing", "cricket", "cycling", "darts", "esports", "floorball", "formula-1", "gaelic-sports", "handball", "jai-alai", "motorsports", "rugby", "snooker", "table-tennis", "volleyball", "olympics"]
 };
 
-
 function setStateSettings(state) {
 	let stateShortName = state.toLowerCase();
 	switch (state) {
@@ -3610,21 +3609,21 @@ function setStateSettings(state) {
 
 			setOperatorAttribute(fanduelClass, fanduel[stateShortName], sportsbookTableType);
 			setOperatorAttribute(fanduelClass, fanduel[stateShortName], casinoTableType);
+
+			setOperatorAttribute(draftkingsClass, draftkings[stateShortName], sportsbookTableType);
+			setOperatorAttribute(draftkingsClass, draftkings[stateShortName], casinoTableType);
+
 			setOperatorAttribute(betmgmClass, betmgm[stateShortName], sportsbookTableType);
 			setOperatorAttribute(betmgmClass, betmgm[stateShortName], casinoTableType);
 
 			setOperatorAttribute(caesarsClass, caesars[stateShortName], sportsbookTableType);
 			setOperatorAttribute(caesarsClass, caesars[stateShortName], casinoTableType);
 
-			setOperatorAttribute(draftkingsClass, draftkings[stateShortName], sportsbookTableType);
 			setOperatorAttribute(betriversClass, betrivers[stateShortName], sportsbookTableType);
+			setOperatorAttribute(betriversClass, betrivers[stateShortName], casinoTableType);
+
 			setOperatorAttribute(wynnbetClass, wynnbet[stateShortName], sportsbookTableType);
 			setOperatorAttribute(wynnbetClass, wynnbet[stateShortName], casinoTableType);
-
-			setOperatorAttribute(fuboClass, fubo[stateShortName], sportsbookTableType);
-			setOperatorAttribute(unibetClass, unibet[stateShortName], sportsbookTableType);
-			setOperatorAttribute(betfredClass, betfred[stateShortName], sportsbookTableType);
-			setOperatorAttribute(hardRockClass, hardRock[stateShortName], sportsbookTableType);
 			break;
 		case "NY":
 			//stateShortName = "ny";
