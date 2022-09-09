@@ -578,9 +578,9 @@ let unibetStandardCasinoBonus = "";
         brand: "unibet",
     promoCode: {
 	    azsportsbettingsites: "AZSPORTB",
-	    arizonaonlinebetting: globalStandardPromoText,
-	    arizonaonlinegambling: globalStandardPromoText,
-	    azonlinebettingsites: globalStandardPromoText
+	    arizonaonlinebetting: "AZSPORTB",
+	    arizonaonlinegambling: "AZSPORTB",
+	    azonlinebettingsites: "AZSPORTB"
     },
     azBonus: {
         sportsbook: unibetStandardSportsBonus,
