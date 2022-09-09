@@ -2849,15 +2849,15 @@ let unibet = {
 				casino: globalStandardPromoText
 			},
 			arizonaonlinebetting: {
-				sportsbook: globalStandardPromoText,
+				sportsbook: "AZSPORTSB",
 				casino: globalStandardPromoText
 			},
 			arizonaonlinegambling: {
-				sportsbook: globalStandardPromoText,
+				sportsbook: "AZSPORTSB",
 				casino: globalStandardPromoText
 			},
 			azonlinebettingsites: {
-				sportsbook: globalStandardPromoText,
+				sportsbook: "AZSPORTSB",
 				casino: globalStandardPromoText
 			}
 		},
