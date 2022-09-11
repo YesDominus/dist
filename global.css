@@ -335,13 +335,6 @@ p {
   width:20%
 }
 	
-.wp-block-columns {
-		  border-width: 1px;
-  border-left: 6px solid lightsteelblue;	
-	padding: 5px;
-border-style: outset;
-}
-	
 }
 
 @media only screen and (min-width:900px) {
