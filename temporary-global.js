@@ -3825,18 +3825,19 @@ if (readMoreLabel) {
 	};
 }
 
+
 let readMoreSection = document.getElementsByClassName("readMoreSection")[0];
-if (readMoreSection) {
-	let readMoreLabel = document.getElementById("readMoreLabel");
-	document.getElementById("readMoreLabel").onclick = function() {
-		if (readMoreSection.style.display === "none" || readMoreSection.style.display === "") {
-			readMoreSection.style.display = "block";
-			readMoreLabel.innerHTML = "Read less";
-		} else {
-			readMoreSection.style.display = "none";
-			readMoreLabel.innerHTML = "Read more";
+if(readMoreSection){
+readMoreSection.style.display = 'none';
+	document.getElementById("readMoreLabel").onclick = function(){
+		if(readMoreSection.style.display === "none" || readMoreSection.style.display === ""){
+		    readMoreSection.style.display = "block"
+		    readMoreLabel.innerHTML = "Read less" 
+		}else{
+		    readMoreSection.style.display = "none";
+		    readMoreLabel.innerHTML = "Read more"
 		}
-	};
+};
 }
 
 /* NEW PAGE NAVIGATION
