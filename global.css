@@ -630,3 +630,20 @@ box-shadow: 4px 5px 5px -2px #ACACAC;
   100% { transform: scale(1); }
   }
 }
+
+.cover-hero div{
+max-width: 1200px;
+}
+
+.cover-hero{
+  border-bottom: 2px solid red;
+}
+
+.cover-hero h1, .cover-hero p{
+	  text-shadow: 2px 2px black;
+}
+
+.cover-hero p{
+	  font-size: 21px!important;
+	  text-align: center;
+}
