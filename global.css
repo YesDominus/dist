@@ -641,9 +641,9 @@ max-width: 1200px;
 
 .cover-hero h1, .cover-hero p{
 	  text-shadow: 2px 2px black;
+	  text-align: center;
 }
 
 .cover-hero p{
 	  font-size: 21px!important;
-	  text-align: center;
 }
