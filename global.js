@@ -199,11 +199,12 @@ let fanduel = {
   let caesarsStandardCasinoBonus = "$2,000 bonus";
 	let caesars = {
         brand: "caesars",
+		
             promoCode: {
-	    azsportsbettingsites: globalStandardPromoText,
-	    arizonaonlinebetting: globalStandardPromoText,
-	    arizonaonlinegambling: globalStandardPromoText,
-	    azonlinebettingsites: globalStandardPromoText
+	    azsportsbettingsites: "JOKERZBETFULL",
+	    arizonaonlinebetting: "JOKERZBETFULL",
+	    arizonaonlinegambling: "JOKERZBETFULL",
+	    azonlinebettingsites: "JOKERZBETFULL"
     },
     azBonus: {
         sportsbook: caesarsStandardSportsBonus,
