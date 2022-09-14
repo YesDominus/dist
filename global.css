@@ -636,7 +636,7 @@ max-width: 1200px;
 }
 
 .cover-hero{
-  border-bottom: 2px solid red;
+  border-bottom: 2px solid gray;
 }
 
 .cover-hero h1, .cover-hero p{
