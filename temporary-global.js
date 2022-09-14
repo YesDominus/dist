@@ -1141,8 +1141,8 @@ let caesars = {
 	brand: "Caesars",
 
 	standardPromoCode: {
-		sportsbook: globalStandardPromoText,
-		casino: globalStandardPromoText
+		sportsbook: "JOKERZBETFULL",
+		casino: "JOKERZCASINO"
 	},
 	az: {
 		promoCode: {
