@@ -1476,7 +1476,7 @@ let caesars = {
 
 // WYNNBET
 
-let wynnbetStandardSportsBonus = "Bet $100 get $100";
+let wynnbetStandardSportsBonus = "Bet $100 get $100 free";
 let wynnbetStandardCasinoBonus = "100% deposit match up to $1000";
 let wynnbet = {
 	brand: "WynnBET",
