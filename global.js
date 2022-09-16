@@ -45,7 +45,7 @@ function setClassAttribute(className, type, newAttribute) {
 
 // FANDUEL
 
-let fanduelStandardSportsBonus = "No sweat first bet up to $1000";
+let fanduelStandardSportsBonus = "No sweat first bet up to $1,000";
 let fanduelStandardCasinoBonus = "$1,000 play it again";
 let fanduel = {
 	brand: "Fanduel",
