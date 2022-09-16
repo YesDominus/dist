@@ -114,7 +114,7 @@ function setClassValue(className, type, newValue) {
 
 // FANDUEL
 
-let fanduelStandardSportsBonus = "Bet $5 get $150 - win or lose";
+let fanduelStandardSportsBonus = "No sweat first bet up to $1,000";
 let fanduelStandardCasinoBonus = "$1,000 play it again";
 let fanduel = {
 	brand: "Fanduel",
