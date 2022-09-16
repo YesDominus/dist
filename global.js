@@ -576,7 +576,7 @@ let fubo = {
 let unibetStandardSportsBonus = "Bet $50 get $200";
 let unibetStandardCasinoBonus = "";
 let unibet = {
-	brand: "unibet",
+	brand: "Unibet",
 	promoCode: {
 		azsportsbettingsites: "AZSPORTB",
 		arizonaonlinebetting: "AZSPORTB",
