@@ -390,8 +390,8 @@ p {
 	background-color: white;
 }
 
-.top-list-table td {
-	border-style: none
+.top-list-table, .top-list-table td{
+	border-style: none;
 }
 
 .bonusTD,
