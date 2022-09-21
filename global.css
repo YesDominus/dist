@@ -631,6 +631,11 @@ box-shadow: 4px 5px 5px -2px #ACACAC;
   }
 }
 
+.review-table .promo-code-offer{ 
+  animation: pulse 1s infinite;
+  animation-timing-function: linear;   
+}
+
 .cover-hero div{
 max-width: 1200px;
 }
