@@ -691,7 +691,7 @@ text-align: center;
 	  color: white;
 	margin: 0 auto;
 	  text-shadow: 1px 1px black;
-	font-weight: 500;
+	font-weight: 600;
 	  text-transform: uppercase;
 }
 
@@ -713,6 +713,11 @@ width: 7%;
 	margin: 2px;
 }
 
+#promoList{
+	color: orangered;
+	text-shadow: 0px 0px black;
+}
+
 @media only screen and (max-width: 1200px) {
 
 #floating-review-cta-button{
@@ -720,6 +725,7 @@ width: 7%;
 }
 #floating-review-cta-button p{
 	font-size: 15px;
+	font-weight: 500;
 }
 	
 #floating-review-cta-button .current-brand-img{
