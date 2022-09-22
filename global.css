@@ -646,10 +646,80 @@ max-width: 1200px;
 
 .cover-hero h1, .cover-hero p{
 	  text-shadow: 2px 2px black;
-		  text-align: center;
 color: white!important;
 }
 
 .cover-hero p{
 	  font-size: 21px!important;
+}
+
+/* FLOATING REVIEW CTA BUTTON CSS*/
+
+#floating-review-cta-button{
+	background-color: #355e3b;
+	padding:10px;	
+	color: white;
+	text-align: center;
+}
+
+#floating-review-cta-button{
+	position: fixed;
+	bottom: 0px;
+	z-index: 101!important;
+	right: 0%;
+	left:0%;
+	padding: 0px!important;
+	box-shadow: 0 -10px 40px -30px #333;
+
+}
+
+#floating-review-cta-button li{
+ list-style: none;
+	width: 70%;
+	margin: 0;
+	margin-left: auto!important;
+	margin-right: auto!important;
+	
+}
+
+#floating-review-cta-button p{
+	  text-align: center;
+	  color: white;
+	margin: 0 auto;
+	  text-shadow: 1px 1px black;
+	font-weight: 500;
+	  text-transform: uppercase;
+}
+
+/* Promo styling */
+#floating-review-cta-button .promo-code-offer::before{ content: "🎁 Exclusive Promo: "
+}
+
+#floating-review-cta-button .promo-code-offer{
+  animation: pulse 1s infinite;
+  animation-timing-function: linear;   
+}
+
+.current-bonus-text{
+	color: orange;
+}
+
+.current-brand-img{
+width: 7%;
+	margin: 2px;
+}
+
+@media only screen and (max-width: 1200px) {
+
+#floating-review-cta-button{
+ font-size: 70%;
+}
+#floating-review-cta-button p{
+	font-size: 15px;
+}
+	
+#floating-review-cta-button .current-brand-img{
+width: 20%!important;
+}
+
 }
