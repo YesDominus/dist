@@ -649,6 +649,10 @@ max-width: 1200px;
 color: white!important;
 }
 
+.cover-hero h1{
+text-align: center;
+}
+
 .cover-hero p{
 	  font-size: 21px!important;
 }
