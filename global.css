@@ -434,7 +434,7 @@ p {
 
 .tableConsList li::before {
 	content: "✓ ";
-	font-weight: 900;
+	font-weight: bold;
 	color: green
 }
 
