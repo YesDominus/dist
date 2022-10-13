@@ -1110,7 +1110,7 @@ if (table) {
 	let currentIMG = table.getElementsByClassName("imgTD")[0].getElementsByTagName("img")[0];
 	document.getElementById("floating-review-cta-button").style.backgroundColor = table.getElementsByClassName("imgTD")[0].style.backgroundColor;
 
-	let bonusText = "<span class='current-bonus-text'>" + table.getElementsByClassName("bonusTD")[0].innerHTML + '</span>';
+	let bonusText = "<span class='current-bonus-text'>" + table.getElementsByClassName("bonusTD")[0].lastChild.textContent.trim() + '</span>';
 	document.getElementById("textId").innerHTML = "🥇<img class='current-brand-img' src=" + currentIMG.src + "> " + bonusText;
 
 	document.getElementById("promoList").innerHTML = table.getElementsByClassName("promo-code-offer")[0].outerHTML;
