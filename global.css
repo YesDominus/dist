@@ -747,3 +747,16 @@ width: 19%!important;
 	text-decoration: underline;
 	font-weight: 900;
 }
+
+.bonusTD{
+	display: flex;
+  flex-direction: column;
+}
+
+.bonusTD .operator-name{
+color: black;
+	font-size: 15px;
+  font-weight: normal;
+	text-transform: capitalize;
+  color: #36454f;
+}
