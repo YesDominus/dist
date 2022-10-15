@@ -749,8 +749,8 @@ width: 19%!important;
 }
 
 .bonusTD{
-	display: flex;
-  flex-direction: column;
+	display: flex!important;
+  flex-direction: column!important;
 }
 
 .bonusTD .operator-name{
