@@ -1114,8 +1114,9 @@ if (table) {
 	document.getElementById("textId").innerHTML = "🥇<img class='current-brand-img' src=" + currentIMG.src + "> " + bonusText;
 
 	document.getElementById("promoList").innerHTML = table.getElementsByClassName("promo-code-offer")[0].outerHTML;
+	
+	/*
 	let currentHref = table.getElementsByClassName("ctaAnchor")[0].href;
-
 	let wordsInHref = currentHref.split("_");
 	const lastWord = wordsInHref[wordsInHref.length - 1];
 
@@ -1124,6 +1125,7 @@ if (table) {
 	} else {
 		document.getElementById("floating-review-cta-button").href = currentHref;
 	}
+	*/
 
 } else {
 	console.log("table not found");
