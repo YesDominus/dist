@@ -479,9 +479,9 @@ p {
 .bonusTD {
 	font-weight: 900;
 	color: tomato;
-	font-size: 21px;
+	font-size: 120%;
 	text-transform: uppercase;
-	 text-align:   center!important;
+	 text-align: center!important;
 	display: block;
 	margin: auto;
 }
@@ -611,7 +611,6 @@ box-shadow: 4px 5px 5px -2px #ACACAC;
 .promo-code-offer{
 	border: 4px dotted #bbb;
   border-radius: 11px;
-	font-size: 120%;
 	text-align: center;	
   background-color: #F1F8FF;
   font-weight: bold;
@@ -729,7 +728,7 @@ width: 6%;
 }
 	
 #floating-review-cta-button .current-brand-img{
-width: 19%!important;
+width: 17%!important;
 }
 
 }
