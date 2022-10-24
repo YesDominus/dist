@@ -694,8 +694,10 @@ text-align: center;
 }
 
 #floating-review-cta-button .promo-code-offer{
+	/*
   animation: pulse 1s infinite;
   animation-timing-function: linear;   
+	*/
 }
 
 .current-bonus-text{
