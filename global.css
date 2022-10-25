@@ -620,7 +620,12 @@ box-shadow: 4px 5px 5px -2px #ACACAC;
 
 .promo-code-offer:hover{ 
   animation: pulse 1s infinite;
-  animation-timing-function: linear;   
+  animation-timing-function: linear; 
+}
+
+.ctaAnchor:hover{ 
+  animation: pulse 1s infinite;
+  animation-timing-function: linear; 
 }
 
 @keyframes pulse {
@@ -726,6 +731,11 @@ width: 6%;
 	
 #floating-review-cta-button .current-brand-img{
 width: 17%!important;
+}
+
+#floating-review-cta-button{ 
+  animation: pulse 1s infinite;
+  animation-timing-function: linear; 
 }
 
 }
