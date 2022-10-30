@@ -720,12 +720,13 @@ width: 6%;
 }
 
 @media only screen and (max-width: 1200px) {
-
+	
 #floating-review-cta-button{
- font-size: 70%;
+ font-size: 75%!important;
 }
+
 #floating-review-cta-button p{
-	font-size: 15px;
+	font-size: 13px!important;
 	font-weight: 500;
 }
 	
