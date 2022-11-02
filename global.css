@@ -767,7 +767,3 @@ color: black;
 	text-transform: capitalize;
   color: #36454f;
 }
-
-.tableSectionRow td:not(.imgTD){
-	margin: auto!important;
-}
