@@ -504,24 +504,14 @@ section img{
   border-color: #e5e4e2;
 	border-width: thin;
 	border-radius: 5px!important;
-	-webkit-box-shadow: 4px 5px 5px -2px #ACACAC; 
-box-shadow: 4px 5px 5px -2px #ACACAC;
+	-webkit-box-shadow: 4px 5px 5px -2px graytext!important; 
+box-shadow: 4px 5px 5px -2px graytext!important;
 }
 
 .uagb-post__inner-wrap div{
 	  display: flex;
   justify-content: center;
   align-items: center;	
-}
-
-.uagb-post__inner-wrap img{
-	max-height: 130px;
-}
-
-.post-thumb-img-content img{
-	display: block;
-	margin-left: auto;
-		margin-right: auto;
 }
 
 .coming-soon{
