@@ -575,6 +575,12 @@ text-align: center;
 	  font-size: 21px!important;
 }
 
+.cover-hero img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* FLOATING REVIEW CTA BUTTON CSS*/
 
 #floating-review-cta-button{
