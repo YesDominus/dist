@@ -496,9 +496,15 @@ section img{
 	font-weight: bold;
 }
 
-/* Post article styling */
+/* Featured post image */
+.post-thumb-img-content img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
 
-.uagb-post__inner-wrap{
+/* Post article styling */
+.wp-block-latest-posts__list li{
 	background-color: white!important;
   border-style: solid;
   border-color: #e5e4e2;
@@ -506,9 +512,12 @@ section img{
 	border-radius: 5px!important;
 	-webkit-box-shadow: 4px 5px 5px -2px graytext!important; 
 box-shadow: 4px 5px 5px -2px graytext!important;
+	padding-left: 10px;
+	padding-right: 10px;
+
 }
 
-.uagb-post__inner-wrap div{
+.wp-block-latest-posts__list{
 	  display: flex;
   justify-content: center;
   align-items: center;	
