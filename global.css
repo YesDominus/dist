@@ -2,7 +2,7 @@
 	--sitecolor: #1C6085;
 	--sitebackgroundimg: url("");
 	--siteoverlay: inset 100vw 0 0 0 rgba(0, 125, 255, 0.2);
-	--bodycolor: #fcfcfc
+	--bodycolor: white;
 }
 
 #masthead {
