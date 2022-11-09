@@ -499,7 +499,7 @@ p {
 }
 
 section:nth-child(odd) {
-  background: whitesmoke;
+  background: #F1F5F5;
 }
 
 section img{
