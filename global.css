@@ -355,10 +355,6 @@ p {
 	color: black;
 }
 
-.review-table .ctaTD a:not(.ctaAnchor) {
-	display: none!important;
-}
-
 .top-list-table, .top-list-table td{
 	border-style: none;
 }
