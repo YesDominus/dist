@@ -539,7 +539,7 @@ section img{
 	margin-right: auto;
 }
 
-/* Post article styling
+/* Post article styling */
 .wp-block-latest-posts__list li{
 	background-color: white!important;
   border-style: solid;
@@ -558,8 +558,6 @@ box-shadow: 4px 5px 5px -2px graytext!important;
   justify-content: center;
   align-items: center;	
 }
-
-*/
 
 .coming-soon{
   opacity: 0.4;
