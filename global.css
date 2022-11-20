@@ -207,6 +207,11 @@ p {
 	border-radius: 10%
 }
 
+.review-table .ctaTD a:not(.ctaAnchor) {
+	display: none!important;
+}
+
+
 .faq-h {
 	text-align: center;
 	text-transform: capitalize;
