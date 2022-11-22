@@ -1145,6 +1145,30 @@ if (table) {
 	console.log("table not found");
 }
 
+/* Formatting tracking links */
+
+let allTableRows = document.getElementsByClassName("tableSectionRow");
+
+if(allTableRows){
+
+for (let i = 0; i < allTableRows.length; i++) {
+	let currentRow = allTableRows[i];
+	let tableAnchors = currentRow.getElementsByTagName("A");
+
+	for (let index = 0; index < tableAnchors.length; index++) {
+		let currentAnchor = tableAnchors[index];
+		if (currentAnchor.href.includes("?")) {
+			//let currentBase = currentAnchor.href.split("?")[0];
+			let dynamicVar = currentAnchor.href.split("=")[0];
+			let currentLocation = currentAnchor.href.split("=")[1].replace(/[^a-zA-Z ]/g, "-");
+
+			let modifiedLocation = dynamicVar + "=" + currentLocation + window.location.search.replace(/[^a-zA-Z ]/g, "-");
+			currentAnchor.href = modifiedLocation.toLowerCase();
+			}
+		}
+	}
+}
+
 /* Handling the page post part */
 
 /* 
