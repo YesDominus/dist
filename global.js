@@ -1106,8 +1106,8 @@ for (let i = 0; i < allTableRows.length; i++) {
 			let dynamicVar = currentAnchor.href.split("=")[0];
 			let currentLocation = currentAnchor.href.split("=")[1].replace(/[^a-zA-Z ]/g, "-");
 
-			let modifiedLocation = dynamicVar + "=" + currentLocation + window.location.search.replace(/[^a-zA-Z ]/g, "-");
-			currentAnchor.href = modifiedLocation.toLowerCase();
+			let modifiedLocation = dynamicVar + "=" + currentLocation + window.location.search.replace(/[^a-zA-Z ]/g, "-").toLowerCase();
+			currentAnchor.href = modifiedLocation;
 			}
 		}
 	}
