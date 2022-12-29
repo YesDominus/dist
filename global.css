@@ -363,6 +363,37 @@ p {
 .top-list-table, .top-list-table td{
 	border-style: none;
 }
+/* Styling brand name */
+
+.operator-name{
+font-size: 18px!important;
+}
+/* Adding row counters */
+.top-list-table {
+  counter-reset: row-counter;
+}
+
+.top-list-table tr {
+  counter-increment: row-counter;
+  position: relative;
+}
+
+.top-list-table tr td:first-child::before {
+  content: counter(row-counter) "";
+  font-weight: bold;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+	line-height: 40px;
+  border-radius: 50%;
+  background-color: white;
+  color: #333333;
+  text-align: center;
+  box-shadow: 0 2px 5px black;
+  transform: translateY(-10px)!important;
+}
 
 .bonusTD,
 .imgTD {
