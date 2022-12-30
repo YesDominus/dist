@@ -745,6 +745,8 @@ width: 17%!important;
 
 }
 
+/*  */
+
 .legal-disclaimer{
 	background-color: green;
 	color: white;
@@ -757,6 +759,24 @@ width: 17%!important;
 .legal-disclaimer span{
 	text-decoration: underline;
 	font-weight: 900;
+}
+
+/* Gambling age disclaimer */
+.gambling-disclaimer{
+  color: #666;
+  margin: 1em 0;
+  padding: 0.5em;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.gambling-disclaimer p {
+  margin: 0;
+  padding: 0;
+}
+
+.gambling-disclaimer strong {
+  color: #333;
 }
 
 .bonusTD{
