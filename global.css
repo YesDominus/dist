@@ -378,7 +378,7 @@ font-size: 18px!important;
   position: relative;
 }
 
-.top-list-table tr td:first-child::before {
+.top-list-table:not(table.review-table) tr td:first-child::before {
   content: counter(row-counter) "";
   font-weight: bold;
   position: absolute;
