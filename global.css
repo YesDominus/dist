@@ -480,9 +480,9 @@ font-size: 18px!important;
 .bonusTD {
 	font-weight: 900;
 	color: tomato;
-	font-size: 120%;
+	font-size: 21px;
 	text-transform: uppercase;
-	 text-align: center!important;
+	text-align: center!important;
 	display: block;
 	margin: auto;
 }
