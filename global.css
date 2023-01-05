@@ -419,6 +419,22 @@ font-size: 18px!important;
 	max-height: 80px!important;
 }
 
+.tableSectionRow a{
+	text-decoration: none;
+}
+
+
+/* Promo styling */
+.tableConsList .promo-code-offer::before{
+	content: "Promo code: ";
+color: #323232!important;
+}
+
+/* Promo styling */
+.tableConsList a{
+color: #551111!important;
+}
+
 .tableConsList{
 	font-size: 17px;
 }
@@ -603,11 +619,6 @@ box-shadow: 4px 5px 5px -2px graytext!important;
 
 .coming-soon-text{
 	text-align: center;
-}
-
-/* Promo styling */
-.tableConsList .promo-code-offer::before{
-	content: "🎁 Promo: "
 }
 
 .promo-code-offer{
