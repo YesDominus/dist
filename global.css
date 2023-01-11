@@ -368,6 +368,8 @@ p {
 
 .tableSectionRow{
 	color: black;
+	margin-bottom: 30px!important;
+	padding: 25px!important;
 }
 
 .top-list-table, .top-list-table td{
@@ -527,9 +529,6 @@ color: #551111!important;
 		text-align: center;
 		align-items: center;
 		align-content: center;
-	}
-	.ctaTD {
-		flex-direction: column-reverse;
 	}
 }
 
@@ -806,11 +805,10 @@ width: 17%!important;
 }
 
 .bonusTD .operator-name{
-color: black;
-	font-size: 15px;
+	font-size: 19px;
   font-weight: normal;
 	text-transform: capitalize;
-  color: #36454f;
+color: #253341
 }
 
 .tableSectionRow td:not(.imgTD){
