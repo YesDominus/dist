@@ -371,6 +371,16 @@ p {
 	padding: 25px!important;
 }
 
+/* Remove sportsbooks from specific tables */
+
+.risk-free-table .caesars{
+display: none!important;
+}
+
+.free-bets-table .caesars{
+display: none!important;
+}
+
 .top-list-table, .top-list-table td{
 	border-style: none;
 }
