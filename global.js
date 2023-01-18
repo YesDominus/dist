@@ -955,21 +955,6 @@ if (AZSites.includes(window.location.hostname)) {
 /*--------------------------------------------------------------------------------------------------------------------------------*/
 
 
-/* Temporary offers */
-
-var ohioTable = document.querySelector(".ohio-table");
-var elements = document.querySelectorAll(".tableSectionRow.draftkings .bonusTD");
-if(ohioTable && elements.length > 0){
-    elements.forEach(function(el) {
-        el.lastChild.textContent = "Bet $5, get $200 in bonus bets";
-    });
-} else if(elements.length > 0) {
-    elements.forEach(function(el) {
-        el.lastChild.textContent = "Bet $5, get $200 in free bets";
-    });
-}
-
-
 let readMoreLabel = document.getElementById("readMoreLabel");
 
 if (readMoreLabel) {
