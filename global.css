@@ -373,11 +373,14 @@ p {
 
 /* Remove sportsbooks from specific tables */
 
-.risk-free-table .caesars{
-display: none!important;
+.free-bets-table .fanduel,
+.free-bets-table .caesars{
+  display: none!important;
 }
 
-.free-bets-table .caesars{
+
+.risk-free-table .fanduel,
+.risk-free-table .caesars{
 display: none!important;
 }
 
