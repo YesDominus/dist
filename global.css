@@ -860,3 +860,16 @@ color: #253341
 	  font-weight: 700!important;
 	text-transform: capitalize!important;
 }
+
+.sportsbooks-table .fanduel li:not(:first-child) {
+  text-indent: -9999px;
+  line-height: 0;
+}
+
+.sportsbooks-table .fanduel .tableConsList::after{
+  content: "🏈 Get a piece of $10M if Gronk kicks a field goal during FanDuel’s Super Bowl commercial";
+  text-indent: 0;
+  display: block;
+  line-height: initial;
+	line-height: 160%;
+}
