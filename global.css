@@ -832,3 +832,71 @@ color: #253341
 	font-size: 89%;
 }
 }
+
+.sportsbooks-table .fanduel .bonusTD::after{
+  content: "Promo expires: 11:59 PM on Feb 12, 2023";
+  text-indent: 0;
+  display: block;
+  line-height: initial;
+	color: graytext;
+	font-size: 15px;
+	text-align: left!important;
+	margin-top: 7px;
+	  font-weight: 700!important;
+	text-transform: capitalize!important
+}
+
+
+.sportsbooks-table .fanduel li:not(:first-child) {
+  text-indent: -9999px;
+  line-height: 0;
+}
+
+.sportsbooks-table .fanduel .tableConsList::after{
+content: "🏈 Get a piece of $10M if Gronk kicks a field goal during FanDuel’s Super Bowl ad 🏈";  text-indent: 0;
+  display: block;
+  line-height: initial;
+	line-height: 160%;
+	font-size: 98%;
+}
+
+/*
+.sportsbook-table .fanduel .bonusTD{
+  text-indent: -9999px;
+  line-height: 0;
+}
+
+.sportsbook-table .fanduel .bonusTD::before{
+  content: "Up to $3,000 in bonus bets";
+  text-indent: 0;
+  display: block;
+  line-height: initial;
+}
+*/
+
+.sportsbook-table .fanduel .bonusTD::after{
+  content: "Promo expires: 11:59 PM on Feb 12, 2023";
+  text-indent: 0;
+  display: block;
+  line-height: initial;
+	color: graytext;
+	font-size: 15px;
+	text-align: left!important;
+	margin-top: 7px;
+	  font-weight: 700!important;
+	text-transform: capitalize!important
+}
+
+
+.sportsbook-table .fanduel li:not(:first-child) {
+  text-indent: -9999999px;
+  line-height: 0;
+}
+
+.sportsbook-table .fanduel .tableConsList::after{
+content: "🏈 Get a piece of $10M if Gronk kicks a field goal during FanDuel’s Super Bowl ad 🏈";  text-indent: 0;
+  display: block;
+  line-height: initial;
+	line-height: 160%;
+	font-size: 98%;
+}
