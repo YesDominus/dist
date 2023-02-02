@@ -833,6 +833,23 @@ color: #253341
 }
 }
 
+/* Temporary promos */
+
+/*
+.sportsbooks-table .fanduel .bonusTD{
+  text-indent: -9999%!important;
+  line-height: 0;
+
+}
+
+.sportsbooks-table .fanduel .bonusTD::before{
+  content: "Up to $3,000 in bonus bets";
+  text-indent: 0;
+  display: block;
+  line-height: initial;
+}
+*/
+
 .sportsbooks-table .fanduel .bonusTD::after{
   content: "Promo expires: 11:59 PM on Feb 12, 2023";
   text-indent: 0;
