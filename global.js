@@ -1436,7 +1436,7 @@ if (fanduelTR) {
 
 /* Offer count down */
 // Set the target date (1 Jan 2023)
-var targetDate = new Date("Feb 12, 2023 00:00:00");
+var targetDate = new Date("Feb 13, 2023 00:00:00");
 
 // Set the interval for the timer (1000 milliseconds = 1 second)
 var interval = 1000;
