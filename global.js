@@ -1409,3 +1409,27 @@ alert("The page is now posted");
     });
 }
 */
+function getClass(className) {
+  return document.querySelector(className);
+}
+
+const sportsbooksTable = getClass(".sportsbooks-table");
+const sportsbookTable = getClass(".sportsbook-table");
+let sportsbookTR = null;
+if (sportsbooksTable) {
+  sportsbookTR = sportsbooksTable.querySelector(".draftkings");
+} else if (sportsbookTable) {
+  sportsbookTR = sportsbookTable.querySelector(".draftkings");
+}
+
+if (sportsbookTR) {
+  const bonusTD = sportsbookTR.querySelector(".bonusTD");
+  if (bonusTD) {
+    bonusTD.lastChild.textContent = "Bet $5 - win $150";
+  } else {
+    console.log("The bonusTD class does not exist");
+  }
+} else {
+  console.log("One of the classes does not exist");
+}
+
