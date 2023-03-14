@@ -1425,7 +1425,7 @@ if (sportsbooksTable) {
 if (sportsbookTR) {
   const bonusTD = sportsbookTR.querySelector(".bonusTD");
   if (bonusTD) {
-    bonusTD.lastChild.textContent = "Bet $5 - win $150";
+    bonusTD.lastChild.textContent = "Bet $5 - win $200";
   } else {
     console.log("The bonusTD class does not exist");
   }
