@@ -956,33 +956,45 @@ if (AZSites.includes(window.location.hostname)) {
 
 
 let readMoreLabel = document.getElementById("readMoreLabel");
-
 if (readMoreLabel) {
-	document.getElementById("readMoreLabel").onclick = function() {
-		let ReadMoreDiv = document.getElementById("ReadMoreDiv");
-		if (ReadMoreDiv.style.display === "none" || ReadMoreDiv.style.display === "") {
-			ReadMoreDiv.style.display = "block";
-			readMoreLabel.innerHTML = "Read less";
-		} else {
-			ReadMoreDiv.style.display = "none";
-			readMoreLabel.innerHTML = "Read more";
-		}
-	};
+  readMoreLabel.onclick = function() {
+    let readMoreDiv = document.getElementById("readMoreDiv");
+    if (readMoreDiv) {
+      if (readMoreDiv.style.display === "none" || readMoreDiv.style.display === "") {
+        readMoreDiv.style.display = "block";
+        readMoreLabel.innerHTML = "Read less";
+      } else {
+        readMoreDiv.style.display = "none";
+        readMoreLabel.innerHTML = "Read more";
+      }
+    } else {
+      console.log("Element with ID 'readMoreDiv' not found");
+    }
+  };
+} else {
+  console.log("Element with ID 'readMoreLabel' not found");
 }
 
 let readMoreSection = document.getElementsByClassName("readMoreSection")[0];
 if (readMoreSection) {
-	readMoreSection.style.display = 'none';
-	document.getElementById("readMoreLabel").onclick = function() {
-		if (readMoreSection.style.display === "none" || readMoreSection.style.display === "") {
-			readMoreSection.style.display = "block";
-			readMoreLabel.innerHTML = "Read less";
-		} else {
-			readMoreSection.style.display = "none";
-			readMoreLabel.innerHTML = "Read more";
-		}
-	};
+  readMoreSection.style.display = 'none';
+  if (readMoreLabel) {
+    readMoreLabel.onclick = function() {
+      if (readMoreSection.style.display === "none" || readMoreSection.style.display === "") {
+        readMoreSection.style.display = "block";
+        readMoreLabel.innerHTML = "Read less";
+      } else {
+        readMoreSection.style.display = "none";
+        readMoreLabel.innerHTML = "Read more";
+      }
+    };
+  } else {
+    console.log("Element with ID 'readMoreLabel' not found");
+  }
+} else {
+  console.log("Element with class 'readMoreSection' not found");
 }
+
 
 /* NEW PAGE NAVIGATION
 var internalNavID = "navlink";
@@ -1491,4 +1503,3 @@ if(topListTableElements){
     }
   }
 }, interval);
-
