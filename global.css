@@ -371,6 +371,11 @@ p {
 	padding: 25px!important;
 }
 
+.tableSectionRow a{
+	  text-decoration: none!important;
+	color: #3b3c36!important;
+}
+
 /* Remove sportsbooks from specific tables */
 
 .free-bets-table .fanduel,
@@ -441,10 +446,6 @@ font-size: 18px!important;
 	display: block;
   	margin:auto;
 	max-height: 80px!important;
-}
-
-.tableSectionRow a{
-	text-decoration: none;
 }
 
 
@@ -528,7 +529,7 @@ color: #551111!important;
 }
 
 .top-list-table a:hover {
-	text-decoration: underline
+	text-decoration: underline;
 }
 
 @media only screen and (max-width:1000px) {
