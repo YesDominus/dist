@@ -764,8 +764,30 @@ text-align: center;
 	  text-transform: uppercase;
 }
 
-/* Promo styling */
-#floating-review-cta-button .promo-code-offer::before{ content: "🎁 Exclusive Promo: "
+#floating-review-cta-button li::before{
+	display: none!important
+}
+
+#floating-review-cta-button li::before{
+	display: none!important
+}
+
+#floating-review-cta-button li a{
+	color: #551111!important;
+	text-shadow: none;
+}
+
+#floating-review-cta-button li{
+max-width: 400px
+}
+
+#floating-review-cta-button li a::before{
+	content: "Exclusive promo: ";
+	color: red;
+}
+
+#floating-review-cta-button{
+display: none!important;
 }
 
 /*
