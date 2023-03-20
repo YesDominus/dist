@@ -1421,6 +1421,8 @@ alert("The page is now posted");
     });
 }
 */
+
+/*
 function getClass(className) {
   return document.querySelector(className);
 }
@@ -1444,8 +1446,10 @@ if (sportsbookTR) {
 } else {
   console.log("One of the classes does not exist");
 }
+*/
 
-/* Offer count down */
+
+/* Offer count down 
 // Set the target date (1 Jan 2023)
 //var targetDate = new Date("Mar 26, 2023 00:00:00");
 var targetDate = new Date("2023-03-19T23:59:59");
@@ -1503,3 +1507,4 @@ if(topListTableElements){
     }
   }
 }, interval);
+*/
