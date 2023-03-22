@@ -517,10 +517,7 @@ color: #551111!important;
 	font-size: 17px;
 	font-weight: 900;
 	text-shadow: 1px 1px darkgreen;
-}
-
-.ctaAnchor::after {
-	content: " »"
+	background-color: green!important;
 }
 
 .ctaTD a:first-child {
@@ -528,14 +525,13 @@ color: #551111!important;
 	color: #fff!important;
 	width: 100%;
 	margin-top: auto;
-	background-color: #39b54a;
 	border-radius: 7px;
 	box-shadow: 0 0 1px 0 rgba(0, 0, 0, .3), 0 5px 15px 0 rgba(0, 0, 0, .3)
 }
 
 .bonusTD {
 	font-weight: 900;
-	color: tomato;
+	color: #ff0038!important;
 	font-size: 21px;
 	text-transform: uppercase;
 	text-align: center!important;
