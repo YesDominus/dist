@@ -388,6 +388,12 @@ p {
 	background-color: #F5F5F5;
 }
 
+@media only screen and (max-width: 600px) {
+	.tableSectionRow{
+	padding: 5px!important;
+}
+}
+
 /* Remove sportsbooks from specific tables */
 
 .free-bets-table .fanduel,
