@@ -1449,10 +1449,10 @@ if (sportsbookTR) {
 
 
 
-/* Offer count down 
+// Offer count down 
 // Set the target date (1 Jan 2023)
 //var targetDate = new Date("Mar 26, 2023 00:00:00");
-var targetDate = new Date("2023-03-19T23:59:59");
+var targetDate = new Date("2023-04-03T23:59:59");
 // Set the interval for the timer (1000 milliseconds = 1 second)
 var interval = 1000;
 
@@ -1507,4 +1507,3 @@ if(topListTableElements){
     }
   }
 }, interval);
-*/
