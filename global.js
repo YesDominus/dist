@@ -1447,8 +1447,7 @@ if (sportsbookTR) {
   console.log("One of the classes does not exist");
 }
 
-
-
+/*
 // Offer count down 
 // Set the target date (1 Jan 2023)
 //var targetDate = new Date("Mar 26, 2023 00:00:00");
@@ -1507,3 +1506,4 @@ if(topListTableElements){
     }
   }
 }, interval);
+*/
