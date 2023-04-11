@@ -1422,7 +1422,7 @@ alert("The page is now posted");
 }
 */
 
-
+/*
 function getClass(className) {
   return document.querySelector(className);
 }
@@ -1446,6 +1446,7 @@ if (sportsbookTR) {
 } else {
   console.log("One of the classes does not exist");
 }
+*/
 
 /*
 // Offer count down 
