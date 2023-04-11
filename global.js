@@ -1422,7 +1422,7 @@ alert("The page is now posted");
 }
 */
 
-/*
+
 function getClass(className) {
   return document.querySelector(className);
 }
@@ -1431,22 +1431,22 @@ const sportsbooksTable = getClass(".sportsbooks-table");
 const sportsbookTable = getClass(".sportsbook-table");
 let sportsbookTR = null;
 if (sportsbooksTable) {
-  sportsbookTR = sportsbooksTable.querySelector(".fanduel");
+  sportsbookTR = sportsbooksTable.querySelector(".caesars");
 } else if (sportsbookTable) {
-  sportsbookTR = sportsbookTable.querySelector(".fanduel");
+  sportsbookTR = sportsbookTable.querySelector(".caesars");
 }
 
 if (sportsbookTR) {
   const bonusTD = sportsbookTR.querySelector(".bonusTD");
   if (bonusTD) {
-    bonusTD.lastChild.textContent = "Up to $1,000 in bonus bets";
+    bonusTD.lastChild.textContent = "Up to $1,250 bonus";
   } else {
     console.log("The bonusTD class does not exist");
   }
 } else {
   console.log("One of the classes does not exist");
 }
-*/
+
 
 /*
 // Offer count down 
