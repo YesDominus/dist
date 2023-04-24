@@ -886,3 +886,7 @@ color: #253341
 	font-size: 89%;
 }
 }
+
+.current-author a{
+	color: black!important;
+}
