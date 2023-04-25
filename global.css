@@ -890,3 +890,7 @@ color: #253341
 .current-author a{
 	color: black!important;
 }
+
+footer ul li{
+	margin: 7px!important
+}
