@@ -31,6 +31,15 @@
 	padding-top: 0!important
 }
 
+#main ul li {
+ list-style: none;
+}
+
+#main ul li:not(.top-list-table ul li)::before {
+content: "► ";
+color: #ff6347;
+}
+
 h1{
 	padding-top: 1rem!important;
 }
@@ -46,7 +55,8 @@ h1 {
 h2 {
 	padding: 5px;
 	text-align: center;
-	font-size: 33px!important
+	font-size: 33px!important;
+	border-bottom: 1px solid #e5e4e2;
 }
 
 h3 {
@@ -889,6 +899,110 @@ color: #253341
 
 .current-author a{
 	color: black!important;
+}
+
+/* Style Hero Container */
+
+.hero-container{
+	background-color: white;
+	padding: 3%!important;
+	border-radius: 3px;
+	margin-bottom: 10px;
+box-shadow: 0px 10px 20px -3px rgba(0,0,0,0.1)!important;
+	font-size: 19px!important
+}
+
+.hero-container p{
+	font-size: 19px!important
+}
+
+.hero-container ol li{
+	margin-bottom: 11px;
+}
+
+.hero-container .imgTD{
+	border-radius: 15px 15px 5px 5px ;
+	padding: 15px;
+	border-bottom: 7px solid black;
+}
+
+.hero-container	.review-table tr {
+		flex-direction: column;
+  box-shadow: none;
+}
+
+.hero-container	.review-table tr::after {
+background-color: white;
+font-size: 10px!important
+}
+
+.hero-container	.review-table .bonusTD {
+font-size: 130%;
+}
+
+.hero-container	.review-table .ctaTD a{
+font-size: 130%!important;
+	background-color: #E3291c!important;
+	text-shadow: none!important;
+	box-shadow: none!important;
+border-bottom: 3px solid black;
+}
+
+
+.hero-container	.review-table .bonusTD::before{
+content: "Sign-up bonus:";
+	font-size: 16px;
+	color: #343434;
+	padding-top: 10px;
+	margin-bottom: 0px;
+	text-transform: capitalize;
+	padding-bottom: 10px;
+}
+
+.hero-container	.review-table .tableConsList li{
+background-color: white!important;
+	font-size: 25px;
+	color: orangered!important;
+	border: none;
+}
+
+
+.hero-container	.review-table td{
+		display: flex;
+		text-align: center;
+		align-items: center;
+		align-content: center;
+		width: 100%!important
+	}
+
+ .hero-container .review-table .operator-name, .hero-container .review-table .tableConsList li:not(:first-child), .hero-container .review-table .ctaTD a:nth-child(2) {
+	display: none!important;
+	}
+
+
+.hero-container	.review-table tr{
+	padding: 0px!important;
+	margin-top: -15px!important;
+	margin-bottom: 0px!important;
+	max-width: 350px!important;
+}
+
+
+.hero-container .tableConsList::before{
+  content: none;
+}
+
+.hero-container table{
+ margin-bottom: 0px;
+}
+
+.hero-container .bonusTD::after{
+  content: "Deposit code:";
+	font-size: 16px;
+	color: #343434;
+	padding-top: 10px;
+	margin-bottom: 0px;
+	text-transform: capitalize;
 }
 
 footer ul li{
