@@ -1508,3 +1508,27 @@ if(topListTableElements){
   }
 }, interval);
 */
+
+/* Add NAV to all UL in Footer */
+const footer = document.querySelector('footer'); // get the <footer> element
+
+if (footer) { // check if the <footer> element exists
+  const ulLists = footer.getElementsByTagName('ul'); // get all <ul> elements inside the <footer> element
+
+  for (let i = 0; i < ulLists.length; i++) {
+    const ulParent = ulLists[i].parentNode; // get the parent of the current <ul> element
+    if (ulParent.tagName.toLowerCase() !== 'nav') {
+      // the parent of the current <ul> element is not a <nav> element
+      const nav = document.createElement('nav'); // create a new <nav> element
+      ulParent.insertBefore(nav, ulLists[i]); // insert the <nav> element before the <ul> element
+      nav.appendChild(ulLists[i]); // move the <ul> element inside the <nav> element
+    } else {
+      // the parent of the current <ul> element is a <nav> element
+      // do something else here
+    }
+  }
+} else {
+  // the <footer> element does not exist
+  // do something else here
+}
+
