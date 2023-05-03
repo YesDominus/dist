@@ -1423,30 +1423,28 @@ alert("The page is now posted");
 */
 
 
-function getClass(className) {
-  return document.querySelector(className);
-}
+function updateBonusText(sportsbooksTableClass, sportsbookTableClass, sportsbookClass, bonusText) {
+  const sportsbooksTable = document.querySelector(sportsbooksTableClass);
+  const sportsbookTable = document.querySelector(sportsbookTableClass);
+  let sportsbookTR = null;
 
-const sportsbooksTable = getClass(".sportsbooks-table");
-const sportsbookTable = getClass(".sportsbook-table");
-let sportsbookTR = null;
-if (sportsbooksTable) {
-  sportsbookTR = sportsbooksTable.querySelector(".caesars");
-} else if (sportsbookTable) {
-  sportsbookTR = sportsbookTable.querySelector(".caesars");
-}
-
-if (sportsbookTR) {
-  const bonusTD = sportsbookTR.querySelector(".bonusTD");
-  if (bonusTD) {
-    bonusTD.lastChild.textContent = "Up to $1,250 bonus";
+  if (sportsbooksTable || sportsbookTable) {
+    sportsbookTR = (sportsbooksTable || sportsbookTable).querySelector(sportsbookClass);
+  if (sportsbookTR) {
+    const bonusTD = sportsbookTR.querySelector(".bonusTD");
+    if (bonusTD) {
+      bonusTD.lastChild.textContent = bonusText;
+    } else {
+      console.log("The bonusTD class does not exist");
+    }
   } else {
-    console.log("The bonusTD class does not exist");
+    console.log("One of the classes does not exist");
   }
-} else {
-  console.log("One of the classes does not exist");
 }
+  }
 
+updateBonusText(".sportsbook-table", ".sportsbooks-table", ".caesars", "100% back up to $1,250");
+//updateBonusText(".casinos-table", ".casino-table", ".betrivers", "Up to $250 deposit match");
 
 /*
 // Offer count down 
