@@ -1444,6 +1444,8 @@ function updateBonusText(sportsbooksTableClass, sportsbookTableClass, sportsbook
   }
 
 updateBonusText(".sportsbook-table", ".sportsbooks-table", ".caesars", "100% back up to $1,250");
+updateBonusText(".sportsbook-table", ".sportsbooks-table", ".fanduel", "Bet $5, get $150");
+
 //updateBonusText(".casinos-table", ".casino-table", ".betrivers", "Up to $250 deposit match");
 
 /*
