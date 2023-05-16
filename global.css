@@ -614,7 +614,7 @@ color: #551111!important;
 }
 
 section:nth-child(odd) {
-  background: #F1F5F5;
+	background-color: #FBFBFB!important;
 }
 
 section img{
