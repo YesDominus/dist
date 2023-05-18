@@ -1011,3 +1011,32 @@ background-color: white!important;
 footer ul li{
 	margin: 7px!important
 }
+
+/* Styling regular table */
+.ctaAnchor{
+	font-weight: 900;
+	font-size: 19px;
+	background-color: #E3291c!important;
+box-shadow: none!important;
+	border-bottom: 5px solid black;
+}
+
+table th:not(.top-list-table th) {
+  background-color: var(--sitecolor)!important;
+	color: white;
+		border-radius: 15px 15px 0px 0px;!important
+
+}
+
+table:not(.top-list-table) {
+  border-bottom: 5px solid var(--sitecolor)!important;;
+}
+
+
+table tr:not(.top-list-table tr):nth-child(even) {
+  background-color: whitesmoke;
+}
+
+table td:not(.top-list-table td){
+		border: none!important;
+}
