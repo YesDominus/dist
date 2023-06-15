@@ -841,7 +841,7 @@ width: 17%!important;
 
 }
 
-/*  */
+/* Legal disclaimer */
 
 .legal-disclaimer{
 	background-color: green;
@@ -855,6 +855,10 @@ width: 17%!important;
 .legal-disclaimer span{
 	text-decoration: underline;
 	font-weight: 900;
+}
+
+.legal-disclaimer{
+	display: none;
 }
 
 /* Gambling age disclaimer */
