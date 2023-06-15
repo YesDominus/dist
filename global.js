@@ -1486,3 +1486,63 @@ if (footer) { // check if the <footer> element exists
   // do something else here
 }
 
+
+/* Replacing SuperBook With BetMGM, in table AND all LINKS */
+
+// Step 1: Get all tables with the class "top-list-table"
+var tables = document.getElementsByClassName("top-list-table");
+
+// Step 2: Check if any tables exist
+if (tables.length > 0) {
+  // Step 3: Iterate over the tables
+  for (var i = 0; i < tables.length; i++) {
+    var currentTable = tables[i];
+
+    // Step 4: Get all TR elements within the table
+    var rows = currentTable.getElementsByTagName("tr");
+
+    // Step 5: Check if any TR elements exist
+    if (rows.length > 0) {
+      // Step 6: Iterate over the TR elements
+      for (var j = rows.length - 1; j >= 0; j--) {
+        var row = rows[j];
+
+        // Step 7: Check if TR element has the class "superbook"
+        if (row.classList.contains("superbook")) {
+          // Step 8: Remove TR element from its parent node
+          row.parentNode.removeChild(row);
+
+if(currentTable.classList.contains("review-table")){
+
+currentTable.classList.add('not-existing-operator');
+
+
+var newRowHTML = "<tr><td>Data 1</td><td>Data 2</td></tr>";
+
+currentTable.innerHTML += "<tr class='tableSectionRow betmgm'><td class='imgTD' style='background-color: black'><a href='/go/betmgm/?tdpeh=formersuperbook' rel='nofollow'><img src='https://jokerzinomarketing.com/wp-content/uploads/betmgm-logo.png' alt='BetMGM' /></a></td><td class='bonusTD'><span class='operator-name'>BetMGM Sportsbook</span>Up to $1,000 in bonus bets</td><td class='tableConsList'><ul><li class='promo-code-offer'><a href='/go/betmgm/?tdpeh=formersuperbook' rel='nofollow'>JOKERZINO</a></li><li>Free live streams</li><li>Early Cashout feature</li></ul></td><td class='ctaTD'><a class='ctaAnchor' href='/go/betmgm/?tdpeh=formersuperbook' rel='nofollow'>Bet now</a></td></tr>";
+
+}
+        }
+      }
+    } else {
+      console.log("No TR elements found in the table.");
+    }
+  }
+} else {
+  console.log("No tables found with the class 'top-list-table'.");
+}
+
+var superbookLinks = document.querySelectorAll('a[href*="/go/superbook/"]');
+
+if (superbookLinks.length > 0) {
+
+superbookLinks.forEach(function(link) {
+  var oldHref = link.getAttribute('href');
+  var newHref = oldHref.replace('/go/superbook/', '/go/betmgm/');
+  link.setAttribute('href', newHref);
+});
+
+}
+else{
+console.log("Link dont exists");
+}
