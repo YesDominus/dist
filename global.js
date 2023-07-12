@@ -1487,10 +1487,14 @@ if (footer) { // check if the <footer> element exists
 }
 
 
-/* Replacing SuperBook With BetMGM, in table AND all LINKS */
+/* Replacing Operator With BetMGM, in tables */
+
+function removeAndReplaceOperator(tableClass, operatorClass){
+
+/* Replacing Operator With BetMGM, in table */
 
 // Step 1: Get all tables with the class "top-list-table"
-var tables = document.getElementsByClassName("top-list-table");
+var tables = document.getElementsByClassName(tableClass);
 
 // Step 2: Check if any tables exist
 if (tables.length > 0) {
@@ -1508,7 +1512,7 @@ if (tables.length > 0) {
         var row = rows[j];
 
         // Step 7: Check if TR element has the class "superbook"
-        if (row.classList.contains("superbook")) {
+        if (row.classList.contains(operatorClass)) {
           // Step 8: Remove TR element from its parent node
           row.parentNode.removeChild(row);
 
@@ -1516,10 +1520,15 @@ if(currentTable.classList.contains("review-table")){
 
 currentTable.classList.add('not-existing-operator');
 
+if(currentTable.classList.contains("casino-table")){
+currentTable.innerHTML += "<tr class='tableSectionRow betmgm'><td class='imgTD' style='background-color: black'><a href='/go/betmgm/?tdpeh=replacedoperator' rel='nofollow'><img src='https://jokerzinomarketing.com/wp-content/uploads/betmgm-logo.png' alt='BetMGM' /></a></td><td class='bonusTD'><span class='operator-name'>BetMGM Casino</span>$25 NO DEPOSIT BONUS</td><td class='tableConsList'><ul><li class='promo-code-offer'><a href='/go/betmgm/?tdpeh=replacedoperator' rel='nofollow'>JOKERZINO</a></li><li>Up To $1,000 Deposit Match</li><li>Get $10 Bonus On The Goonies</li></ul></td><td class='ctaTD'><a class='ctaAnchor' href='/go/betmgm/?tdpeh=replacedoperator' rel='nofollow'>Bet now</a></td></tr>";
+}
+else{
+currentTable.innerHTML += "<tr class='tableSectionRow betmgm'><td class='imgTD' style='background-color: black'><a href='/go/betmgm/?tdpeh=replacedoperator' rel='nofollow'><img src='https://jokerzinomarketing.com/wp-content/uploads/betmgm-logo.png' alt='BetMGM' /></a></td><td class='bonusTD'><span class='operator-name'>BetMGM Sportsbook</span>Up to $1,000 in bonus bets</td><td class='tableConsList'><ul><li class='promo-code-offer'><a href='/go/betmgm/?tdpeh=replacedoperator' rel='nofollow'>JOKERZINO</a></li><li>Free live streams</li><li>Early Cashout feature</li></ul></td><td class='ctaTD'><a class='ctaAnchor' href='/go/betmgm/?tdpeh=replacedoperator' rel='nofollow'>Bet now</a></td></tr>";
+{
+}
+}
 
-var newRowHTML = "<tr><td>Data 1</td><td>Data 2</td></tr>";
-
-currentTable.innerHTML += "<tr class='tableSectionRow betmgm'><td class='imgTD' style='background-color: black'><a href='/go/betmgm/?tdpeh=formersuperbook' rel='nofollow'><img src='https://jokerzinomarketing.com/wp-content/uploads/betmgm-logo.png' alt='BetMGM' /></a></td><td class='bonusTD'><span class='operator-name'>BetMGM Sportsbook</span>Up to $1,000 in bonus bets</td><td class='tableConsList'><ul><li class='promo-code-offer'><a href='/go/betmgm/?tdpeh=formersuperbook' rel='nofollow'>JOKERZINO</a></li><li>Free live streams</li><li>Early Cashout feature</li></ul></td><td class='ctaTD'><a class='ctaAnchor' href='/go/betmgm/?tdpeh=formersuperbook' rel='nofollow'>Bet now</a></td></tr>";
 
 }
         }
@@ -1531,6 +1540,12 @@ currentTable.innerHTML += "<tr class='tableSectionRow betmgm'><td class='imgTD' 
 } else {
   console.log("No tables found with the class 'top-list-table'.");
 }
+}
+
+removeAndReplaceOperator("casino-table", "caesars");
+removeAndReplaceOperator("top-table-list", "superbook");
+
+/* Replacing Operator With BetMGM LINKS */
 
 var superbookLinks = document.querySelectorAll('a[href*="/go/superbook/"]');
 
