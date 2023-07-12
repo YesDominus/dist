@@ -1044,8 +1044,3 @@ table tr:not(.top-list-table tr):nth-child(even) {
 table td:not(.top-list-table td){
 		border: none!important;
 }
-
-/* Hide Caesars Casino */
-.casino-table .caesars {
-  display: none;
-}
