@@ -1397,7 +1397,7 @@ function updateBonusText(sportsbooksTableClass, sportsbookTableClass, sportsbook
 }
   }
 
-updateBonusText(".sportsbook-table", ".sportsbooks-table", ".caesars", "Up to a $1,250 bonus");
+updateBonusText(".sportsbook-table", ".sportsbooks-table", ".caesars", "Bet $50 Get $250");
 updateBonusText(".sportsbook-table", ".sportsbooks-table", ".fanduel", "Bet $5, get $150");
 
 //updateBonusText(".casinos-table", ".casino-table", ".betrivers", "Up to $250 deposit match");
