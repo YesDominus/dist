@@ -1561,3 +1561,23 @@ superbookLinks.forEach(function(link) {
 else{
 console.log("Link dont exists");
 }
+
+
+// Edit Caesars Promo Code
+var bodyElement = document.body;
+
+// Define a function to recursively traverse and replace text nodes
+function replaceTextInNode(node) {
+    if (node.nodeType === Node.TEXT_NODE) {
+        var originalText = node.textContent;
+        var updatedText = originalText.replace(/JOKERZBETFULL/g, "JOKERZBETGET");
+        node.textContent = updatedText;
+    } else if (node.nodeType === Node.ELEMENT_NODE) {
+        var childNodes = node.childNodes;
+        for (var childIndex = 0; childIndex < childNodes.length; childIndex++) {
+            replaceTextInNode(childNodes[childIndex]);
+        }
+    }
+}
+// Start the replacement process
+replaceTextInNode(bodyElement);
