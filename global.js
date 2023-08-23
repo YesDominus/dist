@@ -1564,22 +1564,18 @@ function replaceLinks(linkSelector, oldString, newString) {
 replaceLinks('a[href*="/go/superbook/"]', '/go/superbook/', '/go/betmgm/');
 replaceLinks('a[href*="/go/wynnbet/"]', '/go/wynnbet/', '/go/betmgm/');
 
-
-// Edit Caesars Promo Code
+/* Replace a text with a function */
 var bodyElement = document.body;
-
-// Define a function to recursively traverse and replace text nodes
-function replaceTextInNode(node) {
+function replaceTextInNode(node, originalValue, updatedValue) {
     if (node.nodeType === Node.TEXT_NODE) {
         var originalText = node.textContent;
-        var updatedText = originalText.replace(/JOKERZBETFULL/g, "JOKERZBETGET");
+        var updatedText = originalText.replace(new RegExp(originalValue, 'g'), updatedValue);
         node.textContent = updatedText;
     } else if (node.nodeType === Node.ELEMENT_NODE) {
         var childNodes = node.childNodes;
         for (var childIndex = 0; childIndex < childNodes.length; childIndex++) {
-            replaceTextInNode(childNodes[childIndex]);
+            replaceTextInNode(childNodes[childIndex], originalValue, updatedValue);
         }
     }
 }
-// Start the replacement process
-replaceTextInNode(bodyElement);
+replaceTextInNode(bodyElement, "JOKERZBETFULL", "JOKERZBETGET");
