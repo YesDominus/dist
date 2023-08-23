@@ -1546,22 +1546,23 @@ removeAndReplaceOperator("casino-table", "caesars");
 removeAndReplaceOperator("top-list-table", "superbook");
 removeAndReplaceOperator("top-list-table", "wynnbet");
 
-/* Replacing Operator With BetMGM LINKS */
+/* Replacing Operator's links with BetMGM LINKS */
+function replaceLinks(linkSelector, oldString, newString) {
+  var links = document.querySelectorAll(linkSelector);
 
-var superbookLinks = document.querySelectorAll('a[href*="/go/superbook/"]');
-
-if (superbookLinks.length > 0) {
-
-superbookLinks.forEach(function(link) {
-  var oldHref = link.getAttribute('href');
-  var newHref = oldHref.replace('/go/superbook/', '/go/betmgm/');
-  link.setAttribute('href', newHref);
-});
-
+  if (links.length > 0) {
+    links.forEach(function(link)
+ {
+      var oldHref = link.getAttribute('href');
+      var newHref = oldHref.replace(oldString, newString);
+      link.setAttribute('href', newHref);
+    });
+  } else {
+    console.log("Links provided don't exist");
+  }
 }
-else{
-console.log("Link dont exists");
-}
+replaceLinks('a[href*="/go/superbook/"]', '/go/superbook/', '/go/betmgm/');
+replaceLinks('a[href*="/go/wynnbet/"]', '/go/wynnbet/', '/go/betmgm/');
 
 
 // Edit Caesars Promo Code
