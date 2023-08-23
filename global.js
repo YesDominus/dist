@@ -1547,22 +1547,23 @@ removeAndReplaceOperator("top-list-table", "superbook");
 removeAndReplaceOperator("top-list-table", "wynnbet");
 
 /* Replacing Operator's links with BetMGM LINKS */
-function replaceLinks(linkSelector, oldString, newString) {
+function replaceLinks(originalValue, newValue) {
+  var linkSelector = 'a[href*="' + originalValue + '"]';
   var links = document.querySelectorAll(linkSelector);
 
   if (links.length > 0) {
     links.forEach(function(link)
  {
       var oldHref = link.getAttribute('href');
-      var newHref = oldHref.replace(oldString, newString);
+      var newHref = oldHref.replace(originalValue, newValue);
       link.setAttribute('href', newHref);
     });
   } else {
     console.log("Links provided don't exist");
   }
 }
-replaceLinks('a[href*="/go/superbook/"]', '/go/superbook/', '/go/betmgm/');
-replaceLinks('a[href*="/go/wynnbet/"]', '/go/wynnbet/', '/go/betmgm/');
+replaceLinks('/go/superbook/', '/go/betmgm/');
+replaceLinks('/go/wynnbet/', '/go/betmgm/');
 
 /* Replace a text with a function */
 var bodyElement = document.body;
