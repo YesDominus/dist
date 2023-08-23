@@ -1543,7 +1543,8 @@ currentTable.innerHTML += "<tr class='tableSectionRow betmgm'><td class='imgTD' 
 }
 
 removeAndReplaceOperator("casino-table", "caesars");
-removeAndReplaceOperator("top-table-list", "superbook");
+removeAndReplaceOperator("top-list-table", "superbook");
+removeAndReplaceOperator("top-list-table", "wynnbet");
 
 /* Replacing Operator With BetMGM LINKS */
 
