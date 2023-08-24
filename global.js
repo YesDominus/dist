@@ -1545,6 +1545,7 @@ currentTable.innerHTML += "<tr class='tableSectionRow betmgm'><td class='imgTD' 
 removeAndReplaceOperator("casino-table", "caesars");
 removeAndReplaceOperator("top-list-table", "superbook");
 removeAndReplaceOperator("top-list-table", "wynnbet");
+removeAndReplaceOperator("top-list-table", "betfred");
 
 /* Replacing Operator's links with BetMGM LINKS */
 function replaceLinks(originalValue, newValue) {
@@ -1567,6 +1568,7 @@ var domainName = window.location.hostname;
 
 replaceLinks('/go/superbook/', '/go/betmgm/');
 replaceLinks('/go/wynnbet/', '/go/betmgm/');
+replaceLinks('/go/betfred/', '/go/betmgm/');
 
 if (!((domainName.includes("casino") && domainName !== "ohonlinecasino.com" && domainName !== "tnonlinecasino.com") ||
     domainName === "pennsylvaniagamblers.com" ||
