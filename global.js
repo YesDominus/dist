@@ -1642,7 +1642,7 @@ console.log(stateCodeCaesars);
   }
 });
 
-/* Replace a text with a function */
+/* Update the bonus text of specified operator */
 var bodyElement = document.body;
 function replaceTextInNode(node, originalValue, updatedValue) {
     if (node.nodeType === Node.TEXT_NODE) {
@@ -1657,3 +1657,26 @@ function replaceTextInNode(node, originalValue, updatedValue) {
     }
 }
 replaceTextInNode(bodyElement, "JOKERZBETFULL", "JOKERZBETGET");
+
+/* Update the promo code of specified operator */
+function updatePromoCode(sportsbooksTableClass, sportsbookTableClass, sportsbookClass, promoCodeText) {
+  const sportsbooksTable = document.querySelector(sportsbooksTableClass);
+  const sportsbookTable = document.querySelector(sportsbookTableClass);
+  let sportsbookTR = null;
+
+  if (sportsbooksTable || sportsbookTable) {
+    sportsbookTR = (sportsbooksTable || sportsbookTable).querySelector(sportsbookClass);
+  if (sportsbookTR) {
+    const PromoCodeLI = sportsbookTR.querySelector(".promo-code-offer a");
+    if (PromoCodeLI) {
+      PromoCodeLI.textContent = promoCodeText;
+    } else {
+      console.log("The PromoCodeLI class does not exist");
+    }
+  } else {
+    console.log("One of the classes does not exist");
+  }
+}
+  }
+
+updatePromoCode(".sportsbook-table", ".sportsbooks-table", ".caesars", "JOKERZBETGET");
