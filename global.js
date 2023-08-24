@@ -1562,8 +1562,85 @@ function replaceLinks(originalValue, newValue) {
     console.log("Links provided don't exist");
   }
 }
+
+var domainName = window.location.hostname;
+
 replaceLinks('/go/superbook/', '/go/betmgm/');
 replaceLinks('/go/wynnbet/', '/go/betmgm/');
+
+if (!((domainName.includes("casino") && domainName !== "ohonlinecasino.com" && domainName !== "tnonlinecasino.com") ||
+    domainName === "pennsylvaniagamblers.com" ||
+    domainName === "michigangamblers.com" ||
+    domainName === "wvstateonlinegambling.com")) {
+replaceLinks('/go/caesars', '#?temp=caesars');
+}
+
+//
+
+// Add a click event listener to all links on the page
+let stateCodeCaesars = 2486; // NY General GEO
+
+document.addEventListener('click', function(event) {
+  var clickedElement = event.target;
+  
+  // Check if the clicked element is an anchor (link) and contains the hash "temp=caesars"
+  if (clickedElement.tagName === 'A' && clickedElement.hash.includes('temp=caesars')) {
+    // Prevent the default link behavior
+    event.preventDefault();
+    let pathVar = window.location.href.replace(/[^a-zA-Z ]/g, "");
+console.log(pathVar);
+    // Relocate the user to the specified website
+
+if (!((domainName.includes("casino") && domainName !== "ohonlinecasino.com" && domainName !== "tnonlinecasino.com") ||
+    domainName === "pennsylvaniagamblers.com" ||
+    domainName === "michigangamblers.com" ||
+    domainName === "wvstateonlinegambling.com")) {
+
+if (domainName === "allonlinesportsbooks.com") {
+domainName = window.location.pathname.replace("-sportsbooks", "");
+console.log(domainName);
+}
+
+    if (domainName.includes("az") || domainName.includes("arizona")) {
+        stateCodeCaesars = 2540; // AZ
+    } else if (domainName.includes("md") || domainName.includes("maryland")) {
+        stateCodeCaesars = 2619; // MD
+    } else if (domainName.includes("ny") || domainName.includes("newyork")) {
+        stateCodeCaesars = 2486; // NY
+    } else if (domainName.includes("ks") || domainName.includes("kansas")) {
+        stateCodeCaesars = 2563; // KS
+    } else if (domainName.includes("nj") || domainName.includes("newjersey")) {
+        stateCodeCaesars = 2550; // NJ
+    } else if (domainName.includes("pa") || domainName.includes("pennsylvania")) {
+        stateCodeCaesars = 2590; // PA
+    } else if (domainName.includes("il") || domainName.includes("illinois")) {
+        stateCodeCaesars = 2386; // IL
+    } else if (domainName.includes("ma") || domainName.includes("massachusetts")) {
+        stateCodeCaesars = 2645; // MA
+    } else if (domainName.includes("mi") || domainName.includes("michigan")) {
+        stateCodeCaesars = 2522; // MI
+    } else if (domainName.includes("oh") || domainName.includes("ohio")) {
+        stateCodeCaesars = 2639; // OH
+    } else if (domainName.includes("tn") || domainName.includes("tennessee")) {
+        stateCodeCaesars = 2510; // TN
+    } else if (domainName.includes("ky") || domainName.includes("kentucky")) {
+        stateCodeCaesars = 2486; // KY (Fix the desired value)
+    } else if (domainName.includes("wv") || domainName.includes("westvirginia")) {
+        stateCodeCaesars = 2498; // WV
+    } else if (domainName.includes("la") || domainName.includes("louisiana")) {
+        stateCodeCaesars = 2364; // LA
+    } else if (domainName.includes("ia") || domainName.includes("iowa")) {
+        stateCodeCaesars = 2534; // IA
+    }
+
+console.log(stateCodeCaesars);
+   window.location.href = 'https://wlwilliamhillus.adsrv.eacdn.com/C.ashx?btag=a_11536b_' + stateCodeCaesars + 'c_&affid=220&siteid=11536&adid=' + stateCodeCaesars + '&c=' + encodeURIComponent(pathVar);
+}
+
+
+ // Replace with the desired website URL
+  }
+});
 
 /* Replace a text with a function */
 var bodyElement = document.body;
