@@ -1662,6 +1662,7 @@ function replaceTextInNode(node, originalValue, updatedValue) {
     }
 }
 replaceTextInNode(bodyElement, "JOKERZBETFULL", "JOKERZBETGET");
+replaceTextInNode(bodyElement, "JOKERZCASINO", "JOKERZLAUNCH");
 
 /* Update the promo code of specified operator */
 function updatePromoCode(sportsbooksTableClass, sportsbookTableClass, sportsbookClass, promoCodeText) {
@@ -1685,3 +1686,5 @@ function updatePromoCode(sportsbooksTableClass, sportsbookTableClass, sportsbook
   }
 
 updatePromoCode(".sportsbook-table", ".sportsbooks-table", ".caesars", "JOKERZBETGET");
+
+updateBonusText(".casinos-table", ".casino-table", ".caesars", "JOKERZLAUNCH");
