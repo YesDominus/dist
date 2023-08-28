@@ -1550,7 +1550,7 @@ removeAndReplaceOperator("top-list-table", "fanduel");
 
 /* Replacing Operator's links with BetMGM LINKS */
 function replaceLinks(originalValue, newValue) {
-  var linkSelector = 'a[href*="' + originalValue + '"]';
+  var linkSelector = 'a[href*="' + originalValue + '"]:not([href*="casino"])';
   var links = document.querySelectorAll(linkSelector);
 
   if (links.length > 0) {
