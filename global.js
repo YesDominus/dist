@@ -1401,6 +1401,8 @@ updateBonusText(".sportsbook-table", ".sportsbooks-table", ".caesars", "Bet $50 
 updateBonusText(".sportsbook-table", ".sportsbooks-table", ".fanduel", "Bet $5, get $150");
 
 updateBonusText(".casinos-table", ".casino-table", ".pokerstars", "100% deposit match up to $600");
+updateBonusText(".casinos-table", ".casino-table", ".caesars", "Up to $1,250 + $10 sign-up bonus");
+
 
 /*
 // Offer count down 
@@ -1483,7 +1485,6 @@ if (footer) { // check if the <footer> element exists
   }
 } else {
   // the <footer> element does not exist
-  // do something else here
 }
 
 
