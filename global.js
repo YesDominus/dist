@@ -1548,6 +1548,8 @@ removeAndReplaceOperator("top-list-table", "superbook");
 removeAndReplaceOperator("top-list-table", "wynnbet");
 removeAndReplaceOperator("top-list-table", "betfred");
 removeAndReplaceOperator("top-list-table", "fanduel");
+removeAndReplaceOperator("top-list-table sportsbook-table oh-table", "pointsbet");
+removeAndReplaceOperator("top-list-table sportsbook-table la-table", "pointsbet");
 
 /* Replacing Operator's links with BetMGM LINKS */
 function replaceLinks(originalValue, newValue) {
