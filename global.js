@@ -1693,4 +1693,4 @@ function updatePromoCode(sportsbooksTableClass, sportsbookTableClass, sportsbook
 
 updatePromoCode(".sportsbook-table", ".sportsbooks-table", ".caesars", "JOKERZBETGET");
 
-updateBonusText(".casinos-table", ".casino-table", ".caesars", "JOKERZLAUNCH");
+updatePromoCode(".casinos-table", ".casino-table", ".caesars", "JOKERZLAUNCH");
