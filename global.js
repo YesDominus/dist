@@ -1399,6 +1399,8 @@ function updateBonusText(sportsbooksTableClass, sportsbookTableClass, sportsbook
 
 updateBonusText(".sportsbook-table", ".sportsbooks-table", ".caesars", "Bet $50 Get $250");
 updateBonusText(".sportsbook-table", ".sportsbooks-table", ".fanduel", "Bet $5, get $150");
+updateBonusText("table.sportsbook-table.oh-table", ".sportsbooks-table", ".betway", "Bet $20 get $40");
+
 //Editing betmgm bonus for all states except ny,nv,dc
 updateBonusText("table.sportsbook-table:not(.ny-table):not(.nv-table):not(.dc-table)", ".sportsbooks-table", ".betmgm", "Up to $1,500 bonus");
 
