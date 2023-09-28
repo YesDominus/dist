@@ -1397,7 +1397,7 @@ function updateBonusText(sportsbooksTableClass, sportsbookTableClass, sportsbook
 }
   }
 
-updateBonusText(".sportsbook-table", ".sportsbooks-table", ".caesars", "Bet $50 Get $250");
+updateBonusText(".sportsbook-table", ".sportsbooks-table", ".caesars", "$1,000 First Bet bonus");
 updateBonusText(".sportsbook-table", ".sportsbooks-table", ".fanduel", "Bet $5, get $150");
 updateBonusText("table.sportsbook-table.oh-table", ".sportsbooks-table", ".betway", "Bet $20 get $40");
 
@@ -1529,7 +1529,7 @@ if(currentTable.classList.contains("casino-table")){
 currentTable.innerHTML += "<tr class='tableSectionRow betmgm'><td class='imgTD' style='background-color: black'><a href='/go/betmgm/?tdpeh=replacedoperator' rel='nofollow'><img src='https://jokerzinomarketing.com/wp-content/uploads/betmgm-logo.png' alt='BetMGM' /></a></td><td class='bonusTD'><span class='operator-name'>BetMGM Casino</span>$25 NO DEPOSIT BONUS</td><td class='tableConsList'><ul><li class='promo-code-offer'><a href='/go/betmgm/?tdpeh=replacedoperator' rel='nofollow'>JOKERZINO</a></li><li>Up To $1,000 Deposit Match</li><li>Get $10 Bonus On The Goonies</li></ul></td><td class='ctaTD'><a class='ctaAnchor' href='/go/betmgm/?tdpeh=replacedoperator' rel='nofollow'>Bet now</a></td></tr>";
 }
 else{
-currentTable.innerHTML += "<tr class='tableSectionRow betmgm'><td class='imgTD' style='background-color: black'><a href='/go/betmgm/?tdpeh=replacedoperator' rel='nofollow'><img src='https://jokerzinomarketing.com/wp-content/uploads/betmgm-logo.png' alt='BetMGM' /></a></td><td class='bonusTD'><span class='operator-name'>BetMGM Sportsbook</span>Up to $1,000 in bonus bets</td><td class='tableConsList'><ul><li class='promo-code-offer'><a href='/go/betmgm/?tdpeh=replacedoperator' rel='nofollow'>JOKERZINO</a></li><li>Free live streams</li><li>Early Cashout feature</li></ul></td><td class='ctaTD'><a class='ctaAnchor' href='/go/betmgm/?tdpeh=replacedoperator' rel='nofollow'>Bet now</a></td></tr>";
+currentTable.innerHTML += "<tr class='tableSectionRow betmgm'><td class='imgTD' style='background-color: black'><a href='/go/betmgm/?tdpeh=replacedoperator' rel='nofollow'><img src='https://jokerzinomarketing.com/wp-content/uploads/betmgm-logo.png' alt='BetMGM' /></a></td><td class='bonusTD'><span class='operator-name'>BetMGM Sportsbook</span>Up to $1,500 in bonus bets</td><td class='tableConsList'><ul><li class='promo-code-offer'><a href='/go/betmgm/?tdpeh=replacedoperator' rel='nofollow'>JOKERZINO</a></li><li>Free live streams</li><li>Early Cashout feature</li></ul></td><td class='ctaTD'><a class='ctaAnchor' href='/go/betmgm/?tdpeh=replacedoperator' rel='nofollow'>Bet now</a></td></tr>";
 {
 }
 }
@@ -1590,6 +1590,7 @@ replaceLinks('/go/caesars', '#?temp=caesars');
 
 // Add a click event listener to all links on the page
 let stateCodeCaesars = 2486; // NY General GEO
+let caesarsCampaignCode = 12744; // Replace number with your desired campaign code
 
 document.addEventListener('click', function(event) {
   var clickedElement = event.target;
@@ -1645,7 +1646,7 @@ console.log(domainName);
     }
 
 console.log(stateCodeCaesars);
-   window.location.href = 'https://wlwilliamhillus.adsrv.eacdn.com/C.ashx?btag=a_11536b_' + stateCodeCaesars + 'c_&affid=220&siteid=11536&adid=' + stateCodeCaesars + '&c=' + encodeURIComponent(pathVar);
+   window.location.href = 'https://wlwilliamhillus.adsrv.eacdn.com/C.ashx?btag=a_' + caesarsCampaignCode + 'b_' + stateCodeCaesars + 'c_&affid=220&siteid=' + caesarsCampaignCode + '&adid=' + stateCodeCaesars + '&c=' + encodeURIComponent(pathVar);
 }
 
 
@@ -1691,6 +1692,6 @@ function updatePromoCode(sportsbooksTableClass, sportsbookTableClass, sportsbook
 }
   }
 
-updatePromoCode(".sportsbook-table", ".sportsbooks-table", ".caesars", "JOKERZBETGET");
+updatePromoCode(".sportsbook-table", ".sportsbooks-table", ".caesars", "JOKERZBET1000");
 
 updatePromoCode(".casinos-table", ".casino-table", ".caesars", "JOKERZLAUNCH");
