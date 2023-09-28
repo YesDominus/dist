@@ -1398,6 +1398,8 @@ function updateBonusText(sportsbooksTableClass, sportsbookTableClass, sportsbook
   }
 
 updateBonusText(".sportsbook-table", ".sportsbooks-table", ".caesars", "$1,000 First Bet bonus");
+updateBonusText("table.sportsbook-table.ky-table", ".sportsbooks-table", ".caesars", "Bet $50 get $250");
+
 updateBonusText(".sportsbook-table", ".sportsbooks-table", ".draftkings", "Bet $5, get $200");
 updateBonusText(".sportsbook-table", ".sportsbooks-table", ".fanduel", "Bet $5, get $150");
 updateBonusText("table.sportsbook-table.oh-table", ".sportsbooks-table", ".betway", "Bet $20 get $40");
@@ -1587,8 +1589,6 @@ if (!((domainName.includes("casino") && domainName !== "ohonlinecasino.com" && d
 replaceLinks('/go/caesars', '#?temp=caesars');
 }
 
-//
-
 // Add a click event listener to all links on the page
 let stateCodeCaesars = 2486; // NY General GEO
 let caesarsCampaignCode = 12744; // Replace number with your desired campaign code
@@ -1611,6 +1611,11 @@ if (!((domainName.includes("casino") && domainName !== "ohonlinecasino.com" && d
 
 if (domainName === "allonlinesportsbooks.com") {
 domainName = window.location.pathname.replace("-sportsbooks", "");
+console.log(domainName);
+}
+
+if (domainName === "gamblingjoker.com") {
+domainName = window.location.pathname;
 console.log(domainName);
 }
 
@@ -1637,7 +1642,8 @@ console.log(domainName);
     } else if (domainName.includes("tn") || domainName.includes("tennessee")) {
         stateCodeCaesars = 2510; // TN
     } else if (domainName.includes("ky") || domainName.includes("kentucky")) {
-        stateCodeCaesars = 2486; // KY (Fix the desired value)
+        stateCodeCaesars = 2668; // KY (Fix the desired value)
+	caesarsCampaignCode = 11536;
     } else if (domainName.includes("wv") || domainName.includes("westvirginia")) {
         stateCodeCaesars = 2498; // WV
     } else if (domainName.includes("la") || domainName.includes("louisiana")) {
@@ -1694,5 +1700,6 @@ function updatePromoCode(sportsbooksTableClass, sportsbookTableClass, sportsbook
   }
 
 updatePromoCode(".sportsbook-table", ".sportsbooks-table", ".caesars", "JOKERZBET1000");
+updatePromoCode("table.sportsbook-table.ky-table", ".sportsbooks-table", ".caesars", "JOKERZBETGET");
 
 updatePromoCode(".casinos-table", ".casino-table", ".caesars", "JOKERZLAUNCH");
