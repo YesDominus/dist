@@ -1398,7 +1398,7 @@ function updateBonusText(sportsbooksTableClass, sportsbookTableClass, sportsbook
   }
 
 updateBonusText(".sportsbook-table", ".sportsbooks-table", ".caesars", "$1,000 First Bet bonus");
-updateBonusText("table.sportsbook-table.ky-table", ".sportsbooks-table", ".caesars", "Bet $50 get $250");
+updateBonusText(".sportsbook-table", ".sportsbooks-table", ".bet365", "Bet $1 get $365");
 
 updateBonusText(".sportsbook-table", ".sportsbooks-table", ".draftkings", "Bet $5, get $200");
 updateBonusText(".sportsbook-table", ".sportsbooks-table", ".fanduel", "Bet $5, get $150");
@@ -1700,6 +1700,7 @@ function updatePromoCode(sportsbooksTableClass, sportsbookTableClass, sportsbook
   }
 
 updatePromoCode(".sportsbook-table", ".sportsbooks-table", ".caesars", "JOKERZBET1000");
+updatePromoCode(".sportsbook-table", ".sportsbooks-table", ".bet365", "JOKERZINO");
 updatePromoCode("table.sportsbook-table.ky-table", ".sportsbooks-table", ".caesars", "JOKERZBETGET");
 
 updatePromoCode(".casinos-table", ".casino-table", ".caesars", "JOKERZLAUNCH");
