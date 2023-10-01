@@ -1128,7 +1128,7 @@ for (let i = 0; i < allTableRows.length; i++) {
 	
 };
 
-/* Adding go to top floating button element */
+/* Adding go to top floating button element
 let floatingGoToTopBtn = document.createElement("span");
 floatingGoToTopBtn.innerHTML = '<button class="floating-btn" href="#">▲</button>';
 document.getElementsByTagName("FOOTER")[0].appendChild(floatingGoToTopBtn);
@@ -1137,6 +1137,7 @@ floatingGoToTopBtn.onclick = function() {
 	document.documentElement.scrollTop = 0;
 };
 
+*/
 
 /* Handling the page post part */
 
