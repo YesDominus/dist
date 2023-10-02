@@ -1710,3 +1710,33 @@ updatePromoCode(".sportsbook-table", ".sportsbooks-table", ".bet365", "JOKERZINO
 updatePromoCode("table.sportsbook-table.ky-table", ".sportsbooks-table", ".caesars", "JOKERZBETGET");
 
 updatePromoCode(".casinos-table", ".casino-table", ".caesars", "JOKERZLAUNCH");
+
+// Find all elements with the class "top-list-table"
+var topListTables = document.querySelectorAll('.top-list-table');
+
+topListTables.forEach(function(table) {
+  // Get all rows in the table
+  var rows = table.getElementsByTagName('tr');
+
+  // Variable to track if the "betmgm" row was found
+  var betMGMFound = false;
+  var betMGMRow = null;
+
+  // Find the "betmgm" row
+  for (var i = 0; i < rows.length; i++) {
+    if (rows[i].classList.contains('betmgm')) {
+      betMGMFound = true;
+      betMGMRow = rows[i];
+      break; // Exit the loop once the row is found
+    }
+  }
+
+  // If the "betmgm" row was found, move it to the top
+  if (betMGMFound) {
+    // Remove the "betmgm" row from its current position using the parentNode
+    betMGMRow.parentNode.removeChild(betMGMRow);
+
+    // Insert the "betmgm" row at the top of the table
+    table.insertBefore(betMGMRow, table.firstChild);
+  }
+});
