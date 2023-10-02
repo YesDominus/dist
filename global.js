@@ -1679,26 +1679,31 @@ function replaceTextInNode(node, originalValue, updatedValue) {
 replaceTextInNode(bodyElement, "JOKERZBETFULL", "JOKERZBETGET");
 replaceTextInNode(bodyElement, "JOKERZCASINO", "JOKERZLAUNCH");
 
-/* Update the promo code of specified operator */
+/* Update the promo code of specified operators */
 function updatePromoCode(sportsbooksTableClass, sportsbookTableClass, sportsbookClass, promoCodeText) {
-  const sportsbooksTable = document.querySelector(sportsbooksTableClass);
-  const sportsbookTable = document.querySelector(sportsbookTableClass);
-  let sportsbookTR = null;
+  // Get all elements with the specified classes
+  const sportsbooksTables = document.querySelectorAll(sportsbooksTableClass);
+  const sportsbookTables = document.querySelectorAll(sportsbookTableClass);
 
-  if (sportsbooksTable || sportsbookTable) {
-    sportsbookTR = (sportsbooksTable || sportsbookTable).querySelector(sportsbookClass);
-  if (sportsbookTR) {
-    const PromoCodeLI = sportsbookTR.querySelector(".promo-code-offer a");
-    if (PromoCodeLI) {
-      PromoCodeLI.textContent = promoCodeText;
+  // Merge the NodeList objects into a single array
+  const allTables = Array.from(sportsbooksTables).concat(Array.from(sportsbookTables));
+
+  allTables.forEach(function(table) {
+    const sportsbookTR = table.querySelector(sportsbookClass);
+    
+    if (sportsbookTR) {
+      const PromoCodeLI = sportsbookTR.querySelector(".promo-code-offer a");
+      
+      if (PromoCodeLI) {
+        PromoCodeLI.textContent = promoCodeText;
+      } else {
+        console.log("The PromoCodeLI class does not exist in this table");
+      }
     } else {
-      console.log("The PromoCodeLI class does not exist");
+      console.log("The specified sportsbook class does not exist in this table");
     }
-  } else {
-    console.log("One of the classes does not exist");
-  }
+  });
 }
-  }
 
 updatePromoCode(".sportsbook-table", ".sportsbooks-table", ".caesars", "JOKERZBET1000");
 updatePromoCode(".sportsbook-table", ".sportsbooks-table", ".bet365", "JOKERZINO");
