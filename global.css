@@ -997,3 +997,91 @@ table tr:not(.top-list-table tr):nth-child(even) {
 table td:not(.top-list-table td){
 		border: none!important;
 }
+
+/* Floating CTA button */
+
+#floating-cta-button {
+  position: fixed;
+  bottom: 0;
+	margin: auto;
+	margin-bottom: 3px;
+	border-radius: 5px;
+	border: 1px solid lightgray;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  text-align: center;
+  display: flex;
+	justify-content: space-around;
+	max-width: 700px;
+	padding: 0.5vh 0px;
+	align-items: center;
+}
+
+#floating-cta-button img{
+max-width: 15vh;
+	padding: 3px;
+}
+
+#floating-cta-button .operator-name{
+  display: none!important;
+}
+
+#cta-button-span{
+	font-size: 1.7vh;
+	font-weight: bold;
+	background-color: #ff0038;
+	padding: 7px;
+	border-radius: 5px;
+	color: white;
+}
+
+#cta-button-span::before{
+	content: "Claim » ";
+}
+
+#floating-remove-button{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 33px;
+	margin-top: -33px;
+	background-color: white;
+	border-radius: 100%;
+	border: 1px solid silver;
+	color: gray;
+}
+
+/*
+.desert-diamond-floating-cta #image-span img{
+height: 30%!important;
+widows: 30%!important;
+}
+
+.desert-diamond-floating-cta #floating-cta-bonus::before{
+	content: "Desert Diamond";
+	display: block;
+	font-size: 1.5vh;
+	color: white;
+}
+
+
+#floating-cta-button #promo-code-span::before{
+	all: unset;
+	content: "Promo code";
+	display: block;
+	font-size: 11px;
+	margin: 0px!important;
+	padding 0px!important;
+	color: #343434!important;
+}
+
+#floating-cta-button #floating-cta-bonus::before{
+	content: "Welcome bonus";
+	color: #343434!important;
+	display: block;
+	font-size: 9px;
+}
+*/
+
+/* --- Ending Floating CTA button --- */
