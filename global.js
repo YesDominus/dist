@@ -1057,75 +1057,189 @@ jQuery('.faq-q').click(function() {
 	}
 });
 
-/* Set alt text to images */
-var allSections = document.getElementsByTagName("section");
-if (allSections) {
-	for (i = 0; i < allSections.length; i++) {
+function setAltTextToImages() {
+  var allSections = document.getElementsByTagName("section");
+  if (allSections) {
+    for (let i = 0; i < allSections.length; i++) {
+      let currentSection = allSections[i];
 
-		let currentSection = allSections[i];
+      let firstH2 = currentSection.querySelectorAll("h2")[0];
+      let firstIMG = currentSection.querySelectorAll("img")[0];
 
-		let firstH2 = currentSection.querySelectorAll("h2")[0];
-		let firstIMG = currentSection.querySelectorAll("img")[0];
+      if (firstH2 && firstIMG) {
+        firstH2 = firstH2.innerText;
+        firstIMG.title = firstIMG.alt + " " + firstH2;
+        firstIMG.alt = firstIMG.alt + " " + firstH2;
+      }
+    }
+  }
+}
 
-		if (firstH2 && firstIMG) {
-			firstH2 = firstH2.innerText;
-			firstIMG.title = firstIMG.alt + " " + firstH2;
-			firstIMG.alt = firstIMG.alt + " " + firstH2;
-		}
-	}
+function createInternalNavBar() {
+  let h2List = Array.from(document.getElementsByTagName("h2"));
+  let navBarUL = document.getElementById("internalNavbar");
+  if (navBarUL !== null) {
+    for (let i = 0; i < h2List.length; i++) {
+      let currentH2 = h2List[i];
+      let currentH2Id = currentH2.innerText.replace(/[\W_]+/g, "-").toLowerCase();
+      currentH2.setAttribute("id", currentH2Id);
+
+      let newAnchor = document.createElement("A");
+      let anchorText = document.createTextNode(currentH2.innerText);
+      newAnchor.setAttribute("href", "#" + currentH2Id);
+      newAnchor.appendChild(anchorText);
+
+      let newLi = document.createElement("LI");
+      newLi.appendChild(newAnchor);
+      navBarUL.appendChild(newLi);
+    }
+  }
+}
+
+function formatTrackingLinks() {
+  let allTableRows = document.getElementsByClassName("tableSectionRow");
+
+  if (allTableRows) {
+    for (let i = 0; i < allTableRows.length; i++) {
+      let currentRow = allTableRows[i];
+      let tableAnchors = currentRow.getElementsByTagName("A");
+
+      for (let index = 0; index < tableAnchors.length; index++) {
+        let currentAnchor = tableAnchors[index];
+        if (currentAnchor.href.includes("?")) {
+          let dynamicVar = currentAnchor.href.split("=")[0];
+          let currentLocation = currentAnchor.href.split("=")[1].replace(/[^a-zA-Z ]/g, "");
+          let modifiedLocation = dynamicVar + "=" + currentLocation + window.location.search.replace(/[^a-zA-Z ]/g, "-").toLowerCase();
+          currentAnchor.href = modifiedLocation;
+        }
+      }
+    }
+  }
+}
+
+function createFloatingCTA() {
+  // Step 1: Get the first row of the class "tableSectionRow" if it exists
+  var tableSectionRow = document.querySelector('.tableSectionRow');
+
+  if (tableSectionRow) {
+    // Step 2: Assign all classes to new variables with appropriate names
+    var imgTD = tableSectionRow.querySelector('.imgTD');
+    var bonusTD = tableSectionRow.querySelector('.bonusTD:not(.operator-name)');
+    var promoCodeOffer = tableSectionRow.querySelector('.promo-code-offer');
+    var ctaAnchor = tableSectionRow.querySelector('.ctaAnchor');
+
+    // Get the classes from the tableSectionRow
+    var tableSectionRowClasses = tableSectionRow.classList;
+
+    // Step 3: Create an anchor element with the image, bonus, and promo code displayed in a row
+    var anchorElement = document.createElement('a');
+    anchorElement.href = ctaAnchor.href;
+    anchorElement.rel = ctaAnchor.rel;
+    anchorElement.target = ctaAnchor.target;
+
+    // Add classes from tableSectionRow with '-floating-cta' extension
+    for (var i = 0; i < tableSectionRowClasses.length; i++) {
+      var className = tableSectionRowClasses[i];
+      anchorElement.classList.add(className + '-floating-cta');
+    }
+
+    anchorElement.id = 'floating-cta-button';
+
+    // Create an image element and set its source
+    var imageSpan = document.createElement('span');
+    imageSpan.id = 'image-span';
+    var imageElement = document.createElement('img');
+    imageElement.src = imgTD.querySelector('img').src; // Get the image source
+    imageElement.title = imgTD.querySelector('img').title; // Get the image title
+    imageSpan.appendChild(imageElement);
+
+    // Create a span for the bonus text
+    var bonusSpan = document.createElement('span');
+    bonusSpan.innerHTML = bonusTD.outerHTML;
+    bonusSpan.id = 'floating-cta-bonus';
+
+    // Create a span for the promo code text
+    var promoCodeSpan = document.createElement('span');
+    promoCodeSpan.id = 'promo-code-span';
+    promoCodeSpan.textContent = promoCodeOffer.querySelector('a').textContent;
+
+    let bonusAndPromoSpan = document.createElement('span');
+    bonusAndPromoSpan.appendChild(bonusSpan);
+    //bonusAndPromoSpan.appendChild(promoCodeSpan);
+    bonusAndPromoSpan.id = 'floating-bonus-promo-span';
+
+    let ctaButtonSpan = document.createElement('span');
+    ctaButtonSpan.id = 'cta-button-span';
+    ctaButtonSpan.innerHTML = bonusTD.outerHTML;
+
+    bonusAndPromoSpan.appendChild(ctaButtonSpan);
+
+    // Retrieve and set the background color of imgTD to anchorElement
+    var imgBackgroundColor = window.getComputedStyle(imgTD).backgroundColor;
+    imageSpan.style.backgroundColor = imgBackgroundColor;
+    anchorElement.style.backgroundColor = imgBackgroundColor;
+
+    // Create a button element for removing the anchor
+    var removeButton = document.createElement('span');
+    removeButton.textContent = 'x';
+    removeButton.id = 'floating-remove-button';
+
+    // Add a click event listener to the removeButton
+    removeButton.addEventListener('click', function () {
+      event.preventDefault(); // Prevent the anchor's default click behavior
+      anchorElement.remove(); // Remove the anchor element
+    });
+
+    // Append the removeButton to the anchor element
+
+    // Append the elements to the anchor element
+    anchorElement.appendChild(imageSpan);
+    //anchorElement.appendChild(bonusAndPromoSpan);
+    //anchorElement.appendChild(bonusSpan);
+    anchorElement.appendChild(ctaButtonSpan);
+    anchorElement.appendChild(removeButton);
+
+    // Add any additional styling to the anchor element as needed
+
+    // Append the anchor element to the document body (or another container)
+    document.body.appendChild(anchorElement);
+  }
+
+// Function to check the scroll position and toggle the visibility of the anchor
+function toggleFloatingCTA() {
+  var topListTable = document.querySelector('.top-list-table');
+  var floatingCTA = document.getElementById('floating-cta-button');
+
+  if (topListTable && floatingCTA) {
+    // Get the top position of the first table
+    var tableTop = topListTable.getBoundingClientRect().bottom;
+
+    // Calculate the scroll position relative to the table's top position
+    var scrollPosition = window.scrollY - tableTop;
+
+    if (scrollPosition >= 0) {
+      // Display the anchor when scrolled below the table
+      floatingCTA.style.display = 'flex';
+    } else {
+      // Hide the anchor when scrolled above the table
+      floatingCTA.style.display = 'none';
+    }
+  }
+}
+
+// Add an event listener to check the scroll position when the page is scrolled
+window.addEventListener('scroll', toggleFloatingCTA);
+
+// Initial check when the page loads
+toggleFloatingCTA();
 
 }
 
-
-/* Creating navbar */
-window.onload = function() {
-
-	let h2List = Array.from(document.getElementsByTagName("h2"));
-	let navBarUL = document.getElementById("internalNavbar");
-	if (navBarUL !== null) {
-		for (i = 0; i < h2List.length; i++) {
-			let currentH2 = h2List[i];
-			var currentH2Id = currentH2.innerText.replace(/[\W_]+/g, "-").toLowerCase();
-			currentH2.setAttribute("id", currentH2Id);
-
-			let newAnchor = document.createElement("A");
-			let anchorText = document.createTextNode(currentH2.innerText);
-			newAnchor.setAttribute("href", "#" + currentH2Id);
-			newAnchor.appendChild(anchorText);
-
-			let newLi = document.createElement("LI");
-			newLi.appendChild(newAnchor);
-			navBarUL.appendChild(newLi);
-		}
-
-	}
-	
-
-	/* Formatting tracking links */
-
-let allTableRows = document.getElementsByClassName("tableSectionRow");
-
-if(allTableRows){
-
-for (let i = 0; i < allTableRows.length; i++) {
-	let currentRow = allTableRows[i];
-	let tableAnchors = currentRow.getElementsByTagName("A");
-
-	for (let index = 0; index < tableAnchors.length; index++) {
-		let currentAnchor = tableAnchors[index];
-		if (currentAnchor.href.includes("?")) {
-			//let currentBase = currentAnchor.href.split("?")[0];
-			let dynamicVar = currentAnchor.href.split("=")[0];
-			let currentLocation = currentAnchor.href.split("=")[1].replace(/[^a-zA-Z ]/g, "");
-
-			let modifiedLocation = dynamicVar + "=" + currentLocation + window.location.search.replace(/[^a-zA-Z ]/g, "-").toLowerCase();
-			currentAnchor.href = modifiedLocation;
-			}
-		}
-	}
-}
-	
-	
+window.onload = function () {
+setAltTextToImages();
+createInternalNavBar();
+formatTrackingLinks();
+createFloatingCTA();
 };
 
 /* Adding go to top floating button element
