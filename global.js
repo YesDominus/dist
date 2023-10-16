@@ -1493,24 +1493,41 @@ alert("The page is now posted");
 
 
 function updateBonusText(sportsbooksTableClass, sportsbookTableClass, sportsbookClass, bonusText) {
-  const sportsbooksTable = document.querySelector(sportsbooksTableClass);
-  const sportsbookTable = document.querySelector(sportsbookTableClass);
-  let sportsbookTR = null;
+  const sportsbooksTables = document.querySelectorAll(sportsbooksTableClass);
+  const sportsbookTables = document.querySelectorAll(sportsbookTableClass);
 
-  if (sportsbooksTable || sportsbookTable) {
-    sportsbookTR = (sportsbooksTable || sportsbookTable).querySelector(sportsbookClass);
-  if (sportsbookTR) {
-    const bonusTD = sportsbookTR.querySelector(".bonusTD");
-    if (bonusTD) {
-      bonusTD.lastChild.textContent = bonusText;
+  for (let i = 0; i < sportsbooksTables.length; i++) {
+    const sportsbookTR = sportsbooksTables[i].querySelector(sportsbookClass);
+
+    if (sportsbookTR) {
+      const bonusTD = sportsbookTR.querySelector(".bonusTD");
+
+      if (bonusTD) {
+        bonusTD.lastChild.textContent = bonusText;
+      } else {
+        console.log("The bonusTD class does not exist in sportsbookTable", i + 1);
+      }
     } else {
-      console.log("The bonusTD class does not exist");
+      console.log("One of the classes does not exist in sportsbookTable", i + 1);
     }
-  } else {
-    console.log("One of the classes does not exist");
+  }
+
+  for (let i = 0; i < sportsbookTables.length; i++) {
+    const sportsbookTR = sportsbookTables[i].querySelector(sportsbookClass);
+
+    if (sportsbookTR) {
+      const bonusTD = sportsbookTR.querySelector(".bonusTD");
+
+      if (bonusTD) {
+        bonusTD.lastChild.textContent = bonusText;
+      } else {
+        console.log("The bonusTD class does not exist in sportsbookTable", i + 1);
+      }
+    } else {
+      console.log("One of the classes does not exist in sportsbookTable", i + 1);
+    }
   }
 }
-  }
 
 updateBonusText(".sportsbook-table", ".sportsbooks-table", ".caesars", "$1,000 First Bet bonus");
 updateBonusText(".sportsbook-table", ".sportsbooks-table", ".bet365", "Bet $1 get $365");
