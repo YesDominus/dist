@@ -1530,7 +1530,8 @@ function updateBonusText(sportsbooksTableClass, sportsbookTableClass, sportsbook
 }
 
 updateBonusText(".sportsbook-table", ".sportsbooks-table", ".caesars", "$1,000 First Bet bonus");
-updateBonusText(".sportsbook-table", ".sportsbooks-table", ".bet365", "Bet $1 get $365");
+updateBonusText(".sportsbook-table", ".sportsbooks-table", ".pointsbet", "Up to $1,000 in Bonus Bets");
+updateBonusText(".sportsbook-table", ".sportsbooks-table", ".bet365", "Up to $1,000 in Bonus Bets");
 
 updateBonusText(".sportsbook-table", ".sportsbooks-table", ".draftkings", "Bet $5, get $200");
 updateBonusText(".sportsbook-table", ".sportsbooks-table", ".fanduel", "Bet $5, get $150");
