@@ -1808,7 +1808,7 @@ function replaceTextInNode(node, originalValue, updatedValue) {
         }
     }
 }
-replaceTextInNode(bodyElement, "JOKERZBETFULL", "JOKERZBETGET");
+replaceTextInNode(bodyElement, "JOKERZBETFULL", "JOKERZBET1000");
 replaceTextInNode(bodyElement, "JOKERZCASINO", "JOKERZLAUNCH");
 
 /* Update the promo code of specified operators */
