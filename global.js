@@ -1540,7 +1540,7 @@ updateBonusText("table.sportsbook-table.oh-table", ".sportsbooks-table", ".betwa
 //Editing betmgm bonus for all states except ny,nv,dc
 updateBonusText("table.sportsbook-table:not(.ny-table):not(.nv-table):not(.dc-table)", ".sportsbooks-table", ".betmgm", "Up to $1,500 bonus");
 
-updateBonusText(".casinos-table", ".casino-table", ".pokerstars", "100% deposit match up to $600");
+updateBonusText(".casinos-table", ".casino-table", ".pokerstars", "Bet $1 get $150");
 updateBonusText(".casinos-table", ".casino-table", ".caesars", "Up to $1,250 + $10 sign-up bonus");
 
 
