@@ -1843,6 +1843,7 @@ updatePromoCode("table.sportsbook-table.ky-table", ".sportsbooks-table", ".caesa
 
 updatePromoCode(".casinos-table", ".casino-table", ".caesars", "JOKERZLAUNCH");
 
+/* 
 // Find all elements with the class "top-list-table"
 var topListTables = document.querySelectorAll('.top-list-table');
 
@@ -1872,3 +1873,4 @@ topListTables.forEach(function(table) {
     table.insertBefore(betMGMRow, table.firstChild);
   }
 });
+*/
