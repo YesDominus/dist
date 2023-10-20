@@ -1874,3 +1874,19 @@ topListTables.forEach(function(table) {
   }
 });
 */
+
+// Temporary replace bet365 links to campaign
+const links = document.querySelectorAll('a');
+for (const link of links) {
+  // Check if the href attribute contains both "go" and "bet365"
+  if (link.href.includes('go') && link.href.includes('bet365')) {
+    // Attach an onclick event handler
+    link.onclick = function (event) {
+      // Prevent the default link behavior
+      event.preventDefault();
+      
+      // Redirect the user to the new URL
+      window.location.href = 'https://www.bet365.com/olp/american-football-sunday-offer?affiliate=365_02631831';
+    };
+  }
+}
