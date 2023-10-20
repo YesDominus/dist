@@ -1877,16 +1877,21 @@ topListTables.forEach(function(table) {
 
 // Temporary replace bet365 links to campaign
 const links = document.querySelectorAll('a');
+
+// Define the new URL for redirection
+const newHref = 'https://www.bet365.com/olp/american-football-sunday-offer?affiliate=365_02631831';
+
+// Iterate through the links
 for (const link of links) {
-  // Check if the href attribute contains both "go" and "bet365"
-  if (link.href.includes('go') && link.href.includes('bet365')) {
+  // Check if the href attribute contains "go" and "bet365" but not "casino"
+  if (link.href.includes('go') && link.href.includes('bet365') && !link.href.includes('casino')) {
     // Attach an onclick event handler
     link.onclick = function (event) {
       // Prevent the default link behavior
       event.preventDefault();
       
       // Redirect the user to the new URL
-      window.location.href = 'https://www.bet365.com/olp/american-football-sunday-offer?affiliate=365_02631831';
+      window.location.href = newHref;
     };
   }
 }
