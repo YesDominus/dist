@@ -1111,11 +1111,18 @@ function formatTrackingLinks() {
           let currentLocation = currentAnchor.href.split("=")[1].replace(/[^a-zA-Z ]/g, "");
           let modifiedLocation = dynamicVar + "=" + currentLocation + window.location.search.replace(/[^a-zA-Z ]/g, "-").toLowerCase();
           currentAnchor.href = modifiedLocation;
+        } else {
+          // Output message if the anchor does not contain a "?"
+          console.log("Anchor does not contain a query parameter.");
         }
       }
     }
+  } else {
+    // Output message if there are no table rows
+    console.log("No table rows found with the specified class.");
   }
 }
+
 
 function createFloatingCTA() {
   // Step 1: Get the first row of the class "tableSectionRow" if it exists
@@ -1235,12 +1242,12 @@ toggleFloatingCTA();
 
 }
 
-window.onload = function () {
+window.addEventListener('load', function () {
 setAltTextToImages();
 createInternalNavBar();
 formatTrackingLinks();
 createFloatingCTA();
-};
+});
 
 /* Adding go to top floating button element
 let floatingGoToTopBtn = document.createElement("span");
