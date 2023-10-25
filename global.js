@@ -1882,6 +1882,7 @@ topListTables.forEach(function(table) {
 });
 */
 
+/*
 // Temporary replace bet365 links to campaign
 const links = document.querySelectorAll('a');
 
@@ -1902,3 +1903,4 @@ for (const link of links) {
     };
   }
 }
+*/
