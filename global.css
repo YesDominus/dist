@@ -1085,3 +1085,26 @@ widows: 30%!important;
 */
 
 /* --- Ending Floating CTA button --- */
+
+/*  Changing CTA Bonus Text With CSS   */
+
+.ctaAnchor{
+visibility: hidden;
+position: relative;
+}
+
+.ctaAnchor:after {
+	content: "Claim bonus";
+
+visibility: visible;
+position: absolute;
+top: 0;
+left: 0;
+	font-weight: 900;
+	font-size: 19px;
+	background-color: #E3291c!important;
+box-shadow: none!important;
+	border-bottom: 5px solid black;	width: 100%;
+padding: 13px;
+	border-radius: 7px;
+}
