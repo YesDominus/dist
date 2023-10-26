@@ -1542,7 +1542,13 @@ updateBonusText(".sportsbook-table", ".sportsbooks-table", ".bet365", "Up to $1,
 updateBonusText(".sportsbook-table", ".sportsbooks-table", ".draftkings", "Bet $5, get $200");
 updateBonusText(".sportsbook-table", ".sportsbooks-table", ".crab-sports", "$500 First Bet Payback");
 updateBonusText(".sportsbook-table", ".sportsbooks-table", ".fanduel", "Bet $5, get $150");
+
 updateBonusText("table.sportsbook-table.oh-table", ".sportsbooks-table", ".betway", "Bet $20 get $40");
+updateBonusText("table.sportsbook-table.az-table", ".sportsbooks-table", ".unibet", "$100 2nd Chance Bet");
+updateBonusText("table.sportsbook-table.nj-table", ".sportsbooks-table", ".unibet", "$100 2nd Chance Bet");
+updateBonusText("table.sportsbook-table.pa-table", ".sportsbooks-table", ".unibet", "$500 2nd Chance Bet");
+
+
 
 //Editing betmgm bonus for all states except ny,nv,dc
 updateBonusText("table.sportsbook-table:not(.ny-table):not(.nv-table):not(.dc-table)", ".sportsbooks-table", ".betmgm", "Up to $1,500 bonus");
