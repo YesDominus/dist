@@ -1822,7 +1822,7 @@ function replaceTextInNode(node, originalValue, updatedValue) {
     }
 }
 replaceTextInNode(bodyElement, "JOKERZBETFULL", "JOKERZBET1000");
-replaceTextInNode(bodyElement, "JOKERZCASINO", "JOKERZLAUNCH");
+replaceTextInNode(bodyElement, "JOKERZCASINO", "JOKERZ2500");
 
 /* Update the promo code of specified operators */
 function updatePromoCode(sportsbooksTableClass, sportsbookTableClass, sportsbookClass, promoCodeText) {
@@ -1854,7 +1854,7 @@ updatePromoCode(".sportsbook-table", ".sportsbooks-table", ".caesars", "JOKERZBE
 updatePromoCode(".sportsbook-table", ".sportsbooks-table", ".bet365", "JOKERZINO");
 updatePromoCode("table.sportsbook-table.ky-table", ".sportsbooks-table", ".caesars", "JOKERZBETGET");
 
-updatePromoCode(".casinos-table", ".casino-table", ".caesars", "JOKERZLAUNCH");
+updatePromoCode(".casinos-table", ".casino-table", ".caesars", "JOKERZ2500");
 
 /* 
 // Find all elements with the class "top-list-table"
