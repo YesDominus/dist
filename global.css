@@ -429,6 +429,10 @@ font-size: 18px!important;
 	max-height: 80px!important;
 }
 
+.imgTD a, .imgTD img{
+  margin: auto!important;
+}
+
 
 /* Promo styling */
 .tableConsList::before{
