@@ -801,12 +801,12 @@ width: 17%!important;
 /* Legal disclaimer */
 
 .legal-disclaimer{
-	background-color: green;
-	color: white;
-	padding: 7px;
+	background-color: whitesmoke;
+	color: #36454f;
 	text-align: center;
 	font-size: 130%;
 	font-weight: 600;
+	display: block!important;
 }
 
 .legal-disclaimer span{
@@ -814,8 +814,15 @@ width: 17%!important;
 	font-weight: 900;
 }
 
-.legal-disclaimer{
-	display: none;
+.legal-disclaimer::before{
+	content: url("https://jokerzinomarketing.com/wp-content/uploads/check-mark-li.png");
+		position:relative; 
+  z-index:100000; 
+  top:5px;
+	  bottom:5px;
+	
+margin: 5px;
+
 }
 
 /* Gambling age disclaimer */
