@@ -1727,6 +1727,9 @@ replaceLinks('/go/wynnbet/', '/go/betmgm/');
 replaceLinks('/go/betfred/', '/go/betmgm/');
 replaceLinks('/go/fanduel/', '/go/betmgm/');
 
+
+/* 
+
 if (!((domainName.includes("casino") && domainName !== "ohonlinecasino.com" && domainName !== "tnonlinecasino.com") ||
     domainName === "pennsylvaniagamblers.com" ||
     domainName === "michigangamblers.com" ||
@@ -1734,7 +1737,7 @@ if (!((domainName.includes("casino") && domainName !== "ohonlinecasino.com" && d
 replaceLinks('/go/caesars', '#?temp=caesars');
 }
 
-/*
+
 // Add a click event listener to all links on the page
 let stateCodeCaesars = 2486; // NY General GEO
 let caesarsCampaignCode = 12744; // Replace number with your desired campaign code
