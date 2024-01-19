@@ -1548,10 +1548,9 @@ updateBonusText("table.sportsbook-table.az-table", ".sportsbooks-table", ".unibe
 updateBonusText("table.sportsbook-table.nj-table", ".sportsbooks-table", ".unibet", "$100 2nd Chance Bet");
 updateBonusText("table.sportsbook-table.pa-table", ".sportsbooks-table", ".unibet", "$500 2nd Chance Bet");
 
-
-
-//Editing betmgm bonus for all states except ny,nv,dc
+//Editing Sportsbook bonus for all states except specific states
 updateBonusText("table.sportsbook-table:not(.ny-table):not(.nv-table):not(.dc-table)", ".sportsbooks-table", ".betmgm", "Up to $1,500 bonus");
+updateBonusText("table.sportsbook-table:not(.nj-table):not(.in-table):not(.co-table):not(.ia-table)", ".sportsbooks-table", ".betway", "Bet $50, Get a $200 Bonus Bet");
 
 updateBonusText(".casinos-table", ".casino-table", ".pokerstars", "Bet $1 get $150");
 updateBonusText(".casinos-table", ".casino-table", ".caesars", "Up to $2,500 deposit match");
