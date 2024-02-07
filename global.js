@@ -1696,7 +1696,7 @@ currentTable.innerHTML += "<tr class='tableSectionRow betmgm'><td class='imgTD' 
 }
 }
 
-//removeAndReplaceOperator("casino-table", "caesars");
+removeAndReplaceOperator("top-list-table sportsbook-table", "caesars");
 removeAndReplaceOperator("top-list-table", "superbook");
 removeAndReplaceOperator("top-list-table", "wynnbet");
 removeAndReplaceOperator("top-list-table", "betfred");
