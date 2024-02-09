@@ -1092,3 +1092,62 @@ box-shadow: none!important;
 padding: 13px;
 	border-radius: 7px;
 }
+
+/* Odds Compare CSS*/
+ .odds-section-container div{
+  display: flex;
+  flex-wrap: wrap;
+	justify-content: space-between;
+    }
+
+.odds-iframe{
+	  flex-grow: 1;
+	border-radius: 9px;
+	height: 17rem;
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+	margin: 5px;
+}
+
+    /* Dropdown container styles */
+    .odds-dropdown select{
+      margin: 3px; /* Add margin between dropdowns */
+				box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+
+    /* Dropdown button styles */
+    .dropbtn {
+      padding: 10px;
+      font-size: 16px;
+      border: none;
+      background-color: #f1f1f1;
+      cursor: pointer;
+      width: 200px; /* Adjust width as needed */
+    }
+
+    /* Dropdown options styles */
+    .dropbtn option {
+      color: black;
+      padding: 10px;
+      font-size: 16px;
+      border: none;
+      background-color: #f1f1f1;
+      cursor: pointer;
+      display: block;
+    }
+
+/* Dropdown container styles */
+.odds-dropdown {
+  display: inline-block; /* Display dropdowns inline */
+  margin-right: 10px; /* Add margin between dropdowns */
+}
+
+/* Dropdown button styles */
+.dropbtn {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  width: 200px; /* Adjust width as needed */
+}
+/* Ending Odds Compare Section */
