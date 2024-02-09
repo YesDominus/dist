@@ -1108,6 +1108,12 @@ padding: 13px;
 	margin: 5px;
 }
 
+@media only screen and (max-width: 600px) {
+.odds-iframe{
+	height: 17rem;
+}
+}
+
     /* Dropdown container styles */
     .odds-dropdown select{
       margin: 3px; /* Add margin between dropdowns */
