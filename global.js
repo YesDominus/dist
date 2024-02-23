@@ -1543,7 +1543,7 @@ updateBonusText(".sportsbook-table", ".sportsbooks-table", ".draftkings", "No Sw
 
 updateBonusText(".sportsbook-table", ".sportsbooks-table", ".crab-sports", "$500 First Bet Payback");
 updateBonusText(".sportsbook-table", ".sportsbooks-table", ".fanduel", "Bet $5, get $150");
-updateBonusText(".sportsbook-table", ".sportsbooks-table", ".betmgm", "Bet $5, get $158");
+updateBonusText(".sportsbook-table", ".sportsbooks-table", ".betmgm", "Bet $5, get $150");
 
 
 updateBonusText("table.sportsbook-table.oh-table", ".sportsbooks-table", ".betway", "Bet $20 get $40");
