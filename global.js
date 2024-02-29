@@ -1559,11 +1559,15 @@ updateBonusText("table.sportsbook-table.nc-table", ".sportsbooks-table", ".draft
 updateBonusText("table.sportsbook-table.nc-table", ".sportsbooks-table", ".betmgm", "Get $200 bonus on sign-up - no deposit needed");
 updateBonusText("table.sportsbook-table.nc-table", ".sportsbooks-table", ".bet365", "Get $100 bonus on sign-up - no deposit needed");
 
-/*
+
+// Count down CTA
+let ncTable = document.getElementsByClassName('nc-table')[0];
+
+if(ncTable){
 // Offer count down 
 // Set the target date (1 Jan 2023)
 //var targetDate = new Date("Mar 26, 2023 00:00:00");
-var targetDate = new Date("2023-04-03T23:59:59");
+var targetDate = new Date("2024-03-10T23:59:59");
 // Set the interval for the timer (1000 milliseconds = 1 second)
 var interval = 1000;
 
@@ -1597,7 +1601,7 @@ if(topListTableElements){
   }
 
   // Update the timer display
-  timerElements.innerHTML = "Exclusive deals for the <strong>March Madness</strong> expires in: <br><strong>" + days + "d " + hours + "h " + minutes + "m " + seconds + "s </strong>";
+  timerElements.innerHTML = "Exclusive sign-up deals for the <strong>NC launch</strong> expires in: <br><strong>" + days + "d " + hours + "h " + minutes + "m " + seconds + "s </strong>";
 
   // Set the styles for the elements with the class "timer"
   timerElements.style.fontFamily = "Arial, sans-serif";
@@ -1618,7 +1622,8 @@ if(topListTableElements){
     }
   }
 }, interval);
-*/
+}
+
 
 /* Add NAV to all UL in Footer */
 const footer = document.querySelector('footer'); // get the <footer> element
