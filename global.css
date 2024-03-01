@@ -342,6 +342,10 @@ p {
 	background-color: #F5F5F5;
 }
 
+.nc-table .tableSectionRow::after {
+  content: "Must be 21+ to participate & present in NC. T&Cs Apply. Play Responsibly. Gambling problem? Call 877-718-5543 or visit morethanagame.nc.gov"!important;
+}
+
 .passage img:not(.top-list-table img) {
 	max-height: 200px!important;
 	border-radius: 50%;
