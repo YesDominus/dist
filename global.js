@@ -1866,6 +1866,7 @@ function updatePromoCode(sportsbooksTableClass, sportsbookTableClass, sportsbook
 
 updatePromoCode(".sportsbook-table", ".sportsbooks-table", ".caesars", "JOKERZBET1000");
 updatePromoCode(".sportsbook-table", ".sportsbooks-table", ".bet365", "JOKERZINO");
+updatePromoCode(".sportsbook-table", ".sportsbooks-table", ".draftkings", "Click & Activate");
 updatePromoCode("table.sportsbook-table.ky-table", ".sportsbooks-table", ".caesars", "JOKERZBETGET");
 
 updatePromoCode(".casinos-table", ".casino-table", ".caesars", "JOKERZ2500");
