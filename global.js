@@ -1555,7 +1555,7 @@ updateBonusText(".casinos-table", ".casino-table", ".caesars", "Up to $2,500 dep
 
 //State specific bonus updates
 updateBonusText("table.sportsbook-table.oh-table", ".sportsbooks-table", ".betway", "Bet $20 get $40");
-updateBonusText("table.sportsbook-table.nc-table", ".sportsbooks-table", ".draftkings", "Get $100 bonus on-sign up + Extra $200 on $5 deposit");
+updateBonusText("table.sportsbook-table.nc-table", ".sportsbooks-table", ".draftkings", "Get $100 on-sign up + Extra $200 on $5 deposit");
 updateBonusText("table.sportsbook-table.nc-table", ".sportsbooks-table", ".betmgm", "Get $200 bonus on sign-up - no deposit needed");
 updateBonusText("table.sportsbook-table.nc-table", ".sportsbooks-table", ".bet365", "Get $100 bonus on sign-up - no deposit needed");
 
@@ -1601,7 +1601,7 @@ if(topListTableElements){
   }
 
   // Update the timer display
-  timerElements.innerHTML = "Exclusive sign-up deals for the <strong>NC launch</strong> expires in: <br><strong>" + days + "d " + hours + "h " + minutes + "m " + seconds + "s </strong>";
+  timerElements.innerHTML = "Exclusive pre-registration deals for the <strong>NC launch</strong> expires in: <br><strong>" + days + "d " + hours + "h " + minutes + "m " + seconds + "s </strong>";
 
   // Set the styles for the elements with the class "timer"
   timerElements.style.fontFamily = "Arial, sans-serif";
