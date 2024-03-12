@@ -1543,7 +1543,7 @@ updateBonusText(".sportsbook-table", ".sportsbooks-table", ".draftkings", "No Sw
 
 updateBonusText(".sportsbook-table", ".sportsbooks-table", ".crab-sports", "$500 First Bet Payback");
 updateBonusText(".sportsbook-table", ".sportsbooks-table", ".fanduel", "Bet $5, get $150");
-updateBonusText(".sportsbook-table", ".sportsbooks-table", ".betmgm", "Bet $5, get $150");
+updateBonusText(".sportsbook-table", ".sportsbooks-table", ".betmgm", "Bet $5, get $150 Instantly");
 
 //Editing Sportsbook bonus for all states except specific states
 updateBonusText("table.sportsbook-table:not(.ny-table):not(.nv-table):not(.dc-table)", ".sportsbooks-table", ".betmgm", "Bet $5, get $150");
@@ -1555,9 +1555,8 @@ updateBonusText(".casinos-table", ".casino-table", ".caesars", "Up to $2,500 dep
 
 //State specific bonus updates
 updateBonusText("table.sportsbook-table.oh-table", ".sportsbooks-table", ".betway", "Bet $20 get $40");
-updateBonusText("table.sportsbook-table.nc-table", ".sportsbooks-table", ".draftkings", "Get $100 on-sign up + Extra $200 on $5 deposit");
-updateBonusText("table.sportsbook-table.nc-table", ".sportsbooks-table", ".betmgm", "Get $200 bonus on sign-up - no deposit needed");
-updateBonusText("table.sportsbook-table.nc-table", ".sportsbooks-table", ".bet365", "Get $100 bonus on sign-up - no deposit needed");
+updateBonusText("table.sportsbook-table.nc-table", ".sportsbooks-table", ".draftkings", "Bet $5, get $250 Instantly");
+updateBonusText("table.sportsbook-table.nc-table", ".sportsbooks-table", ".bet365", "Bet $5, get $200 in Bonus Bets");
 
 
 // Count down CTA
