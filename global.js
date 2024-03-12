@@ -1558,7 +1558,7 @@ updateBonusText("table.sportsbook-table.oh-table", ".sportsbooks-table", ".betwa
 updateBonusText("table.sportsbook-table.nc-table", ".sportsbooks-table", ".draftkings", "Bet $5, get $250 Instantly");
 updateBonusText("table.sportsbook-table.nc-table", ".sportsbooks-table", ".bet365", "Bet $5, get $200 in Bonus Bets");
 
-
+/*
 // Count down CTA
 let ncTable = document.getElementsByClassName('nc-table')[0];
 
@@ -1622,7 +1622,7 @@ if(topListTableElements){
   }
 }, interval);
 }
-
+*/
 
 /* Add NAV to all UL in Footer */
 const footer = document.querySelector('footer'); // get the <footer> element
