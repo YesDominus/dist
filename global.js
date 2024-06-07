@@ -1543,7 +1543,7 @@ updateBonusText(".sportsbook-table", ".sportsbooks-table", ".draftkings", "Bet $
 
 updateBonusText(".sportsbook-table", ".sportsbooks-table", ".crab-sports", "$500 First Bet Payback");
 updateBonusText(".sportsbook-table", ".sportsbooks-table", ".fanduel", "Bet $5, get $150");
-updateBonusText(".sportsbook-table", ".sportsbooks-table", ".betmgm", "Bet $5, get $150 Instantly");
+updateBonusText(".sportsbook-table", ".sportsbooks-table", ".betmgm", "Up to $1,500 in Bonus Bets");
 
 //Editing Sportsbook bonus for all states except specific states
 updateBonusText("table.sportsbook-table:not(.ny-table):not(.nv-table):not(.dc-table)", ".sportsbooks-table", ".betmgm", "Bet $5, get $150");
