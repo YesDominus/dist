@@ -1557,7 +1557,7 @@ updateBonusText(".casinos-table", ".casino-table", ".caesars", "Up to $2,500 dep
 updateBonusText("table.sportsbook-table.oh-table", ".sportsbooks-table", ".betway", "Bet $20 get $40");
 //updateBonusText("table.sportsbook-table.nc-table", ".sportsbooks-table", ".draftkings", "Bet $5, get $250 Instantly");
 updateBonusText("table.sportsbook-table.nc-table", ".sportsbooks-table", ".bet365", "Bet $5, get $200 in Bonus Bets");
-updateBonusText("table.sportsbook-table.nc-table", ".sportsbooks-table", ".betmgm", "Great odds");
+updateBonusText("table.sportsbook-table.ny-table", ".sportsbooks-table", ".betmgm", "Great odds");
 
 /*
 // Count down CTA
