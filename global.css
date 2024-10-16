@@ -346,6 +346,43 @@ p {
   content: "Must be 21+ to participate & present in NC. T&Cs Apply. Play Responsibly. Gambling problem? Call 877-718-5543 or visit morethanagame.nc.gov"!important;
 }
 
+/* BetMGM Disclaimer */
+.sportsbook-table .betmgm::after {
+  content: "Bonus Bets Expire in 7 Days. One New Customer Offer Only. Must be 21+ to participate & present in the state. In Partnership with MGM National Harbor. Gambling problem? Call 1-800-GAMBLER. Visit BetMGM.com for Terms & Conditions. US promotional offers not available in NY, NV, or Puerto Rico."!important;
+}
+
+.sportsbook-table.nc-table .betmgm::after {
+  content: "See BetMGM.com for Terms. Must be 21+ to participate & present in NC only. New Customer Offer. Subject to eligibility requirements. Rewards are non-withdrawable bonus bets that expire in 7 days. Gambling problem? Call 877-718-5543 or visit morethanagame.nc.gov."!important;
+}
+
+.sportsbook-table.oh-table .betmgm::after {
+  content: "Bonus Bets Expire in 7 Days. One New Customer Offer Only. Must be 21+ to participate & present in OH. In Partnership with MGM National Harbor. Gambling problem? Call 1-800-GAMBLER. Visit BetMGM.com for Terms & Conditions. US promotional offers not available in NY, NV, or Puerto Rico."!important;
+}
+
+.sportsbook-table.az-table .betmgm::after {
+  content: "Bonus Bets Expire in 7 Days. One New Customer Offer Only. Must be 21+ to participate & present in AZ. In Partnership with MGM National Harbor. Gambling problem? Call 1-800-GAMBLER. Visit BetMGM.com for Terms & Conditions. US promotional offers not available in NY, NV, or Puerto Rico."!important;
+}
+
+.sportsbook-table.md-table .betmgm::after {
+  content: "Bonus Bets Expire in 7 Days. One New Customer Offer Only. Must be 21+ to participate & present in MD. In Partnership with MGM National Harbor. Gambling problem? Call 1-800-GAMBLER. Visit BetMGM.com for Terms & Conditions. US promotional offers not available in NY, NV, or Puerto Rico."!important;
+}
+
+.sportsbook-table.il-table .betmgm::after {
+  content: "Bonus Bets Expire in 7 Days. One New Customer Offer Only. Must be 21+ to participate & present in IL. In Partnership with MGM National Harbor. Gambling problem? Call 1-800-GAMBLER. Visit BetMGM.com for Terms & Conditions. US promotional offers not available in NY, NV, or Puerto Rico."!important;
+}
+
+.sportsbook-table.co-table .betmgm::after {
+  content: "Bonus Bets Expire in 7 Days. One New Customer Offer Only. Must be 21+ to participate & present in CO. In Partnership with MGM National Harbor. Gambling problem? Call 1-800-GAMBLER. Visit BetMGM.com for Terms & Conditions. US promotional offers not available in NY, NV, or Puerto Rico."!important;
+}
+
+.sportsbook-table.ks-table .betmgm::after {
+  content: "Bonus Bets Expire in 7 Days. One New Customer Offer Only. Must be 21+ to participate & present in KS. In Partnership with MGM National Harbor. Gambling problem? Call 1-800-GAMBLER. Visit BetMGM.com for Terms & Conditions. US promotional offers not available in NY, NV, or Puerto Rico."!important;
+}
+
+.sportsbook-table.ct-table .betmgm::after {
+  content: "Bonus Bets Expire in 7 Days. One New Customer Offer Only. Must be 21+ to participate & present in CT. In Partnership with MGM National Harbor. Gambling problem? Call 1-800-GAMBLER. Visit BetMGM.com for Terms & Conditions. US promotional offers not available in NY, NV, or Puerto Rico."!important;
+}
+
 .passage img:not(.top-list-table img) {
 	max-height: 200px!important;
 	border-radius: 50%;
