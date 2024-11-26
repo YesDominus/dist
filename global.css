@@ -1141,6 +1141,19 @@ padding: 13px;
 	justify-content: space-between;
     }
 
+.odds-section-container::after {
+  content: "GAMBLING PROBLEM? CALL 1-800-GAMBLER, (800) 327-5050 or visit gamblinghelplinema.org (MA). Call 877-8-HOPENY/text HOPENY (467369) (NY). Please Gamble Responsibly. 888-789-7777/visit ccpg.org (CT), or visit www.mdgamblinghelp.org (MD). 21+ and present in most states. (18+ DC/KY/NH/WY).";
+  display: block;
+  clear: both;
+	margin: auto;
+	border-top: 1px solid #dbd7d2;
+	text-align: center;
+	font-size: .70rem;
+	color: #757575;
+	width:100%;
+	font-weight: bold;
+}
+
 .odds-iframe{
 	  flex-grow: 1;
 	border-radius: 9px;
