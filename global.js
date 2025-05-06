@@ -1541,7 +1541,7 @@ updateBonusText(".sportsbook-table", ".sportsbooks-table", ".pointsbet", "Great 
 updateBonusText(".sportsbook-table", ".sportsbooks-table", ".bet365", "Bet $5, get 150 in Bonus Bets");
 updateBonusText(".sportsbook-table", ".sportsbooks-table", ".draftkings", "Bet $5, Get $200 Instantly");
 
-updateBonusText(".sportsbook-table", ".sportsbooks-table", ".crab-sports", "$500 First Bet Payback");
+updateBonusText(".sportsbook-table", ".sportsbooks-table", ".crab-sports", "100% Boost Up To $500");
 updateBonusText(".sportsbook-table", ".sportsbooks-table", ".fanduel", "Up To $1,500 In Bonus Bets");
 updateBonusText(".sportsbook-table", ".sportsbooks-table", ".betmgm", "Up to $1,500 in Bonus Bets");
 
