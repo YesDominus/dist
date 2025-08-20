@@ -1539,7 +1539,7 @@ function updateBonusText(sportsbooksTableClass, sportsbookTableClass, sportsbook
 updateBonusText(".sportsbook-table", ".sportsbooks-table", ".caesars", "$1,000 First Bet bonus");
 updateBonusText(".sportsbook-table", ".sportsbooks-table", ".pointsbet", "Great betting features");
 updateBonusText(".sportsbook-table", ".sportsbooks-table", ".bet365", "Bet $5, get $150 in Bonus Bets");
-updateBonusText(".sportsbook-table", ".sportsbooks-table", ".draftkings", "Bet $5, Get $150 in Bonus Bets INSTANTLY!");
+updateBonusText(".sportsbook-table", ".sportsbooks-table", ".draftkings", "Bet $5, Get $200 in Bonus Bets INSTANTLY!");
 
 updateBonusText(".sportsbook-table", ".sportsbooks-table", ".crab-sports", "100% Boost Up To $500");
 updateBonusText(".sportsbook-table", ".sportsbooks-table", ".fanduel", "Up To $1,500 In Bonus Bets");
