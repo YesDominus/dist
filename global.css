@@ -346,14 +346,27 @@ p {
   content: "Must be 21+ to participate & present in NC. T&Cs Apply. Play Responsibly. Gambling problem? Call 877-718-5543 or visit morethanagame.nc.gov"!important;
 }
 
-/* BetMGM Disclaimer */
-.sportsbook-table .betmgm::after {
-  content: "Bonus Bets Expire in 7 Days. One New Customer Offer Only. Must be 21+ to participate & present in the state. In Partnership with MGM National Harbor. Gambling problem? Call 1-800-GAMBLER. Visit BetMGM.com for Terms & Conditions. US promotional offers not available in NY, NV, or Puerto Rico."!important;
+/* Bet365 Disclaimer */
+.sportsbook-table .bet365::after {
+  content: "Must be 21+ to participate. Gambling problem? Call 1-800-GAMBLER (CO, IL, IA, KY, KS, LA, MD, NC, NJ, OH, PA, TN, VA). Call 1-800-NEXT-STEP (AZ). Call 1-800-9-WITH-IT (IN). Deposit required. Paid in Bonus Bets. Bets wager excluded from returns. New Customer only. T&Cs, time limits and exclusions apply. Code is for marketing/tracking purposes."!important;
 }
 
 /* DraftKings Disclaimer */
 .sportsbook-table .draftkings::after {
   content: "GAMBLING PROBLEM? CALL 1-800-GAMBLER, (800) 327-5050 or visit gamblinghelplinema.org (MA). Call 877-8-HOPENY/text HOPENY (467369) (NY). Please Gamble Responsibly. 888-789-7777/visit ccpg.org (CT), or visit www.mdgamblinghelp.org (MD). 21+ and present in most states. (18+ DC/KY/NH/WY). Void in ONT/OR/NH. Eligibility restrictions apply. On behalf of Boot Hill Casino & Resort (KS). Pass-thru of per wager tax may apply in IL. 1 per new DraftKings customer. Must register new DraftKings account to receive reward Token. Must select Token BEFORE placing min. $5 bet to get 1 promo code to redeem 3-month NBA League Pass subscription, complimentary of DraftKings, and get max. $300 in Bonus Bets if your bet wins. Min. -500 odds req. Token and Bonus Bets are single-use and non-withdrawable. Bonus Bets expire in 7 days (168 hours) and stake removed from payout. Token expires 11/23/25. Terms: sportsbook.draftkings.com/promos. NBA League Pass: Subscription auto-renews monthly at then-current price (currently $16.99/mo); cancel anytime. Terms, restrictions, and eligibility requirements apply. Redeem League Pass by 12/19/25 at 11:59 PM ET. Addt’l terms: https://support.watch.nba.com/hc/en-us/articles/9165532876183-League-Pass-Terms-of-Use_. Offer ends 11/16/25 at 11:59 PM ET. Sponsored by DK."!important;
+}
+
+.sportsbook-table.mo-table .draftkings::after {
+  content: "Gambling problem? Call 1-800-GAMBLER. 21+. Physically present in Missouri. Eligibility restrictions apply. 1 per new customer. $5+ first-time bet req. Max. $300 issued as non-withdrawable Bonus Bets that expire in 7 days (168 hours). Stake removed from payout. Excludes customers who redeem prelaunch signup offer. Terms: sportsbook.draftkings.com/promos. Ends 1/4/26 at 11:59 PM CST. Sponsored by DK."!important;
+}
+
+/* BetMGM Disclaimer */
+.sportsbook-table .betmgm::after {
+  content: "Bonus Bets Expire in 7 Days. One New Customer Offer Only. Must be 21+ to participate & present in the state. In Partnership with MGM National Harbor. Gambling problem? Call 1-800-GAMBLER. Visit BetMGM.com for Terms & Conditions. US promotional offers not available in NY, NV, or Puerto Rico."!important;
+}
+
+.sportsbook-table.mo-table .betmgm::after {
+  content: "Gambling Problem? Call 1-800-GAMBLER. See BetMGM.com for Terms. 21+ only. MO Only. New Customer Offer. § Minimum $10 deposit required. Bonus bets expire in 7 days. One new player offer. Add’l terms. Subject to eligibility requirements. Bonus bets are non-withdrawable. Please gamble responsibly."!important;
 }
 
 .sportsbook-table.nc-table .betmgm::after {
