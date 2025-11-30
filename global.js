@@ -1554,7 +1554,14 @@ updateBonusText(".casinos-table", ".casino-table", ".pokerstars", "Bet $1 get $1
 updateBonusText(".casinos-table", ".casino-table", ".caesars", "Up to $2,500 deposit match");
 
 //State specific bonus updates
+// OH
 updateBonusText("table.sportsbook-table.oh-table", ".sportsbooks-table", ".betway", "Bet $20 get $40");
+// MO
+updateBonusText("table.sportsbook-table.mo-table", ".sportsbooks-table", ".betmgm", "Bet $20 get $40");
+updateBonusText("table.sportsbook-table.mo-table", ".sportsbooks-table", ".draftkings", "Bet $5 Get $300 Instantly in Bonus Bets!");
+updateBonusText("table.sportsbook-table.mo-table", ".sportsbooks-table", ".caesars", "Bet $20 get $40");
+updateBonusText("table.sportsbook-table.mo-table", ".sportsbooks-table", ".bet365", "Bet $5 get $150 + 100% profit boost");
+
 //updateBonusText("table.sportsbook-table.nc-table", ".sportsbooks-table", ".draftkings", "Bet $5, get $250 Instantly");
 //updateBonusText("table.sportsbook-table.nc-table", ".sportsbooks-table", ".bet365", "Bet $5, get 150 in Bonus Bets");
 updateBonusText("table.sportsbook-table.ny-table", ".sportsbooks-table", ".betmgm", "Great odds");
