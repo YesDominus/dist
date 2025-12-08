@@ -1877,6 +1877,30 @@ updatePromoCode("table.sportsbook-table.ky-table", ".sportsbooks-table", ".caesa
 
 updatePromoCode(".casinos-table", ".casino-table", ".caesars", "JOKERZ2500");
 
+//Remove BetMGM due to termination :(
+document.addEventListener("DOMContentLoaded", function () {
+  const links = document.querySelectorAll("a[href]");
+  let found = false;
+
+  links.forEach(link => {
+    const href = link.getAttribute("href").toLowerCase();
+
+    if (href.includes("betmgm") || href.includes("borgata")) {
+      found = true;
+    }
+  });
+
+  if (found) {
+    links.forEach(link => {
+      const href = link.getAttribute("href").toLowerCase();
+
+      if (href.includes("betmgm") || href.includes("borgata")) {
+        link.setAttribute("href", "/");
+      }
+    });
+  }
+});
+
 /* 
 // Find all elements with the class "top-list-table"
 var topListTables = document.querySelectorAll('.top-list-table');
