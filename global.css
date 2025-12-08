@@ -361,6 +361,11 @@ p {
 }
 
 /* BetMGM Disclaimer */
+
+.tableSectionRow.betmgm {
+  display: none !important;
+}
+
 .sportsbook-table .betmgm::after {
   content: "Bonus Bets Expire in 7 Days. One New Customer Offer Only. Must be 21+ to participate & present in the state. In Partnership with MGM National Harbor. Gambling problem? Call 1-800-GAMBLER. Visit BetMGM.com for Terms & Conditions. US promotional offers not available in NY, NV, or Puerto Rico."!important;
 }
